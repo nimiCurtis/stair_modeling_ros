@@ -125,8 +125,7 @@ private:
     int level_index_;
     
     // ROS parameters
-    double leaf_size_xy_;
-    double leaf_size_z_;
+
     double distance_threshold_;
     int max_iterations_;
     double angle_threshold_;
@@ -135,18 +134,19 @@ private:
     int max_cluster_size_;
     int mean_k_;
     double stddev_mul_thresh_;
-    double min_x_;
-    double max_x_;
-    double min_y_;
-    double max_y_;
-    double min_z_;
-    double max_z_;
+
     int k_neighbors_;
     int x_neighbors_;
     double y_threshold_;
+    
     std::string input_point_cloud_topic_;
-    std::string input_frame_id_;
-    std::string output_frame_id_;
+    std::string filtered_point_cloud_topic_;
+
+    std::string map_frame_;
+    std::string base_frame_;
+    std::string input_frame_;
+    std::string output_frame_;
+
     bool debug_;
     std::string debug_msg_;
 };

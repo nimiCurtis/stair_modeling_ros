@@ -1,7 +1,10 @@
+// system
 #include <sys/resource.h>
 
-
+// ros
 #include <rclcpp/rclcpp.hpp>
+
+// custom
 #include "stair_modeling_ros/stair_modeling.h"
 #include "stair_modeling_ros/zion_tf2_broadcaster.h"
 
@@ -35,10 +38,7 @@ int main(int argc, char * argv[])
     }
   );
 
-  // executor->add_node(pcl_node);
-  // executor->spin();
 
-  
   executor1_thread.join();
   executor2_thread.join();
 

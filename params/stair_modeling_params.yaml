@@ -35,11 +35,14 @@
 
     topic_names:
       input_point_cloud_topic: "/zedm/zed_node/point_cloud/cloud_registered"
+      filtered_point_cloud_topic: "/stair_modeling_ros/point_cloud/cloud_filtered"
 
     frame_ids:
-      input_frame_id: "zedm_left_camera_frame"
-      output_frame_id: "zedm_base_link_projected"
-      
+      map_frame: "map"
+      base_frame: "zedm_base_link"
+      input_cloud_frame: "zedm_left_camera_frame"
+      output_cloud_frame: "zedm_base_link_projected"
+
 /**:
     ros__parameters:
       allNodeCanSee: True

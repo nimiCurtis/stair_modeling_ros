@@ -45,10 +45,9 @@ StairModeling::StairModeling() : Node("StairModeling")
     rclcpp::QoS qos_profile_pcl(1);
     // qos_profile_pcl.reliability(RMW_QOS_POLICY_RELIABILITY_BEST_EFFORT);
     qos_profile_pcl.reliability(RMW_QOS_POLICY_RELIABILITY_RELIABLE);
-    pcl_sub_ = this->create_subscription<sensor_msgs::msg::PointCloud2>("/stair_modeling_ros/point_cloud/cloud_projected", qos_profile_pcl,
+    pcl_sub_ = this->create_subscription<sensor_msgs::msg::PointCloud2>("/stair_modeling_ros/point_cloud/cloud_filtered", qos_profile_pcl,
         std::bind(&StairModeling::pclCallback, this, std::placeholders::_1));
 
-    pcl_pub_= this->create_publisher<sensor_msgs::msg::PointCloud2>("/stair_modeling_ros/point_cloud/cloud_filtered",10);
     hull_marker_array_pub_ = this->create_publisher<visualization_msgs::msg::MarkerArray>("/stair_modeling_ros/hull_marker_array",10);
     env_geo_pub_ = this->create_publisher<zion_msgs::msg::EnvGeoStamped>("/stair_modeling_ros/env_geo_params",10);
 
@@ -58,7 +57,6 @@ StairModeling::StairModeling() : Node("StairModeling")
 
     // init pcl and buffer
     cloud_.reset(new pcl::PointCloud<pcl::PointXYZRGB>());
-    pcl_buffer_ = std::make_shared<sensor_msgs::msg::PointCloud2>();
 
     // Initialize to an invalid index
     floor_index_ = -1;  
@@ -79,12 +77,6 @@ void StairModeling::loadParams()
     this->declare_parameter("debug", false);
     this->get_parameter("debug", debug_);
 
-    // Voxel Filter Parameters
-    this->declare_parameter("voxel_filter.leaf_size_xy", 0.02);
-    this->declare_parameter("voxel_filter.leaf_size_z", 0.08);
-    this->get_parameter("voxel_filter.leaf_size_xy", leaf_size_xy_);
-    this->get_parameter("voxel_filter.leaf_size_z", leaf_size_z_);
-
     // Segmentation Parameters
     this->declare_parameter("segmentation.distance_threshold", 0.05);
     this->declare_parameter("segmentation.max_iterations", 600);
@@ -98,27 +90,7 @@ void StairModeling::loadParams()
     this->declare_parameter("clustering.min_cluster_size", 50);
     this->get_parameter("clustering.cluster_tolerance", cluster_tolerance_);
     this->get_parameter("clustering.min_cluster_size", min_cluster_size_);
-    
-    // Outlier Removal Parameters
-    this->declare_parameter("outlier_removal.mean_k", 50);
-    this->declare_parameter("outlier_removal.stddev_mul_thresh", 0.1);
-    this->get_parameter("outlier_removal.mean_k", mean_k_);
-    this->get_parameter("outlier_removal.stddev_mul_thresh", stddev_mul_thresh_);
-    
-    // Crop Box Parameters
-    this->declare_parameter("crop_box.min_x", 0.0);
-    this->declare_parameter("crop_box.max_x", 2.0);
-    this->declare_parameter("crop_box.min_y", -0.8);
-    this->declare_parameter("crop_box.max_y", 0.8);
-    this->declare_parameter("crop_box.min_z", -3.0);
-    this->declare_parameter("crop_box.max_z", 1.0);
-    this->get_parameter("crop_box.min_x", min_x_);
-    this->get_parameter("crop_box.max_x", max_x_);
-    this->get_parameter("crop_box.min_y", min_y_);
-    this->get_parameter("crop_box.max_y", max_y_);
-    this->get_parameter("crop_box.min_z", min_z_);
-    this->get_parameter("crop_box.max_z", max_z_);
-    
+
     // Floor Finding Parameters
     this->declare_parameter("floor_finding.k_neighbors", 50);
     this->get_parameter("floor_finding.k_neighbors", k_neighbors_);
@@ -129,13 +101,11 @@ void StairModeling::loadParams()
     this->get_parameter("avg_x_calculation.x_neighbors", x_neighbors_);
     this->get_parameter("avg_x_calculation.y_threshold", y_threshold_);
     
-    // Topic Names and Frame IDs
-    this->declare_parameter("topic_names.input_point_cloud_topic", "/zedm/zed_node/point_cloud/cloud_registered");
-    this->declare_parameter("frame_ids.input_frame_id", "zedm_left_camera_frame");
-    this->declare_parameter("frame_ids.output_frame_id", "zedm_base_link_projected");
-    this->get_parameter("topic_names.input_point_cloud_topic", input_point_cloud_topic_);
-    this->get_parameter("frame_ids.input_frame_id", input_frame_id_);
-    this->get_parameter("frame_ids.output_frame_id", output_frame_id_);
+    // Topic Names
+    this->declare_parameter("topic_names.filtered_point_cloud_topic", "/stair_modeling_ros/point_cloud/cloud_filtered");
+    this->get_parameter("topic_names.filtered_point_cloud_topic", filtered_point_cloud_topic_);
+
+    // Frame IDs
 }
 
 
@@ -145,32 +115,32 @@ void StairModeling::printDebug()
     RCLCPP_INFO( this->get_logger(), "%s", debug_msg_.c_str());
 }
 
-void StairModeling::computeC2CpTransformations()
-{
-    geometry_msgs::msg::TransformStamped transform_stamped;
-    // Check if transform is available
-    if (tf_buffer_->canTransform(output_frame_id_, input_frame_id_, tf2::TimePointZero, tf2::durationFromSec(1.)))
-    {
-        try
-        {
-            transform_stamped = tf_buffer_->lookupTransform(
-                output_frame_id_, input_frame_id_,
-                tf2::TimePointZero);
+// void StairModeling::computeC2CpTransformations()
+// {
+//     geometry_msgs::msg::TransformStamped transform_stamped;
+//     // Check if transform is available
+//     if (tf_buffer_->canTransform(output_frame_id_, input_frame_id_, tf2::TimePointZero, tf2::durationFromSec(1.)))
+//     {
+//         try
+//         {
+//             transform_stamped = tf_buffer_->lookupTransform(
+//                 output_frame_id_, input_frame_id_,
+//                 tf2::TimePointZero);
 
-            // Convert tf2::Transform to Eigen::Affine3d
-            c2cp = tf2::transformToEigen(transform_stamped);
-            // Inverse the transform
-            cp2c = c2cp.inverse();
-        }
-        catch (tf2::TransformException& ex)
-        {
-        RCLCPP_INFO(
-                    this->get_logger(), "Could not transform %s to %s: %s",
-                    output_frame_id_.c_str(), input_frame_id_.c_str(), ex.what());
-                return;
-        }
-    }
-}
+//             // Convert tf2::Transform to Eigen::Affine3d
+//             c2cp = tf2::transformToEigen(transform_stamped);
+//             // Inverse the transform
+//             cp2c = c2cp.inverse();
+//         }
+//         catch (tf2::TransformException& ex)
+//         {
+//         RCLCPP_INFO(
+//                     this->get_logger(), "Could not transform %s to %s: %s",
+//                     output_frame_id_.c_str(), input_frame_id_.c_str(), ex.what());
+//                 return;
+//         }
+//     }
+// }
 
 void StairModeling::getPlanes(pcl::PointCloud<pcl::PointXYZRGB>::Ptr input_cloud)
 {       
@@ -396,7 +366,7 @@ void StairModeling::setStairTf()
 
     tf2_transform.setIdentity();    
     transformStamped.header.stamp = this->get_clock()->now();
-    transformStamped.header.frame_id = output_frame_id_;
+    transformStamped.header.frame_id = output_frame_;
     transformStamped.child_frame_id = "stair";
 
     //translation
@@ -541,32 +511,32 @@ void StairModeling::publishHullsAsMarkerArray(const std::string& cloud_frame,
     }
 }
 
-void StairModeling::transformCloud(const sensor_msgs::msg::PointCloud2::SharedPtr input_cloud,
-                               sensor_msgs::msg::PointCloud2::SharedPtr output_cloud)
-{
-    geometry_msgs::msg::TransformStamped transform_stamped;
-    // Check if transform is available
-    if (tf_buffer_->canTransform(output_frame_id_, input_frame_id_, tf2::TimePointZero, tf2::durationFromSec(0.01)))
-    {
-        try
-        {
-            transform_stamped = tf_buffer_->lookupTransform(
-            output_frame_id_, input_frame_id_,
-            tf2::TimePointZero);
+// void StairModeling::transformCloud(const sensor_msgs::msg::PointCloud2::SharedPtr input_cloud,
+//                                sensor_msgs::msg::PointCloud2::SharedPtr output_cloud)
+// {
+//     geometry_msgs::msg::TransformStamped transform_stamped;
+//     // Check if transform is available
+//     if (tf_buffer_->canTransform(output_frame_id_, input_frame_id_, tf2::TimePointZero, tf2::durationFromSec(0.01)))
+//     {
+//         try
+//         {
+//             transform_stamped = tf_buffer_->lookupTransform(
+//             output_frame_id_, input_frame_id_,
+//             tf2::TimePointZero);
 
-            tf2::doTransform(*input_cloud,*output_cloud,transform_stamped);
+//             tf2::doTransform(*input_cloud,*output_cloud,transform_stamped);
 
-        }
-        catch (tf2::TransformException& ex)
-        {
-        RCLCPP_INFO(
-                    this->get_logger(), "Could not transform %s to %s: %s",
-                    output_frame_id_.c_str(), input_frame_id_.c_str(), ex.what());
-                return;
-        }
-};
+//         }
+//         catch (tf2::TransformException& ex)
+//         {
+//         RCLCPP_INFO(
+//                     this->get_logger(), "Could not transform %s to %s: %s",
+//                     output_frame_id_.c_str(), input_frame_id_.c_str(), ex.what());
+//                 return;
+//         }
+// };
 
-}
+// }
 
 void StairModeling::pclCallback(const sensor_msgs::msg::PointCloud2::SharedPtr pcl_msg)
 {
@@ -589,23 +559,14 @@ void StairModeling::pclCallback(const sensor_msgs::msg::PointCloud2::SharedPtr p
         // Utilities::transformCloud(c2cp,cloud_,cloud_);
 
         // Cropping
-        Utilities::cropping(cloud_, cloud_,
-                            min_x_,max_x_,
-                            min_y_,max_y_,
-                            min_z_,max_z_);
+
 
         // RANSAC-based plane segmentation
         getPlanes(cloud_);
 
-        // // debug msg
-        // if(debug_){
-        //     printDebug();
-        // }
-
         // find the floor plane
         findFloor();
         checkForValidStair();
-
 
         // if stair detected set the stair instance and compute geometric parameters
         if(stair_detected_){
@@ -613,15 +574,11 @@ void StairModeling::pclCallback(const sensor_msgs::msg::PointCloud2::SharedPtr p
             setStairTf();
         }
 
-        // to ros msg
-        pcl::toROSMsg(*cloud_, *pcl_buffer_);
-
+        rclcpp::Time stamp = this->get_clock()->now();
+        
         // Publish the processed point cloud and custom msgs
-        pcl_buffer_->header.stamp = this->get_clock()->now();
-        pcl_buffer_->header.frame_id = output_frame_id_;
-        publishHullsAsMarkerArray(output_frame_id_,pcl_buffer_->header.stamp.sec,pcl_buffer_->header.stamp.nanosec);
-        publishEnvGeo(output_frame_id_,pcl_buffer_->header.stamp.sec,pcl_buffer_->header.stamp.nanosec);
-        pcl_pub_->publish(*pcl_buffer_);
+        publishHullsAsMarkerArray(output_frame_,stamp.seconds(),stamp.nanoseconds());
+        publishEnvGeo(output_frame_,stamp.seconds(),stamp.nanoseconds());
 
         // debug msg
         if(debug_){

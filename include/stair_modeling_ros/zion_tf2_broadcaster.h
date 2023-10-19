@@ -41,7 +41,7 @@ private:
 
   void pclCallback(const sensor_msgs::msg::PointCloud2::SharedPtr pcl_msg);
 
-  void tfCallback(const tf2_msgs::msg::TFMessage::SharedPtr msg);
+  void loadParams();
 
   std::unique_ptr<tf2_ros::Buffer> tf_buffer_;
   std::shared_ptr<tf2_ros::TransformListener> tf_listener_{nullptr};
@@ -54,6 +54,23 @@ private:
   std::shared_ptr<sensor_msgs::msg::PointCloud2> pcl_buffer_;
 
   Eigen::Affine3d c2cp;
+
+  std::string input_point_cloud_topic_;
+  std::string filtered_point_cloud_topic_;
+
+  std::string map_frame_;
+  std::string base_frame_;
+  std::string input_frame_;
+  std::string output_frame_;
+
+  double leaf_size_xy_;
+  double leaf_size_z_;
+  double min_x_;
+  double max_x_;
+  double min_y_;
+  double max_y_;
+  double min_z_;
+  double max_z_;
 };
 
 #endif //  ZION_TF2_BROADCASTER
