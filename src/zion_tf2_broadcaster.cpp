@@ -89,7 +89,7 @@ void ZionBroadcaster::pclCallback(const sensor_msgs::msg::PointCloud2::SharedPtr
       
           // Create a new transform to broadcast
           base_projected2map.header.stamp = this->get_clock()->now();
-          base_projected2map.header.frame_id = fromFrameRel;
+          base_projected2map.header.frame_id = toFrameRel;
 
           base_projected2map.child_frame_id = output_frame_;
 
@@ -125,7 +125,7 @@ void ZionBroadcaster::pclCallback(const sensor_msgs::msg::PointCloud2::SharedPtr
           pcl_buffer_->header.stamp = this->get_clock()->now();
           pcl_buffer_->header.frame_id = output_frame_;
           pcl_pub_->publish(*pcl_buffer_);
-        } 
+        }
         catch (const tf2::TransformException & ex) {
           RCLCPP_INFO(
             this->get_logger(), "Could not transform %s to %s: %s",

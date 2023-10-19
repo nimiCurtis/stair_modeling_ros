@@ -45,7 +45,7 @@ StairModeling::StairModeling() : Node("StairModeling")
     rclcpp::QoS qos_profile_pcl(1);
     // qos_profile_pcl.reliability(RMW_QOS_POLICY_RELIABILITY_BEST_EFFORT);
     qos_profile_pcl.reliability(RMW_QOS_POLICY_RELIABILITY_RELIABLE);
-    pcl_sub_ = this->create_subscription<sensor_msgs::msg::PointCloud2>("/stair_modeling_ros/point_cloud/cloud_filtered", qos_profile_pcl,
+    pcl_sub_ = this->create_subscription<sensor_msgs::msg::PointCloud2>(filtered_point_cloud_topic_, qos_profile_pcl,
         std::bind(&StairModeling::pclCallback, this, std::placeholders::_1));
 
     hull_marker_array_pub_ = this->create_publisher<visualization_msgs::msg::MarkerArray>("/stair_modeling_ros/hull_marker_array",10);
@@ -104,8 +104,10 @@ void StairModeling::loadParams()
     // Topic Names
     this->declare_parameter("topic_names.filtered_point_cloud_topic", "/stair_modeling_ros/point_cloud/cloud_filtered");
     this->get_parameter("topic_names.filtered_point_cloud_topic", filtered_point_cloud_topic_);
-
+    
     // Frame IDs
+    this->declare_parameter("frame_ids.output_cloud_frame", "zedm_base_link_projected");
+    this->get_parameter("frame_ids.output_cloud_frame", output_frame_);
 }
 
 
