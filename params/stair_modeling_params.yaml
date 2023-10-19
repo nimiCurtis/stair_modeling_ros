@@ -1,0 +1,45 @@
+/stair_modeling_ros_node:
+  ros__parameters:
+    voxel_filter:
+      leaf_size_xy: 0.04    # best = 0.02
+      leaf_size_z: 0.08     # best = 0.08
+
+    segmentation:
+      distance_threshold: 0.05
+      max_iterations: 500
+      angle_threshold: 5
+
+    clustering:
+      cluster_tolerance: 0.08
+      min_cluster_size: 50
+      # max_cluster_size: 25000
+
+    outlier_removal:
+      mean_k: 16
+      stddev_mul_thresh: 0.01
+
+    crop_box:
+      min_x: 0.0
+      max_x: 2.0
+      min_y: -0.7
+      max_y: 0.7
+      min_z: -3.0
+      max_z: 1.0
+
+    floor_finding:
+      k_neighbors: 50
+
+    avg_x_calculation:
+      x_neighbors: 20
+      y_threshold: 0.05
+
+    topic_names:
+      input_point_cloud_topic: "/zedm/zed_node/point_cloud/cloud_registered"
+
+    frame_ids:
+      input_frame_id: "zedm_left_camera_frame"
+      output_frame_id: "zedm_base_link_projected"
+      
+/**:
+    ros__parameters:
+      allNodeCanSee: True

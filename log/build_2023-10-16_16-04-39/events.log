@@ -1,0 +1,342 @@
+[0.000000] (-) TimerEvent: {}
+[0.001176] (stair_modeling_ros) JobQueued: {'identifier': 'stair_modeling_ros', 'dependencies': OrderedDict()}
+[0.001312] (stair_modeling_ros) JobStarted: {'identifier': 'stair_modeling_ros'}
+[0.101061] (-) TimerEvent: {}
+[0.204164] (-) TimerEvent: {}
+[0.305031] (-) TimerEvent: {}
+[0.352763] (stair_modeling_ros) JobProgress: {'identifier': 'stair_modeling_ros', 'progress': 'cmake'}
+[0.354046] (stair_modeling_ros) JobProgress: {'identifier': 'stair_modeling_ros', 'progress': 'build'}
+[0.355533] (stair_modeling_ros) Command: {'cmd': ['/home/nimrod/.local/bin/cmake', '--build', '/home/nimrod/ros2_ws/src/stair_detection_pkg/stair_modeling_ros/build/stair_modeling_ros', '--', '-j16', '-l16'], 'cwd': '/home/nimrod/ros2_ws/src/stair_detection_pkg/stair_modeling_ros/build/stair_modeling_ros', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_IL:en'), ('USER', 'nimrod'), ('SSH_AGENT_PID', '2050'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/nimrod/ros2_ws/src/stair_detection_pkg/stair_modeling_ros/install/stair_modeling_ros/lib:/home/nimrod/ros2_ws/install/stair_modeling_ros/lib:/home/nimrod/ros2_ws/install/zion_msgs/lib:/home/nimrod/ros2_ws/install/zed_topic_benchmark_interfaces/lib:/home/nimrod/ros2_ws/install/zed_rgb_convert/lib:/home/nimrod/ros2_ws/install/zed_components/lib:/home/nimrod/ros2_ws/install/rviz_plugin_zed_od/lib:/home/nimrod/ros2_ws/install/zed_interfaces/lib:/home/nimrod/ros2_ws/install/image_transport/lib:/home/nimrod/ros2_ws/install/camera_info_manager/lib:/home/nimrod/ros2_ws/install/camera_calibration_parsers/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib:/usr/local/cuda-11.7/lib64:'), ('HOME', '/home/nimrod'), ('OLDPWD', '/home/nimrod/ros2_ws'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/local/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1821'), ('DBUS_SESSION_BUS_ADDRESS', ''), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '40832'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/nimrod/ros2_ws/src/stair_detection_pkg/stair_modeling_ros/install:/home/nimrod/ros2_ws/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'nimrod'), ('JOURNAL_STREAM', '8:53061'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'nimrod'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/usr/local/cuda-11.7/bin:/home/nimrod/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/nimrod-ThinkPad-P14s-Gen-3:@/tmp/.ICE-unix/2087,unix/nimrod-ThinkPad-P14s-Gen-3:/tmp/.ICE-unix/2087'), ('INVOCATION_ID', 'cb98390c3b9043aaa39ede44fea4b74f'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/nimrod/ros2_ws/src/stair_detection_pkg/stair_modeling_ros/install/stair_modeling_ros:/home/nimrod/ros2_ws/install/zion_zed_ros2_interface:/home/nimrod/ros2_ws/install/stair_modeling_ros:/home/nimrod/ros2_ws/install/stair_detection_ros:/home/nimrod/ros2_ws/install/zion_msgs:/home/nimrod/ros2_ws/install/zed_ros2:/home/nimrod/ros2_ws/install/zed_multi_camera:/home/nimrod/ros2_ws/install/zed_display_rviz2:/home/nimrod/ros2_ws/install/zed_wrapper:/home/nimrod/ros2_ws/install/zed_tutorial_video:/home/nimrod/ros2_ws/install/zed_tutorial_pos_tracking:/home/nimrod/ros2_ws/install/zed_tutorial_depth:/home/nimrod/ros2_ws/install/zed_topic_benchmark_interfaces:/home/nimrod/ros2_ws/install/zed_rgb_convert:/home/nimrod/ros2_ws/install/zed_components:/home/nimrod/ros2_ws/install/rviz_plugin_zed_od:/home/nimrod/ros2_ws/install/zed_interfaces:/home/nimrod/ros2_ws/install/image_common:/home/nimrod/ros2_ws/install/image_transport:/home/nimrod/ros2_ws/install/camera_info_manager:/home/nimrod/ros2_ws/install/camera_calibration_parsers:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:2b67f8cd-d46d-41a1-b13a-ffba7190ac87'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/nimrod/ros2_ws/src/stair_detection_pkg/stair_modeling_ros/build/stair_modeling_ros'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/nimrod/ros2_ws/install/stair_detection_ros/lib/python3.8/site-packages:/home/nimrod/ros2_ws/install/zion_msgs/lib/python3.8/site-packages:/home/nimrod/ros2_ws/install/zed_topic_benchmark_interfaces/lib/python3.8/site-packages:/home/nimrod/ros2_ws/install/zed_interfaces/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/nimrod/ros2_ws/src/stair_detection_pkg/stair_modeling_ros/install/stair_modeling_ros:/home/nimrod/ros2_ws/install/zion_zed_ros2_interface:/home/nimrod/ros2_ws/install/stair_modeling_ros:/home/nimrod/ros2_ws/install/zion_msgs:/home/nimrod/ros2_ws/install/zed_ros2:/home/nimrod/ros2_ws/install/zed_multi_camera:/home/nimrod/ros2_ws/install/zed_display_rviz2:/home/nimrod/ros2_ws/install/zed_wrapper:/home/nimrod/ros2_ws/install/zed_tutorial_video:/home/nimrod/ros2_ws/install/zed_tutorial_pos_tracking:/home/nimrod/ros2_ws/install/zed_tutorial_depth:/home/nimrod/ros2_ws/install/zed_topic_benchmark_interfaces:/home/nimrod/ros2_ws/install/zed_rgb_convert:/home/nimrod/ros2_ws/install/zed_components:/home/nimrod/ros2_ws/install/rviz_plugin_zed_od:/home/nimrod/ros2_ws/install/zed_interfaces:/home/nimrod/ros2_ws/install/image_common:/home/nimrod/ros2_ws/install/image_transport:/home/nimrod/ros2_ws/install/camera_info_manager:/home/nimrod/ros2_ws/install/camera_calibration_parsers:/home/nimrod/ros2_ws/install/stair_detection_ros:/opt/ros/foxy')]), 'shell': False}
+[0.405207] (-) TimerEvent: {}
+[0.441292] (stair_modeling_ros) StdoutLine: {'line': b'[ 22%] Built target zion_tf2_broadcaster\n'}
+[0.505325] (-) TimerEvent: {}
+[0.517626] (stair_modeling_ros) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/stair_modeling_ros.dir/src/stair_modeling.cpp.o\x1b[0m\n'}
+[0.605584] (-) TimerEvent: {}
+[0.706179] (-) TimerEvent: {}
+[0.806819] (-) TimerEvent: {}
+[0.907426] (-) TimerEvent: {}
+[1.007980] (-) TimerEvent: {}
+[1.108641] (-) TimerEvent: {}
+[1.209201] (-) TimerEvent: {}
+[1.309807] (-) TimerEvent: {}
+[1.410498] (-) TimerEvent: {}
+[1.511142] (-) TimerEvent: {}
+[1.611837] (-) TimerEvent: {}
+[1.712510] (-) TimerEvent: {}
+[1.813138] (-) TimerEvent: {}
+[1.913914] (-) TimerEvent: {}
+[2.014551] (-) TimerEvent: {}
+[2.115232] (-) TimerEvent: {}
+[2.215785] (-) TimerEvent: {}
+[2.316335] (-) TimerEvent: {}
+[2.416857] (-) TimerEvent: {}
+[2.517372] (-) TimerEvent: {}
+[2.617933] (-) TimerEvent: {}
+[2.718454] (-) TimerEvent: {}
+[2.818989] (-) TimerEvent: {}
+[2.919428] (-) TimerEvent: {}
+[3.019879] (-) TimerEvent: {}
+[3.120359] (-) TimerEvent: {}
+[3.220837] (-) TimerEvent: {}
+[3.321350] (-) TimerEvent: {}
+[3.421815] (-) TimerEvent: {}
+[3.522220] (-) TimerEvent: {}
+[3.622670] (-) TimerEvent: {}
+[3.723127] (-) TimerEvent: {}
+[3.823556] (-) TimerEvent: {}
+[3.924010] (-) TimerEvent: {}
+[4.024424] (-) TimerEvent: {}
+[4.124866] (-) TimerEvent: {}
+[4.225325] (-) TimerEvent: {}
+[4.325827] (-) TimerEvent: {}
+[4.426246] (-) TimerEvent: {}
+[4.526752] (-) TimerEvent: {}
+[4.627152] (-) TimerEvent: {}
+[4.727579] (-) TimerEvent: {}
+[4.827988] (-) TimerEvent: {}
+[4.928419] (-) TimerEvent: {}
+[5.028964] (-) TimerEvent: {}
+[5.129497] (-) TimerEvent: {}
+[5.229967] (-) TimerEvent: {}
+[5.330425] (-) TimerEvent: {}
+[5.430873] (-) TimerEvent: {}
+[5.531337] (-) TimerEvent: {}
+[5.631889] (-) TimerEvent: {}
+[5.732395] (-) TimerEvent: {}
+[5.832833] (-) TimerEvent: {}
+[5.933328] (-) TimerEvent: {}
+[6.033821] (-) TimerEvent: {}
+[6.134373] (-) TimerEvent: {}
+[6.234860] (-) TimerEvent: {}
+[6.335324] (-) TimerEvent: {}
+[6.435853] (-) TimerEvent: {}
+[6.536345] (-) TimerEvent: {}
+[6.636839] (-) TimerEvent: {}
+[6.737324] (-) TimerEvent: {}
+[6.837795] (-) TimerEvent: {}
+[6.938282] (-) TimerEvent: {}
+[7.038753] (-) TimerEvent: {}
+[7.139196] (-) TimerEvent: {}
+[7.239595] (-) TimerEvent: {}
+[7.340055] (-) TimerEvent: {}
+[7.440529] (-) TimerEvent: {}
+[7.541085] (-) TimerEvent: {}
+[7.641645] (-) TimerEvent: {}
+[7.742105] (-) TimerEvent: {}
+[7.842607] (-) TimerEvent: {}
+[7.943091] (-) TimerEvent: {}
+[8.043631] (-) TimerEvent: {}
+[8.144041] (-) TimerEvent: {}
+[8.244506] (-) TimerEvent: {}
+[8.344965] (-) TimerEvent: {}
+[8.445388] (-) TimerEvent: {}
+[8.545922] (-) TimerEvent: {}
+[8.646321] (-) TimerEvent: {}
+[8.746678] (-) TimerEvent: {}
+[8.847118] (-) TimerEvent: {}
+[8.947691] (-) TimerEvent: {}
+[9.048102] (-) TimerEvent: {}
+[9.148496] (-) TimerEvent: {}
+[9.248936] (-) TimerEvent: {}
+[9.349315] (-) TimerEvent: {}
+[9.449705] (-) TimerEvent: {}
+[9.550115] (-) TimerEvent: {}
+[9.650534] (-) TimerEvent: {}
+[9.750947] (-) TimerEvent: {}
+[9.851345] (-) TimerEvent: {}
+[9.951739] (-) TimerEvent: {}
+[10.052192] (-) TimerEvent: {}
+[10.152595] (-) TimerEvent: {}
+[10.253014] (-) TimerEvent: {}
+[10.353399] (-) TimerEvent: {}
+[10.453886] (-) TimerEvent: {}
+[10.554232] (-) TimerEvent: {}
+[10.654751] (-) TimerEvent: {}
+[10.755230] (-) TimerEvent: {}
+[10.855714] (-) TimerEvent: {}
+[10.956169] (-) TimerEvent: {}
+[11.056644] (-) TimerEvent: {}
+[11.157115] (-) TimerEvent: {}
+[11.257577] (-) TimerEvent: {}
+[11.358027] (-) TimerEvent: {}
+[11.458483] (-) TimerEvent: {}
+[11.558827] (-) TimerEvent: {}
+[11.659206] (-) TimerEvent: {}
+[11.759684] (-) TimerEvent: {}
+[11.860150] (-) TimerEvent: {}
+[11.960617] (-) TimerEvent: {}
+[12.061064] (-) TimerEvent: {}
+[12.161512] (-) TimerEvent: {}
+[12.261867] (-) TimerEvent: {}
+[12.362239] (-) TimerEvent: {}
+[12.462640] (-) TimerEvent: {}
+[12.563120] (-) TimerEvent: {}
+[12.663570] (-) TimerEvent: {}
+[12.764026] (-) TimerEvent: {}
+[12.864483] (-) TimerEvent: {}
+[12.964850] (-) TimerEvent: {}
+[13.065345] (-) TimerEvent: {}
+[13.165867] (-) TimerEvent: {}
+[13.266324] (-) TimerEvent: {}
+[13.366771] (-) TimerEvent: {}
+[13.467100] (-) TimerEvent: {}
+[13.567490] (-) TimerEvent: {}
+[13.667901] (-) TimerEvent: {}
+[13.768328] (-) TimerEvent: {}
+[13.868719] (-) TimerEvent: {}
+[13.969115] (-) TimerEvent: {}
+[14.069545] (-) TimerEvent: {}
+[14.169936] (-) TimerEvent: {}
+[14.270416] (-) TimerEvent: {}
+[14.370800] (-) TimerEvent: {}
+[14.471227] (-) TimerEvent: {}
+[14.571669] (-) TimerEvent: {}
+[14.672155] (-) TimerEvent: {}
+[14.772598] (-) TimerEvent: {}
+[14.873031] (-) TimerEvent: {}
+[14.973515] (-) TimerEvent: {}
+[15.073951] (-) TimerEvent: {}
+[15.174386] (-) TimerEvent: {}
+[15.274821] (-) TimerEvent: {}
+[15.375258] (-) TimerEvent: {}
+[15.475686] (-) TimerEvent: {}
+[15.576111] (-) TimerEvent: {}
+[15.676572] (-) TimerEvent: {}
+[15.777031] (-) TimerEvent: {}
+[15.877403] (-) TimerEvent: {}
+[15.977765] (-) TimerEvent: {}
+[16.078091] (-) TimerEvent: {}
+[16.178525] (-) TimerEvent: {}
+[16.279022] (-) TimerEvent: {}
+[16.379386] (-) TimerEvent: {}
+[16.479809] (-) TimerEvent: {}
+[16.580360] (-) TimerEvent: {}
+[16.680807] (-) TimerEvent: {}
+[16.781231] (-) TimerEvent: {}
+[16.881685] (-) TimerEvent: {}
+[16.982143] (-) TimerEvent: {}
+[17.082560] (-) TimerEvent: {}
+[17.183001] (-) TimerEvent: {}
+[17.283455] (-) TimerEvent: {}
+[17.383931] (-) TimerEvent: {}
+[17.484414] (-) TimerEvent: {}
+[17.584812] (-) TimerEvent: {}
+[17.685234] (-) TimerEvent: {}
+[17.785662] (-) TimerEvent: {}
+[17.886094] (-) TimerEvent: {}
+[17.986569] (-) TimerEvent: {}
+[18.087044] (-) TimerEvent: {}
+[18.187488] (-) TimerEvent: {}
+[18.287900] (-) TimerEvent: {}
+[18.388319] (-) TimerEvent: {}
+[18.488793] (-) TimerEvent: {}
+[18.589216] (-) TimerEvent: {}
+[18.689655] (-) TimerEvent: {}
+[18.790082] (-) TimerEvent: {}
+[18.890492] (-) TimerEvent: {}
+[18.991003] (-) TimerEvent: {}
+[19.091396] (-) TimerEvent: {}
+[19.191843] (-) TimerEvent: {}
+[19.292294] (-) TimerEvent: {}
+[19.392707] (-) TimerEvent: {}
+[19.493109] (-) TimerEvent: {}
+[19.593623] (-) TimerEvent: {}
+[19.694159] (-) TimerEvent: {}
+[19.794579] (-) TimerEvent: {}
+[19.895109] (-) TimerEvent: {}
+[19.995534] (-) TimerEvent: {}
+[20.095913] (-) TimerEvent: {}
+[20.196245] (-) TimerEvent: {}
+[20.296687] (-) TimerEvent: {}
+[20.397036] (-) TimerEvent: {}
+[20.497398] (-) TimerEvent: {}
+[20.597830] (-) TimerEvent: {}
+[20.698212] (-) TimerEvent: {}
+[20.798605] (-) TimerEvent: {}
+[20.899031] (-) TimerEvent: {}
+[20.999497] (-) TimerEvent: {}
+[21.099910] (-) TimerEvent: {}
+[21.200323] (-) TimerEvent: {}
+[21.300809] (-) TimerEvent: {}
+[21.401278] (-) TimerEvent: {}
+[21.501756] (-) TimerEvent: {}
+[21.602179] (-) TimerEvent: {}
+[21.702597] (-) TimerEvent: {}
+[21.803014] (-) TimerEvent: {}
+[21.903482] (-) TimerEvent: {}
+[22.003974] (-) TimerEvent: {}
+[22.104360] (-) TimerEvent: {}
+[22.204843] (-) TimerEvent: {}
+[22.305277] (-) TimerEvent: {}
+[22.405692] (-) TimerEvent: {}
+[22.506166] (-) TimerEvent: {}
+[22.606559] (-) TimerEvent: {}
+[22.706994] (-) TimerEvent: {}
+[22.807405] (-) TimerEvent: {}
+[22.907831] (-) TimerEvent: {}
+[23.008273] (-) TimerEvent: {}
+[23.108698] (-) TimerEvent: {}
+[23.209179] (-) TimerEvent: {}
+[23.309609] (-) TimerEvent: {}
+[23.328030] (stair_modeling_ros) StdoutLine: {'line': b'[ 44%] \x1b[32m\x1b[1mLinking CXX shared library libstair_modeling_ros.so\x1b[0m\n'}
+[23.409783] (-) TimerEvent: {}
+[23.510251] (-) TimerEvent: {}
+[23.610676] (-) TimerEvent: {}
+[23.711245] (-) TimerEvent: {}
+[23.811653] (-) TimerEvent: {}
+[23.912223] (-) TimerEvent: {}
+[24.012705] (-) TimerEvent: {}
+[24.113133] (-) TimerEvent: {}
+[24.213684] (-) TimerEvent: {}
+[24.314180] (-) TimerEvent: {}
+[24.414730] (-) TimerEvent: {}
+[24.515288] (-) TimerEvent: {}
+[24.615840] (-) TimerEvent: {}
+[24.716363] (-) TimerEvent: {}
+[24.816915] (-) TimerEvent: {}
+[24.917505] (-) TimerEvent: {}
+[25.018184] (-) TimerEvent: {}
+[25.118846] (-) TimerEvent: {}
+[25.219500] (-) TimerEvent: {}
+[25.320119] (-) TimerEvent: {}
+[25.420792] (-) TimerEvent: {}
+[25.521456] (-) TimerEvent: {}
+[25.622106] (-) TimerEvent: {}
+[25.722653] (-) TimerEvent: {}
+[25.823238] (-) TimerEvent: {}
+[25.923869] (-) TimerEvent: {}
+[26.024555] (-) TimerEvent: {}
+[26.125152] (-) TimerEvent: {}
+[26.225802] (-) TimerEvent: {}
+[26.326435] (-) TimerEvent: {}
+[26.427063] (-) TimerEvent: {}
+[26.527699] (-) TimerEvent: {}
+[26.628284] (-) TimerEvent: {}
+[26.728882] (-) TimerEvent: {}
+[26.816709] (stair_modeling_ros) StdoutLine: {'line': b'[ 77%] Built target stair_modeling_ros\n'}
+[26.829008] (-) TimerEvent: {}
+[26.850748] (stair_modeling_ros) StdoutLine: {'line': b'[ 88%] \x1b[32m\x1b[1mLinking CXX executable stair_modeling_ros_node\x1b[0m\n'}
+[26.929184] (-) TimerEvent: {}
+[27.029688] (-) TimerEvent: {}
+[27.130204] (-) TimerEvent: {}
+[27.230671] (-) TimerEvent: {}
+[27.331191] (-) TimerEvent: {}
+[27.431817] (-) TimerEvent: {}
+[27.532442] (-) TimerEvent: {}
+[27.633103] (-) TimerEvent: {}
+[27.733761] (-) TimerEvent: {}
+[27.834428] (-) TimerEvent: {}
+[27.935073] (-) TimerEvent: {}
+[28.035738] (-) TimerEvent: {}
+[28.136374] (-) TimerEvent: {}
+[28.237111] (-) TimerEvent: {}
+[28.337930] (-) TimerEvent: {}
+[28.377078] (stair_modeling_ros) StdoutLine: {'line': b'[100%] Built target stair_modeling_ros_node\n'}
+[28.398388] (stair_modeling_ros) CommandEnded: {'returncode': 0}
+[28.438302] (-) TimerEvent: {}
+[28.514273] (stair_modeling_ros) JobProgress: {'identifier': 'stair_modeling_ros', 'progress': 'install'}
+[28.538578] (-) TimerEvent: {}
+[28.584702] (stair_modeling_ros) Command: {'cmd': ['/home/nimrod/.local/bin/cmake', '--install', '/home/nimrod/ros2_ws/src/stair_detection_pkg/stair_modeling_ros/build/stair_modeling_ros'], 'cwd': '/home/nimrod/ros2_ws/src/stair_detection_pkg/stair_modeling_ros/build/stair_modeling_ros', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_IL:en'), ('USER', 'nimrod'), ('SSH_AGENT_PID', '2050'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/nimrod/ros2_ws/src/stair_detection_pkg/stair_modeling_ros/install/stair_modeling_ros/lib:/home/nimrod/ros2_ws/install/stair_modeling_ros/lib:/home/nimrod/ros2_ws/install/zion_msgs/lib:/home/nimrod/ros2_ws/install/zed_topic_benchmark_interfaces/lib:/home/nimrod/ros2_ws/install/zed_rgb_convert/lib:/home/nimrod/ros2_ws/install/zed_components/lib:/home/nimrod/ros2_ws/install/rviz_plugin_zed_od/lib:/home/nimrod/ros2_ws/install/zed_interfaces/lib:/home/nimrod/ros2_ws/install/image_transport/lib:/home/nimrod/ros2_ws/install/camera_info_manager/lib:/home/nimrod/ros2_ws/install/camera_calibration_parsers/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib:/usr/local/cuda-11.7/lib64:'), ('HOME', '/home/nimrod'), ('OLDPWD', '/home/nimrod/ros2_ws'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/local/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1821'), ('DBUS_SESSION_BUS_ADDRESS', ''), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '40832'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/nimrod/ros2_ws/src/stair_detection_pkg/stair_modeling_ros/install:/home/nimrod/ros2_ws/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'nimrod'), ('JOURNAL_STREAM', '8:53061'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'nimrod'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/usr/local/cuda-11.7/bin:/home/nimrod/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/nimrod-ThinkPad-P14s-Gen-3:@/tmp/.ICE-unix/2087,unix/nimrod-ThinkPad-P14s-Gen-3:/tmp/.ICE-unix/2087'), ('INVOCATION_ID', 'cb98390c3b9043aaa39ede44fea4b74f'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/nimrod/ros2_ws/src/stair_detection_pkg/stair_modeling_ros/install/stair_modeling_ros:/home/nimrod/ros2_ws/install/zion_zed_ros2_interface:/home/nimrod/ros2_ws/install/stair_modeling_ros:/home/nimrod/ros2_ws/install/stair_detection_ros:/home/nimrod/ros2_ws/install/zion_msgs:/home/nimrod/ros2_ws/install/zed_ros2:/home/nimrod/ros2_ws/install/zed_multi_camera:/home/nimrod/ros2_ws/install/zed_display_rviz2:/home/nimrod/ros2_ws/install/zed_wrapper:/home/nimrod/ros2_ws/install/zed_tutorial_video:/home/nimrod/ros2_ws/install/zed_tutorial_pos_tracking:/home/nimrod/ros2_ws/install/zed_tutorial_depth:/home/nimrod/ros2_ws/install/zed_topic_benchmark_interfaces:/home/nimrod/ros2_ws/install/zed_rgb_convert:/home/nimrod/ros2_ws/install/zed_components:/home/nimrod/ros2_ws/install/rviz_plugin_zed_od:/home/nimrod/ros2_ws/install/zed_interfaces:/home/nimrod/ros2_ws/install/image_common:/home/nimrod/ros2_ws/install/image_transport:/home/nimrod/ros2_ws/install/camera_info_manager:/home/nimrod/ros2_ws/install/camera_calibration_parsers:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:2b67f8cd-d46d-41a1-b13a-ffba7190ac87'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/nimrod/ros2_ws/src/stair_detection_pkg/stair_modeling_ros/build/stair_modeling_ros'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/nimrod/ros2_ws/install/stair_detection_ros/lib/python3.8/site-packages:/home/nimrod/ros2_ws/install/zion_msgs/lib/python3.8/site-packages:/home/nimrod/ros2_ws/install/zed_topic_benchmark_interfaces/lib/python3.8/site-packages:/home/nimrod/ros2_ws/install/zed_interfaces/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/nimrod/ros2_ws/src/stair_detection_pkg/stair_modeling_ros/install/stair_modeling_ros:/home/nimrod/ros2_ws/install/zion_zed_ros2_interface:/home/nimrod/ros2_ws/install/stair_modeling_ros:/home/nimrod/ros2_ws/install/zion_msgs:/home/nimrod/ros2_ws/install/zed_ros2:/home/nimrod/ros2_ws/install/zed_multi_camera:/home/nimrod/ros2_ws/install/zed_display_rviz2:/home/nimrod/ros2_ws/install/zed_wrapper:/home/nimrod/ros2_ws/install/zed_tutorial_video:/home/nimrod/ros2_ws/install/zed_tutorial_pos_tracking:/home/nimrod/ros2_ws/install/zed_tutorial_depth:/home/nimrod/ros2_ws/install/zed_topic_benchmark_interfaces:/home/nimrod/ros2_ws/install/zed_rgb_convert:/home/nimrod/ros2_ws/install/zed_components:/home/nimrod/ros2_ws/install/rviz_plugin_zed_od:/home/nimrod/ros2_ws/install/zed_interfaces:/home/nimrod/ros2_ws/install/image_common:/home/nimrod/ros2_ws/install/image_transport:/home/nimrod/ros2_ws/install/camera_info_manager:/home/nimrod/ros2_ws/install/camera_calibration_parsers:/home/nimrod/ros2_ws/install/stair_detection_ros:/opt/ros/foxy')]), 'shell': False}
+[28.638692] (-) TimerEvent: {}
+[28.641618] (stair_modeling_ros) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[28.642232] (stair_modeling_ros) StdoutLine: {'line': b'-- Installing: /home/nimrod/ros2_ws/src/stair_detection_pkg/stair_modeling_ros/install/stair_modeling_ros/lib/libstair_modeling_ros.so\n'}
+[28.653664] (stair_modeling_ros) StdoutLine: {'line': b'-- Set runtime path of "/home/nimrod/ros2_ws/src/stair_detection_pkg/stair_modeling_ros/install/stair_modeling_ros/lib/libstair_modeling_ros.so" to ""\n'}
+[28.654238] (stair_modeling_ros) StdoutLine: {'line': b'-- Installing: /home/nimrod/ros2_ws/src/stair_detection_pkg/stair_modeling_ros/install/stair_modeling_ros/lib/stair_modeling_ros/stair_modeling_ros_node\n'}
+[28.654784] (stair_modeling_ros) StdoutLine: {'line': b'-- Set runtime path of "/home/nimrod/ros2_ws/src/stair_detection_pkg/stair_modeling_ros/install/stair_modeling_ros/lib/stair_modeling_ros/stair_modeling_ros_node" to ""\n'}
+[28.655411] (stair_modeling_ros) StdoutLine: {'line': b'-- Up-to-date: /home/nimrod/ros2_ws/src/stair_detection_pkg/stair_modeling_ros/install/stair_modeling_ros/lib/stair_modeling_ros/zion_tf2_broadcaster\n'}
+[28.655957] (stair_modeling_ros) StdoutLine: {'line': b'-- Up-to-date: /home/nimrod/ros2_ws/src/stair_detection_pkg/stair_modeling_ros/install/stair_modeling_ros/include/stair_modeling_ros\n'}
+[28.656393] (stair_modeling_ros) StdoutLine: {'line': b'-- Up-to-date: /home/nimrod/ros2_ws/src/stair_detection_pkg/stair_modeling_ros/install/stair_modeling_ros/share/stair_modeling_ros/rviz2\n'}
+[28.656692] (stair_modeling_ros) StdoutLine: {'line': b'-- Up-to-date: /home/nimrod/ros2_ws/src/stair_detection_pkg/stair_modeling_ros/install/stair_modeling_ros/share/stair_modeling_ros/rviz2/stair_modeling.rviz\n'}
+[28.656977] (stair_modeling_ros) StdoutLine: {'line': b'-- Up-to-date: /home/nimrod/ros2_ws/src/stair_detection_pkg/stair_modeling_ros/install/stair_modeling_ros/share/stair_modeling_ros/params\n'}
+[28.657260] (stair_modeling_ros) StdoutLine: {'line': b'-- Up-to-date: /home/nimrod/ros2_ws/src/stair_detection_pkg/stair_modeling_ros/install/stair_modeling_ros/share/stair_modeling_ros/params/stair_modeling_params.yaml\n'}
+[28.657537] (stair_modeling_ros) StdoutLine: {'line': b'-- Up-to-date: /home/nimrod/ros2_ws/src/stair_detection_pkg/stair_modeling_ros/install/stair_modeling_ros/share/stair_modeling_ros/launch\n'}
+[28.657803] (stair_modeling_ros) StdoutLine: {'line': b'-- Up-to-date: /home/nimrod/ros2_ws/src/stair_detection_pkg/stair_modeling_ros/install/stair_modeling_ros/share/stair_modeling_ros/launch/stair_modeling_view.launch.py\n'}
+[28.658068] (stair_modeling_ros) StdoutLine: {'line': b'-- Up-to-date: /home/nimrod/ros2_ws/src/stair_detection_pkg/stair_modeling_ros/install/stair_modeling_ros/share/stair_modeling_ros/launch/stair_modeling.launch.py\n'}
+[28.658332] (stair_modeling_ros) StdoutLine: {'line': b'-- Up-to-date: /home/nimrod/ros2_ws/src/stair_detection_pkg/stair_modeling_ros/install/stair_modeling_ros/share/ament_index/resource_index/package_run_dependencies/stair_modeling_ros\n'}
+[28.658597] (stair_modeling_ros) StdoutLine: {'line': b'-- Up-to-date: /home/nimrod/ros2_ws/src/stair_detection_pkg/stair_modeling_ros/install/stair_modeling_ros/share/ament_index/resource_index/parent_prefix_path/stair_modeling_ros\n'}
+[28.658893] (stair_modeling_ros) StdoutLine: {'line': b'-- Up-to-date: /home/nimrod/ros2_ws/src/stair_detection_pkg/stair_modeling_ros/install/stair_modeling_ros/share/stair_modeling_ros/environment/ament_prefix_path.sh\n'}
+[28.659176] (stair_modeling_ros) StdoutLine: {'line': b'-- Up-to-date: /home/nimrod/ros2_ws/src/stair_detection_pkg/stair_modeling_ros/install/stair_modeling_ros/share/stair_modeling_ros/environment/ament_prefix_path.dsv\n'}
+[28.659446] (stair_modeling_ros) StdoutLine: {'line': b'-- Up-to-date: /home/nimrod/ros2_ws/src/stair_detection_pkg/stair_modeling_ros/install/stair_modeling_ros/share/stair_modeling_ros/environment/path.sh\n'}
+[28.659754] (stair_modeling_ros) StdoutLine: {'line': b'-- Up-to-date: /home/nimrod/ros2_ws/src/stair_detection_pkg/stair_modeling_ros/install/stair_modeling_ros/share/stair_modeling_ros/environment/path.dsv\n'}
+[28.660017] (stair_modeling_ros) StdoutLine: {'line': b'-- Up-to-date: /home/nimrod/ros2_ws/src/stair_detection_pkg/stair_modeling_ros/install/stair_modeling_ros/share/stair_modeling_ros/local_setup.bash\n'}
+[28.660278] (stair_modeling_ros) StdoutLine: {'line': b'-- Up-to-date: /home/nimrod/ros2_ws/src/stair_detection_pkg/stair_modeling_ros/install/stair_modeling_ros/share/stair_modeling_ros/local_setup.sh\n'}
+[28.660537] (stair_modeling_ros) StdoutLine: {'line': b'-- Up-to-date: /home/nimrod/ros2_ws/src/stair_detection_pkg/stair_modeling_ros/install/stair_modeling_ros/share/stair_modeling_ros/local_setup.zsh\n'}
+[28.660790] (stair_modeling_ros) StdoutLine: {'line': b'-- Up-to-date: /home/nimrod/ros2_ws/src/stair_detection_pkg/stair_modeling_ros/install/stair_modeling_ros/share/stair_modeling_ros/local_setup.dsv\n'}
+[28.661046] (stair_modeling_ros) StdoutLine: {'line': b'-- Installing: /home/nimrod/ros2_ws/src/stair_detection_pkg/stair_modeling_ros/install/stair_modeling_ros/share/stair_modeling_ros/package.dsv\n'}
+[28.661306] (stair_modeling_ros) StdoutLine: {'line': b'-- Up-to-date: /home/nimrod/ros2_ws/src/stair_detection_pkg/stair_modeling_ros/install/stair_modeling_ros/share/ament_index/resource_index/packages/stair_modeling_ros\n'}
+[28.661610] (stair_modeling_ros) StdoutLine: {'line': b'-- Up-to-date: /home/nimrod/ros2_ws/src/stair_detection_pkg/stair_modeling_ros/install/stair_modeling_ros/share/stair_modeling_ros/cmake/stair_modeling_rosConfig.cmake\n'}
+[28.661872] (stair_modeling_ros) StdoutLine: {'line': b'-- Up-to-date: /home/nimrod/ros2_ws/src/stair_detection_pkg/stair_modeling_ros/install/stair_modeling_ros/share/stair_modeling_ros/cmake/stair_modeling_rosConfig-version.cmake\n'}
+[28.662123] (stair_modeling_ros) StdoutLine: {'line': b'-- Up-to-date: /home/nimrod/ros2_ws/src/stair_detection_pkg/stair_modeling_ros/install/stair_modeling_ros/share/stair_modeling_ros/package.xml\n'}
+[28.664717] (stair_modeling_ros) CommandEnded: {'returncode': 0}
+[28.740721] (-) TimerEvent: {}
+[28.842893] (-) TimerEvent: {}
+[28.944593] (-) TimerEvent: {}
+[29.048344] (-) TimerEvent: {}
+[29.149961] (-) TimerEvent: {}
+[29.251488] (-) TimerEvent: {}
+[29.352628] (-) TimerEvent: {}
+[29.453414] (-) TimerEvent: {}
+[29.559027] (-) TimerEvent: {}
+[29.661238] (-) TimerEvent: {}
+[29.726860] (stair_modeling_ros) JobEnded: {'identifier': 'stair_modeling_ros', 'rc': 0}
+[29.728331] (-) EventReactorShutdown: {}

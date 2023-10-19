@@ -1,0 +1,890 @@
+[0.000000] (-) TimerEvent: {}
+[0.000107] (stair_modeling_ros) JobQueued: {'identifier': 'stair_modeling_ros', 'dependencies': OrderedDict()}
+[0.000127] (stair_modeling_ros) JobStarted: {'identifier': 'stair_modeling_ros'}
+[0.099756] (-) TimerEvent: {}
+[0.107942] (stair_modeling_ros) JobProgress: {'identifier': 'stair_modeling_ros', 'progress': 'cmake'}
+[0.108049] (stair_modeling_ros) Command: {'cmd': ['/home/nimrod/.local/bin/cmake', '/home/nimrod/ros2_ws/src/stair_detection_pkg/stair_modeling_ros', '-DCMAKE_INSTALL_PREFIX=/home/nimrod/ros2_ws/src/stair_detection_pkg/stair_modeling_ros/install/stair_modeling_ros'], 'cwd': '/home/nimrod/ros2_ws/src/stair_detection_pkg/stair_modeling_ros/build/stair_modeling_ros', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_IL:en'), ('USER', 'nimrod'), ('SSH_AGENT_PID', '2050'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/nimrod/ros2_ws/install/stair_modeling_ros/lib:/home/nimrod/ros2_ws/install/zion_msgs/lib:/home/nimrod/ros2_ws/install/zed_topic_benchmark_interfaces/lib:/home/nimrod/ros2_ws/install/zed_rgb_convert/lib:/home/nimrod/ros2_ws/install/zed_components/lib:/home/nimrod/ros2_ws/install/rviz_plugin_zed_od/lib:/home/nimrod/ros2_ws/install/zed_interfaces/lib:/home/nimrod/ros2_ws/install/image_transport/lib:/home/nimrod/ros2_ws/install/camera_info_manager/lib:/home/nimrod/ros2_ws/install/camera_calibration_parsers/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib:/usr/local/cuda-11.7/lib64:'), ('HOME', '/home/nimrod'), ('OLDPWD', '/home/nimrod/ros2_ws'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/local/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1821'), ('DBUS_SESSION_BUS_ADDRESS', ''), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '40832'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/nimrod/ros2_ws/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'nimrod'), ('JOURNAL_STREAM', '8:53061'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'nimrod'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/usr/local/cuda-11.7/bin:/home/nimrod/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/nimrod-ThinkPad-P14s-Gen-3:@/tmp/.ICE-unix/2087,unix/nimrod-ThinkPad-P14s-Gen-3:/tmp/.ICE-unix/2087'), ('INVOCATION_ID', 'cb98390c3b9043aaa39ede44fea4b74f'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/nimrod/ros2_ws/install/zion_zed_ros2_interface:/home/nimrod/ros2_ws/install/stair_modeling_ros:/home/nimrod/ros2_ws/install/stair_detection_ros:/home/nimrod/ros2_ws/install/zion_msgs:/home/nimrod/ros2_ws/install/zed_ros2:/home/nimrod/ros2_ws/install/zed_multi_camera:/home/nimrod/ros2_ws/install/zed_display_rviz2:/home/nimrod/ros2_ws/install/zed_wrapper:/home/nimrod/ros2_ws/install/zed_tutorial_video:/home/nimrod/ros2_ws/install/zed_tutorial_pos_tracking:/home/nimrod/ros2_ws/install/zed_tutorial_depth:/home/nimrod/ros2_ws/install/zed_topic_benchmark_interfaces:/home/nimrod/ros2_ws/install/zed_rgb_convert:/home/nimrod/ros2_ws/install/zed_components:/home/nimrod/ros2_ws/install/rviz_plugin_zed_od:/home/nimrod/ros2_ws/install/zed_interfaces:/home/nimrod/ros2_ws/install/image_common:/home/nimrod/ros2_ws/install/image_transport:/home/nimrod/ros2_ws/install/camera_info_manager:/home/nimrod/ros2_ws/install/camera_calibration_parsers:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:2b67f8cd-d46d-41a1-b13a-ffba7190ac87'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/nimrod/ros2_ws/src/stair_detection_pkg/stair_modeling_ros/build/stair_modeling_ros'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/nimrod/ros2_ws/install/stair_detection_ros/lib/python3.8/site-packages:/home/nimrod/ros2_ws/install/zion_msgs/lib/python3.8/site-packages:/home/nimrod/ros2_ws/install/zed_topic_benchmark_interfaces/lib/python3.8/site-packages:/home/nimrod/ros2_ws/install/zed_interfaces/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/nimrod/ros2_ws/install/zion_zed_ros2_interface:/home/nimrod/ros2_ws/install/stair_modeling_ros:/home/nimrod/ros2_ws/install/zion_msgs:/home/nimrod/ros2_ws/install/zed_ros2:/home/nimrod/ros2_ws/install/zed_multi_camera:/home/nimrod/ros2_ws/install/zed_display_rviz2:/home/nimrod/ros2_ws/install/zed_wrapper:/home/nimrod/ros2_ws/install/zed_tutorial_video:/home/nimrod/ros2_ws/install/zed_tutorial_pos_tracking:/home/nimrod/ros2_ws/install/zed_tutorial_depth:/home/nimrod/ros2_ws/install/zed_topic_benchmark_interfaces:/home/nimrod/ros2_ws/install/zed_rgb_convert:/home/nimrod/ros2_ws/install/zed_components:/home/nimrod/ros2_ws/install/rviz_plugin_zed_od:/home/nimrod/ros2_ws/install/zed_interfaces:/home/nimrod/ros2_ws/install/image_common:/home/nimrod/ros2_ws/install/image_transport:/home/nimrod/ros2_ws/install/camera_info_manager:/home/nimrod/ros2_ws/install/camera_calibration_parsers:/home/nimrod/ros2_ws/install/stair_detection_ros:/opt/ros/foxy')]), 'shell': False}
+[0.162546] (stair_modeling_ros) StdoutLine: {'line': b'-- The C compiler identification is GNU 9.4.0\n'}
+[0.199960] (-) TimerEvent: {}
+[0.200370] (stair_modeling_ros) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 9.4.0\n'}
+[0.206541] (stair_modeling_ros) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.239989] (stair_modeling_ros) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.245802] (stair_modeling_ros) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.246097] (stair_modeling_ros) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.246402] (stair_modeling_ros) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.248449] (stair_modeling_ros) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.287653] (stair_modeling_ros) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.293920] (stair_modeling_ros) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.294150] (stair_modeling_ros) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.294461] (stair_modeling_ros) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.296235] (stair_modeling_ros) StdoutLine: {'line': b'-- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)\n'}
+[0.300064] (-) TimerEvent: {}
+[0.314690] (stair_modeling_ros) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") \n'}
+[0.314827] (stair_modeling_ros) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[0.400317] (-) TimerEvent: {}
+[0.443348] (stair_modeling_ros) StdoutLine: {'line': b'-- Found rclcpp: 2.4.3 (/opt/ros/foxy/share/rclcpp/cmake)\n'}
+[0.478660] (stair_modeling_ros) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.484648] (stair_modeling_ros) StdoutLine: {'line': b'-- Found rosidl_adapter: 1.3.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)\n'}
+[0.500418] (-) TimerEvent: {}
+[0.541195] (stair_modeling_ros) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")  \n'}
+[0.561904] (stair_modeling_ros) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/foxy/include  \n'}
+[0.600518] (-) TimerEvent: {}
+[0.611809] (stair_modeling_ros) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.644853] (stair_modeling_ros) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 1.0.4 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)\n'}
+[0.646031] (stair_modeling_ros) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[0.646641] (stair_modeling_ros) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[0.681738] (stair_modeling_ros) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed\n'}
+[0.681956] (stair_modeling_ros) StdoutLine: {'line': b'-- Looking for pthread_create in pthreads\n'}
+[0.700644] (-) TimerEvent: {}
+[0.709893] (stair_modeling_ros) StdoutLine: {'line': b'-- Looking for pthread_create in pthreads - not found\n'}
+[0.710040] (stair_modeling_ros) StdoutLine: {'line': b'-- Looking for pthread_create in pthread\n'}
+[0.747835] (stair_modeling_ros) StdoutLine: {'line': b'-- Looking for pthread_create in pthread - found\n'}
+[0.748940] (stair_modeling_ros) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[0.800730] (-) TimerEvent: {}
+[0.833637] (stair_modeling_ros) StdoutLine: {'line': b'-- Found rclcpp_components: 2.4.3 (/opt/ros/foxy/share/rclcpp_components/cmake)\n'}
+[0.868314] (stair_modeling_ros) StdoutLine: {'line': b'-- Found sensor_msgs: 2.0.5 (/opt/ros/foxy/share/sensor_msgs/cmake)\n'}
+[0.900958] (-) TimerEvent: {}
+[0.934795] (stair_modeling_ros) StdoutLine: {'line': b'-- Found tf2_ros: 0.13.14 (/opt/ros/foxy/share/tf2_ros/cmake)\n'}
+[1.001183] (-) TimerEvent: {}
+[1.089462] (stair_modeling_ros) StdoutLine: {'line': b'-- Found tf2_geometry_msgs: 0.13.14 (/opt/ros/foxy/share/tf2_geometry_msgs/cmake)\n'}
+[1.094933] (stair_modeling_ros) StdoutLine: {'line': b'-- Found eigen3_cmake_module: 0.1.1 (/opt/ros/foxy/share/eigen3_cmake_module/cmake)\n'}
+[1.097090] (stair_modeling_ros) StdoutLine: {'line': b'-- Found Eigen3: TRUE (found version "3.3.7") \n'}
+[1.101337] (-) TimerEvent: {}
+[1.124003] (stair_modeling_ros) StdoutLine: {'line': b"-- Checking for module 'eigen3'\n"}
+[1.132980] (stair_modeling_ros) StdoutLine: {'line': b'--   Found eigen3, version 3.3.7\n'}
+[1.152386] (stair_modeling_ros) StdoutLine: {'line': b'-- Found Eigen: /usr/include/eigen3 (Required is at least version "3.1") \n'}
+[1.152549] (stair_modeling_ros) StdoutLine: {'line': b'-- Eigen found (include: /usr/include/eigen3, version: 3.3.7)\n'}
+[1.201017] (stair_modeling_ros) StdoutLine: {'line': b'-- Found Boost: /usr/include (found suitable version "1.71.0", minimum required is "1.55.0") found components: system filesystem date_time iostreams regex \n'}
+[1.201403] (-) TimerEvent: {}
+[1.211107] (stair_modeling_ros) StdoutLine: {'line': b"-- Checking for module 'flann'\n"}
+[1.221219] (stair_modeling_ros) StdoutLine: {'line': b'--   Found flann, version 1.9.1\n'}
+[1.246880] (stair_modeling_ros) StdoutLine: {'line': b'-- Found FLANN: /usr/lib/x86_64-linux-gnu/libflann_cpp.so  \n'}
+[1.269186] (stair_modeling_ros) StdoutLine: {'line': b'-- The imported target "vtkParseOGLExt" references the file\n'}
+[1.269519] (stair_modeling_ros) StdoutLine: {'line': b'   "/usr/bin/vtkParseOGLExt-7.1"\n'}
+[1.269608] (stair_modeling_ros) StdoutLine: {'line': b'but this file does not exist.  Possible reasons include:\n'}
+[1.269676] (stair_modeling_ros) StdoutLine: {'line': b'* The file was deleted, renamed, or moved to another location.\n'}
+[1.269739] (stair_modeling_ros) StdoutLine: {'line': b'* An install or uninstall procedure did not complete successfully.\n'}
+[1.269799] (stair_modeling_ros) StdoutLine: {'line': b'* The installation package was faulty and contained\n'}
+[1.269860] (stair_modeling_ros) StdoutLine: {'line': b'   "/usr/lib/cmake/vtk-7.1/VTKTargets.cmake"\n'}
+[1.269920] (stair_modeling_ros) StdoutLine: {'line': b'but not all the files it references.\n'}
+[1.269978] (stair_modeling_ros) StdoutLine: {'line': b'\n'}
+[1.270037] (stair_modeling_ros) StdoutLine: {'line': b'-- The imported target "vtkRenderingPythonTkWidgets" references the file\n'}
+[1.270096] (stair_modeling_ros) StdoutLine: {'line': b'   "/usr/lib/x86_64-linux-gnu/libvtkRenderingPythonTkWidgets.so"\n'}
+[1.270155] (stair_modeling_ros) StdoutLine: {'line': b'but this file does not exist.  Possible reasons include:\n'}
+[1.270224] (stair_modeling_ros) StdoutLine: {'line': b'* The file was deleted, renamed, or moved to another location.\n'}
+[1.270283] (stair_modeling_ros) StdoutLine: {'line': b'* An install or uninstall procedure did not complete successfully.\n'}
+[1.270342] (stair_modeling_ros) StdoutLine: {'line': b'* The installation package was faulty and contained\n'}
+[1.270401] (stair_modeling_ros) StdoutLine: {'line': b'   "/usr/lib/cmake/vtk-7.1/VTKTargets.cmake"\n'}
+[1.270459] (stair_modeling_ros) StdoutLine: {'line': b'but not all the files it references.\n'}
+[1.270517] (stair_modeling_ros) StdoutLine: {'line': b'\n'}
+[1.270576] (stair_modeling_ros) StdoutLine: {'line': b'-- The imported target "vtk" references the file\n'}
+[1.270633] (stair_modeling_ros) StdoutLine: {'line': b'   "/usr/bin/vtk"\n'}
+[1.270691] (stair_modeling_ros) StdoutLine: {'line': b'but this file does not exist.  Possible reasons include:\n'}
+[1.270750] (stair_modeling_ros) StdoutLine: {'line': b'* The file was deleted, renamed, or moved to another location.\n'}
+[1.270809] (stair_modeling_ros) StdoutLine: {'line': b'* An install or uninstall procedure did not complete successfully.\n'}
+[1.270868] (stair_modeling_ros) StdoutLine: {'line': b'* The installation package was faulty and contained\n'}
+[1.270926] (stair_modeling_ros) StdoutLine: {'line': b'   "/usr/lib/cmake/vtk-7.1/VTKTargets.cmake"\n'}
+[1.270984] (stair_modeling_ros) StdoutLine: {'line': b'but not all the files it references.\n'}
+[1.271042] (stair_modeling_ros) StdoutLine: {'line': b'\n'}
+[1.271100] (stair_modeling_ros) StdoutLine: {'line': b'-- The imported target "pvtk" references the file\n'}
+[1.271158] (stair_modeling_ros) StdoutLine: {'line': b'   "/usr/bin/pvtk"\n'}
+[1.271216] (stair_modeling_ros) StdoutLine: {'line': b'but this file does not exist.  Possible reasons include:\n'}
+[1.271279] (stair_modeling_ros) StdoutLine: {'line': b'* The file was deleted, renamed, or moved to another location.\n'}
+[1.271337] (stair_modeling_ros) StdoutLine: {'line': b'* An install or uninstall procedure did not complete successfully.\n'}
+[1.271395] (stair_modeling_ros) StdoutLine: {'line': b'* The installation package was faulty and contained\n'}
+[1.271459] (stair_modeling_ros) StdoutLine: {'line': b'   "/usr/lib/cmake/vtk-7.1/VTKTargets.cmake"\n'}
+[1.271517] (stair_modeling_ros) StdoutLine: {'line': b'but not all the files it references.\n'}
+[1.271575] (stair_modeling_ros) StdoutLine: {'line': b'\n'}
+[1.280813] (stair_modeling_ros) StdoutLine: {'line': b"-- Checking for module 'libusb-1.0'\n"}
+[1.291593] (stair_modeling_ros) StdoutLine: {'line': b'--   Found libusb-1.0, version 1.0.23\n'}
+[1.301644] (-) TimerEvent: {}
+[1.316408] (stair_modeling_ros) StderrLine: {'line': b'\x1b[33mCMake Warning (dev) at /home/nimrod/.local/lib/python3.8/site-packages/cmake/data/share/cmake-3.26/Modules/FindPackageHandleStandardArgs.cmake:438 (message):\n'}
+[1.316636] (stair_modeling_ros) StderrLine: {'line': b'  The package name passed to `find_package_handle_standard_args` (USB_10)\n'}
+[1.316708] (stair_modeling_ros) StderrLine: {'line': b'  does not match the name of the calling package (OpenNI).  This can lead to\n'}
+[1.316770] (stair_modeling_ros) StderrLine: {'line': b'  problems in calling code that expects `find_package` result variables\n'}
+[1.316831] (stair_modeling_ros) StderrLine: {'line': b'  (e.g., `_FOUND`) to follow a certain pattern.\n'}
+[1.316892] (stair_modeling_ros) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[1.316950] (stair_modeling_ros) StderrLine: {'line': b'  /usr/lib/x86_64-linux-gnu/cmake/pcl/Modules/FindOpenNI.cmake:28 (find_package_handle_standard_args)\n'}
+[1.317009] (stair_modeling_ros) StderrLine: {'line': b'  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:179 (find_package)\n'}
+[1.317067] (stair_modeling_ros) StderrLine: {'line': b'  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:322 (find_openni)\n'}
+[1.317124] (stair_modeling_ros) StderrLine: {'line': b'  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:548 (find_external_library)\n'}
+[1.317183] (stair_modeling_ros) StderrLine: {'line': b'  CMakeLists.txt:37 (find_package)\n'}
+[1.317240] (stair_modeling_ros) StderrLine: {'line': b'This warning is for project developers.  Use -Wno-dev to suppress it.\n'}
+[1.317298] (stair_modeling_ros) StderrLine: {'line': b'\x1b[0m\n'}
+[1.317355] (stair_modeling_ros) StdoutLine: {'line': b'-- Found USB_10: /usr/lib/x86_64-linux-gnu/libusb-1.0.so  \n'}
+[1.355124] (stair_modeling_ros) StdoutLine: {'line': b'-- Found OpenNI: /usr/lib/libOpenNI.so  \n'}
+[1.355309] (stair_modeling_ros) StdoutLine: {'line': b'-- OpenNI found (include: /usr/include/ni, lib: /usr/lib/libOpenNI.so)\n'}
+[1.359373] (stair_modeling_ros) StderrLine: {'line': b'\x1b[33mCMake Warning (dev) at /home/nimrod/.local/lib/python3.8/site-packages/cmake/data/share/cmake-3.26/Modules/FindPackageHandleStandardArgs.cmake:438 (message):\n'}
+[1.359523] (stair_modeling_ros) StderrLine: {'line': b'  The package name passed to `find_package_handle_standard_args` (USB_10)\n'}
+[1.359591] (stair_modeling_ros) StderrLine: {'line': b'  does not match the name of the calling package (OpenNI2).  This can lead to\n'}
+[1.359653] (stair_modeling_ros) StderrLine: {'line': b'  problems in calling code that expects `find_package` result variables\n'}
+[1.359713] (stair_modeling_ros) StderrLine: {'line': b'  (e.g., `_FOUND`) to follow a certain pattern.\n'}
+[1.359772] (stair_modeling_ros) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[1.359831] (stair_modeling_ros) StderrLine: {'line': b'  /usr/lib/x86_64-linux-gnu/cmake/pcl/Modules/FindOpenNI2.cmake:28 (find_package_handle_standard_args)\n'}
+[1.359890] (stair_modeling_ros) StderrLine: {'line': b'  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:193 (find_package)\n'}
+[1.359948] (stair_modeling_ros) StderrLine: {'line': b'  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:324 (find_openni2)\n'}
+[1.360016] (stair_modeling_ros) StderrLine: {'line': b'  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:548 (find_external_library)\n'}
+[1.360074] (stair_modeling_ros) StderrLine: {'line': b'  CMakeLists.txt:37 (find_package)\n'}
+[1.360132] (stair_modeling_ros) StderrLine: {'line': b'This warning is for project developers.  Use -Wno-dev to suppress it.\n'}
+[1.360189] (stair_modeling_ros) StderrLine: {'line': b'\x1b[0m\n'}
+[1.393489] (stair_modeling_ros) StdoutLine: {'line': b'-- Found OpenNI2: /usr/lib/libOpenNI2.so  \n'}
+[1.393656] (stair_modeling_ros) StdoutLine: {'line': b'-- OpenNI2 found (include: /usr/include/openni2, lib: /usr/lib/libOpenNI2.so)\n'}
+[1.393725] (stair_modeling_ros) StderrLine: {'line': b'\x1b[0m** WARNING ** io features related to pcap will be disabled\x1b[0m\n'}
+[1.393790] (stair_modeling_ros) StderrLine: {'line': b'\x1b[0m** WARNING ** io features related to png will be disabled\x1b[0m\n'}
+[1.401380] (stair_modeling_ros) StdoutLine: {'line': b'-- Found libusb-1.0: /usr/include  \n'}
+[1.401531] (stair_modeling_ros) StderrLine: {'line': b'\x1b[33mCMake Warning (dev) at /home/nimrod/.local/lib/python3.8/site-packages/cmake/data/share/cmake-3.26/Modules/FindPackageHandleStandardArgs.cmake:438 (message):\n'}
+[1.401610] (stair_modeling_ros) StderrLine: {'line': b'  The package name passed to `find_package_handle_standard_args` (libusb-1.0)\n'}
+[1.401670] (-) TimerEvent: {}
+[1.401753] (stair_modeling_ros) StderrLine: {'line': b'  does not match the name of the calling package (PCL).  This can lead to\n'}
+[1.401819] (stair_modeling_ros) StderrLine: {'line': b'  problems in calling code that expects `find_package` result variables\n'}
+[1.401879] (stair_modeling_ros) StderrLine: {'line': b'  (e.g., `_FOUND`) to follow a certain pattern.\n'}
+[1.401937] (stair_modeling_ros) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[1.401995] (stair_modeling_ros) StderrLine: {'line': b'  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:291 (find_package_handle_standard_args)\n'}
+[1.402054] (stair_modeling_ros) StderrLine: {'line': b'  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:338 (find_libusb)\n'}
+[1.402114] (stair_modeling_ros) StderrLine: {'line': b'  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:548 (find_external_library)\n'}
+[1.402172] (stair_modeling_ros) StderrLine: {'line': b'  CMakeLists.txt:37 (find_package)\n'}
+[1.402229] (stair_modeling_ros) StderrLine: {'line': b'This warning is for project developers.  Use -Wno-dev to suppress it.\n'}
+[1.402287] (stair_modeling_ros) StderrLine: {'line': b'\x1b[0m\n'}
+[1.402344] (stair_modeling_ros) StderrLine: {'line': b'\x1b[0m** WARNING ** io features related to libusb-1.0 will be disabled\x1b[0m\n'}
+[1.404998] (stair_modeling_ros) StderrLine: {'line': b'\x1b[33mCMake Warning (dev) at /home/nimrod/.local/lib/python3.8/site-packages/cmake/data/share/cmake-3.26/Modules/FindPackageHandleStandardArgs.cmake:438 (message):\n'}
+[1.405146] (stair_modeling_ros) StderrLine: {'line': b'  The package name passed to `find_package_handle_standard_args` (USB_10)\n'}
+[1.405213] (stair_modeling_ros) StderrLine: {'line': b'  does not match the name of the calling package (OpenNI).  This can lead to\n'}
+[1.405274] (stair_modeling_ros) StderrLine: {'line': b'  problems in calling code that expects `find_package` result variables\n'}
+[1.405333] (stair_modeling_ros) StderrLine: {'line': b'  (e.g., `_FOUND`) to follow a certain pattern.\n'}
+[1.405393] (stair_modeling_ros) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[1.405452] (stair_modeling_ros) StderrLine: {'line': b'  /usr/lib/x86_64-linux-gnu/cmake/pcl/Modules/FindOpenNI.cmake:28 (find_package_handle_standard_args)\n'}
+[1.405511] (stair_modeling_ros) StderrLine: {'line': b'  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:179 (find_package)\n'}
+[1.405569] (stair_modeling_ros) StderrLine: {'line': b'  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:322 (find_openni)\n'}
+[1.405635] (stair_modeling_ros) StderrLine: {'line': b'  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:548 (find_external_library)\n'}
+[1.405698] (stair_modeling_ros) StderrLine: {'line': b'  CMakeLists.txt:37 (find_package)\n'}
+[1.405757] (stair_modeling_ros) StderrLine: {'line': b'This warning is for project developers.  Use -Wno-dev to suppress it.\n'}
+[1.405816] (stair_modeling_ros) StderrLine: {'line': b'\x1b[0m\n'}
+[1.405973] (stair_modeling_ros) StdoutLine: {'line': b'-- OpenNI found (include: /usr/include/ni, lib: /usr/lib/libOpenNI.so)\n'}
+[1.409174] (stair_modeling_ros) StderrLine: {'line': b'\x1b[33mCMake Warning (dev) at /home/nimrod/.local/lib/python3.8/site-packages/cmake/data/share/cmake-3.26/Modules/FindPackageHandleStandardArgs.cmake:438 (message):\n'}
+[1.409324] (stair_modeling_ros) StderrLine: {'line': b'  The package name passed to `find_package_handle_standard_args` (USB_10)\n'}
+[1.409392] (stair_modeling_ros) StderrLine: {'line': b'  does not match the name of the calling package (OpenNI2).  This can lead to\n'}
+[1.409454] (stair_modeling_ros) StderrLine: {'line': b'  problems in calling code that expects `find_package` result variables\n'}
+[1.409524] (stair_modeling_ros) StderrLine: {'line': b'  (e.g., `_FOUND`) to follow a certain pattern.\n'}
+[1.409584] (stair_modeling_ros) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[1.409644] (stair_modeling_ros) StderrLine: {'line': b'  /usr/lib/x86_64-linux-gnu/cmake/pcl/Modules/FindOpenNI2.cmake:28 (find_package_handle_standard_args)\n'}
+[1.409703] (stair_modeling_ros) StderrLine: {'line': b'  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:193 (find_package)\n'}
+[1.409762] (stair_modeling_ros) StderrLine: {'line': b'  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:324 (find_openni2)\n'}
+[1.409820] (stair_modeling_ros) StderrLine: {'line': b'  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:548 (find_external_library)\n'}
+[1.409880] (stair_modeling_ros) StderrLine: {'line': b'  CMakeLists.txt:37 (find_package)\n'}
+[1.409939] (stair_modeling_ros) StderrLine: {'line': b'This warning is for project developers.  Use -Wno-dev to suppress it.\n'}
+[1.410000] (stair_modeling_ros) StderrLine: {'line': b'\x1b[0m\n'}
+[1.410156] (stair_modeling_ros) StdoutLine: {'line': b'-- OpenNI2 found (include: /usr/include/openni2, lib: /usr/lib/libOpenNI2.so)\n'}
+[1.429269] (stair_modeling_ros) StdoutLine: {'line': b'-- Found Qhull: optimized;/usr/lib/x86_64-linux-gnu/libqhull.so;debug;/usr/lib/x86_64-linux-gnu/libqhull.so  \n'}
+[1.429426] (stair_modeling_ros) StdoutLine: {'line': b'-- QHULL found (include: /usr/include, lib: optimized;/usr/lib/x86_64-linux-gnu/libqhull.so;debug;/usr/lib/x86_64-linux-gnu/libqhull.so)\n'}
+[1.432979] (stair_modeling_ros) StderrLine: {'line': b'\x1b[33mCMake Warning (dev) at /home/nimrod/.local/lib/python3.8/site-packages/cmake/data/share/cmake-3.26/Modules/FindPackageHandleStandardArgs.cmake:438 (message):\n'}
+[1.433127] (stair_modeling_ros) StderrLine: {'line': b'  The package name passed to `find_package_handle_standard_args` (USB_10)\n'}
+[1.433194] (stair_modeling_ros) StderrLine: {'line': b'  does not match the name of the calling package (OpenNI).  This can lead to\n'}
+[1.433256] (stair_modeling_ros) StderrLine: {'line': b'  problems in calling code that expects `find_package` result variables\n'}
+[1.433317] (stair_modeling_ros) StderrLine: {'line': b'  (e.g., `_FOUND`) to follow a certain pattern.\n'}
+[1.433377] (stair_modeling_ros) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[1.433437] (stair_modeling_ros) StderrLine: {'line': b'  /usr/lib/x86_64-linux-gnu/cmake/pcl/Modules/FindOpenNI.cmake:28 (find_package_handle_standard_args)\n'}
+[1.433496] (stair_modeling_ros) StderrLine: {'line': b'  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:179 (find_package)\n'}
+[1.433554] (stair_modeling_ros) StderrLine: {'line': b'  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:322 (find_openni)\n'}
+[1.433625] (stair_modeling_ros) StderrLine: {'line': b'  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:548 (find_external_library)\n'}
+[1.433686] (stair_modeling_ros) StderrLine: {'line': b'  CMakeLists.txt:37 (find_package)\n'}
+[1.433749] (stair_modeling_ros) StderrLine: {'line': b'This warning is for project developers.  Use -Wno-dev to suppress it.\n'}
+[1.433902] (stair_modeling_ros) StderrLine: {'line': b'\x1b[0m\n'}
+[1.433970] (stair_modeling_ros) StdoutLine: {'line': b'-- OpenNI found (include: /usr/include/ni, lib: /usr/lib/libOpenNI.so)\n'}
+[1.440083] (stair_modeling_ros) StdoutLine: {'line': b'-- looking for PCL_COMMON\n'}
+[1.440821] (stair_modeling_ros) StderrLine: {'line': b'\x1b[33mCMake Warning (dev) at /home/nimrod/.local/lib/python3.8/site-packages/cmake/data/share/cmake-3.26/Modules/FindPackageHandleStandardArgs.cmake:438 (message):\n'}
+[1.440977] (stair_modeling_ros) StderrLine: {'line': b'  The package name passed to `find_package_handle_standard_args` (PCL_COMMON)\n'}
+[1.441047] (stair_modeling_ros) StderrLine: {'line': b'  does not match the name of the calling package (PCL).  This can lead to\n'}
+[1.441204] (stair_modeling_ros) StderrLine: {'line': b'  problems in calling code that expects `find_package` result variables\n'}
+[1.441281] (stair_modeling_ros) StderrLine: {'line': b'  (e.g., `_FOUND`) to follow a certain pattern.\n'}
+[1.441346] (stair_modeling_ros) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[1.441407] (stair_modeling_ros) StderrLine: {'line': b'  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:616 (find_package_handle_standard_args)\n'}
+[1.441467] (stair_modeling_ros) StderrLine: {'line': b'  CMakeLists.txt:37 (find_package)\n'}
+[1.441807] (stair_modeling_ros) StderrLine: {'line': b'This warning is for project developers.  Use -Wno-dev to suppress it.\n'}
+[1.441944] (stair_modeling_ros) StderrLine: {'line': b'\x1b[0m\n'}
+[1.442010] (stair_modeling_ros) StdoutLine: {'line': b'-- Found PCL_COMMON: /usr/lib/x86_64-linux-gnu/libpcl_common.so  \n'}
+[1.442078] (stair_modeling_ros) StdoutLine: {'line': b'-- looking for PCL_KDTREE\n'}
+[1.442139] (stair_modeling_ros) StdoutLine: {'line': b'-- Found PCL_KDTREE: /usr/lib/x86_64-linux-gnu/libpcl_kdtree.so  \n'}
+[1.442199] (stair_modeling_ros) StdoutLine: {'line': b'-- looking for PCL_OCTREE\n'}
+[1.442258] (stair_modeling_ros) StderrLine: {'line': b'\x1b[33mCMake Warning (dev) at /home/nimrod/.local/lib/python3.8/site-packages/cmake/data/share/cmake-3.26/Modules/FindPackageHandleStandardArgs.cmake:438 (message):\n'}
+[1.442319] (stair_modeling_ros) StderrLine: {'line': b'  The package name passed to `find_package_handle_standard_args` (PCL_KDTREE)\n'}
+[1.442385] (stair_modeling_ros) StderrLine: {'line': b'  does not match the name of the calling package (PCL).  This can lead to\n'}
+[1.442474] (stair_modeling_ros) StderrLine: {'line': b'  problems in calling code that expects `find_package` result variables\n'}
+[1.442536] (stair_modeling_ros) StderrLine: {'line': b'  (e.g., `_FOUND`) to follow a certain pattern.\n'}
+[1.442595] (stair_modeling_ros) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[1.442655] (stair_modeling_ros) StderrLine: {'line': b'  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:616 (find_package_handle_standard_args)\n'}
+[1.442714] (stair_modeling_ros) StderrLine: {'line': b'  CMakeLists.txt:37 (find_package)\n'}
+[1.442772] (stair_modeling_ros) StderrLine: {'line': b'This warning is for project developers.  Use -Wno-dev to suppress it.\n'}
+[1.442960] (stair_modeling_ros) StderrLine: {'line': b'\x1b[0m\n'}
+[1.443033] (stair_modeling_ros) StdoutLine: {'line': b'-- Found PCL_OCTREE: /usr/lib/x86_64-linux-gnu/libpcl_octree.so  \n'}
+[1.443107] (stair_modeling_ros) StdoutLine: {'line': b'-- looking for PCL_SEARCH\n'}
+[1.443170] (stair_modeling_ros) StderrLine: {'line': b'\x1b[33mCMake Warning (dev) at /home/nimrod/.local/lib/python3.8/site-packages/cmake/data/share/cmake-3.26/Modules/FindPackageHandleStandardArgs.cmake:438 (message):\n'}
+[1.443407] (stair_modeling_ros) StderrLine: {'line': b'  The package name passed to `find_package_handle_standard_args` (PCL_OCTREE)\n'}
+[1.443482] (stair_modeling_ros) StderrLine: {'line': b'  does not match the name of the calling package (PCL).  This can lead to\n'}
+[1.443551] (stair_modeling_ros) StderrLine: {'line': b'  problems in calling code that expects `find_package` result variables\n'}
+[1.443612] (stair_modeling_ros) StderrLine: {'line': b'  (e.g., `_FOUND`) to follow a certain pattern.\n'}
+[1.443671] (stair_modeling_ros) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[1.443730] (stair_modeling_ros) StderrLine: {'line': b'  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:616 (find_package_handle_standard_args)\n'}
+[1.443790] (stair_modeling_ros) StderrLine: {'line': b'  CMakeLists.txt:37 (find_package)\n'}
+[1.443848] (stair_modeling_ros) StderrLine: {'line': b'This warning is for project developers.  Use -Wno-dev to suppress it.\n'}
+[1.443906] (stair_modeling_ros) StderrLine: {'line': b'\x1b[0m\n'}
+[1.443964] (stair_modeling_ros) StdoutLine: {'line': b'-- Found PCL_SEARCH: /usr/lib/x86_64-linux-gnu/libpcl_search.so  \n'}
+[1.444028] (stair_modeling_ros) StderrLine: {'line': b'\x1b[33mCMake Warning (dev) at /home/nimrod/.local/lib/python3.8/site-packages/cmake/data/share/cmake-3.26/Modules/FindPackageHandleStandardArgs.cmake:438 (message):\n'}
+[1.444105] (stair_modeling_ros) StderrLine: {'line': b'  The package name passed to `find_package_handle_standard_args` (PCL_SEARCH)\n'}
+[1.444167] (stair_modeling_ros) StderrLine: {'line': b'  does not match the name of the calling package (PCL).  This can lead to\n'}
+[1.444301] (stair_modeling_ros) StderrLine: {'line': b'  problems in calling code that expects `find_package` result variables\n'}
+[1.444360] (stair_modeling_ros) StderrLine: {'line': b'  (e.g., `_FOUND`) to follow a certain pattern.\n'}
+[1.444418] (stair_modeling_ros) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[1.444476] (stair_modeling_ros) StderrLine: {'line': b'  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:616 (find_package_handle_standard_args)\n'}
+[1.444533] (stair_modeling_ros) StderrLine: {'line': b'  CMakeLists.txt:37 (find_package)\n'}
+[1.444597] (stair_modeling_ros) StderrLine: {'line': b'This warning is for project developers.  Use -Wno-dev to suppress it.\n'}
+[1.444656] (stair_modeling_ros) StderrLine: {'line': b'\x1b[0m\n'}
+[1.444714] (stair_modeling_ros) StdoutLine: {'line': b'-- looking for PCL_SAMPLE_CONSENSUS\n'}
+[1.444773] (stair_modeling_ros) StdoutLine: {'line': b'-- Found PCL_SAMPLE_CONSENSUS: /usr/lib/x86_64-linux-gnu/libpcl_sample_consensus.so  \n'}
+[1.444833] (stair_modeling_ros) StderrLine: {'line': b'\x1b[33mCMake Warning (dev) at /home/nimrod/.local/lib/python3.8/site-packages/cmake/data/share/cmake-3.26/Modules/FindPackageHandleStandardArgs.cmake:438 (message):\n'}
+[1.444897] (stair_modeling_ros) StderrLine: {'line': b'  The package name passed to `find_package_handle_standard_args`\n'}
+[1.444956] (stair_modeling_ros) StderrLine: {'line': b'  (PCL_SAMPLE_CONSENSUS) does not match the name of the calling package\n'}
+[1.445047] (stair_modeling_ros) StderrLine: {'line': b'  (PCL).  This can lead to problems in calling code that expects\n'}
+[1.445105] (stair_modeling_ros) StderrLine: {'line': b'  `find_package` result variables (e.g., `_FOUND`) to follow a certain\n'}
+[1.445223] (stair_modeling_ros) StderrLine: {'line': b'  pattern.\n'}
+[1.445318] (stair_modeling_ros) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[1.445377] (stair_modeling_ros) StderrLine: {'line': b'  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:616 (find_package_handle_standard_args)\n'}
+[1.445438] (stair_modeling_ros) StderrLine: {'line': b'  CMakeLists.txt:37 (find_package)\n'}
+[1.445513] (stair_modeling_ros) StderrLine: {'line': b'This warning is for project developers.  Use -Wno-dev to suppress it.\n'}
+[1.445598] (stair_modeling_ros) StderrLine: {'line': b'\x1b[0m\n'}
+[1.445665] (stair_modeling_ros) StdoutLine: {'line': b'-- looking for PCL_FILTERS\n'}
+[1.445727] (stair_modeling_ros) StdoutLine: {'line': b'-- Found PCL_FILTERS: /usr/lib/x86_64-linux-gnu/libpcl_filters.so  \n'}
+[1.445813] (stair_modeling_ros) StdoutLine: {'line': b'-- looking for PCL_2D\n'}
+[1.445876] (stair_modeling_ros) StderrLine: {'line': b'\x1b[33mCMake Warning (dev) at /home/nimrod/.local/lib/python3.8/site-packages/cmake/data/share/cmake-3.26/Modules/FindPackageHandleStandardArgs.cmake:438 (message):\n'}
+[1.445935] (stair_modeling_ros) StderrLine: {'line': b'  The package name passed to `find_package_handle_standard_args`\n'}
+[1.445994] (stair_modeling_ros) StderrLine: {'line': b'  (PCL_FILTERS) does not match the name of the calling package (PCL).  This\n'}
+[1.446051] (stair_modeling_ros) StderrLine: {'line': b'  can lead to problems in calling code that expects `find_package` result\n'}
+[1.446110] (stair_modeling_ros) StderrLine: {'line': b'  variables (e.g., `_FOUND`) to follow a certain pattern.\n'}
+[1.446168] (stair_modeling_ros) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[1.446225] (stair_modeling_ros) StderrLine: {'line': b'  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:616 (find_package_handle_standard_args)\n'}
+[1.446283] (stair_modeling_ros) StderrLine: {'line': b'  CMakeLists.txt:37 (find_package)\n'}
+[1.446339] (stair_modeling_ros) StderrLine: {'line': b'This warning is for project developers.  Use -Wno-dev to suppress it.\n'}
+[1.446446] (stair_modeling_ros) StderrLine: {'line': b'\x1b[0m\n'}
+[1.446504] (stair_modeling_ros) StderrLine: {'line': b'\x1b[33mCMake Warning (dev) at /home/nimrod/.local/lib/python3.8/site-packages/cmake/data/share/cmake-3.26/Modules/FindPackageHandleStandardArgs.cmake:438 (message):\n'}
+[1.446562] (stair_modeling_ros) StderrLine: {'line': b'  The package name passed to `find_package_handle_standard_args` (PCL_2D)\n'}
+[1.446633] (stair_modeling_ros) StderrLine: {'line': b'  does not match the name of the calling package (PCL).  This can lead to\n'}
+[1.446691] (stair_modeling_ros) StderrLine: {'line': b'  problems in calling code that expects `find_package` result variables\n'}
+[1.446749] (stair_modeling_ros) StderrLine: {'line': b'  (e.g., `_FOUND`) to follow a certain pattern.\n'}
+[1.446807] (stair_modeling_ros) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[1.446864] (stair_modeling_ros) StderrLine: {'line': b'  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:619 (find_package_handle_standard_args)\n'}
+[1.446922] (stair_modeling_ros) StderrLine: {'line': b'  CMakeLists.txt:37 (find_package)\n'}
+[1.446979] (stair_modeling_ros) StderrLine: {'line': b'This warning is for project developers.  Use -Wno-dev to suppress it.\n'}
+[1.447037] (stair_modeling_ros) StderrLine: {'line': b'\x1b[0m\n'}
+[1.447095] (stair_modeling_ros) StdoutLine: {'line': b'-- Found PCL_2D: /usr/include/pcl-1.10  \n'}
+[1.447154] (stair_modeling_ros) StdoutLine: {'line': b'-- looking for PCL_GEOMETRY\n'}
+[1.447212] (stair_modeling_ros) StderrLine: {'line': b'\x1b[33mCMake Warning (dev) at /home/nimrod/.local/lib/python3.8/site-packages/cmake/data/share/cmake-3.26/Modules/FindPackageHandleStandardArgs.cmake:438 (message):\n'}
+[1.447270] (stair_modeling_ros) StderrLine: {'line': b'  The package name passed to `find_package_handle_standard_args`\n'}
+[1.447369] (stair_modeling_ros) StderrLine: {'line': b'  (PCL_GEOMETRY) does not match the name of the calling package (PCL).  This\n'}
+[1.447431] (stair_modeling_ros) StderrLine: {'line': b'  can lead to problems in calling code that expects `find_package` result\n'}
+[1.447489] (stair_modeling_ros) StderrLine: {'line': b'  variables (e.g., `_FOUND`) to follow a certain pattern.\n'}
+[1.447549] (stair_modeling_ros) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[1.447622] (stair_modeling_ros) StderrLine: {'line': b'  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:619 (find_package_handle_standard_args)\n'}
+[1.447681] (stair_modeling_ros) StderrLine: {'line': b'  CMakeLists.txt:37 (find_package)\n'}
+[1.447738] (stair_modeling_ros) StderrLine: {'line': b'This warning is for project developers.  Use -Wno-dev to suppress it.\n'}
+[1.447795] (stair_modeling_ros) StderrLine: {'line': b'\x1b[0m\n'}
+[1.447852] (stair_modeling_ros) StdoutLine: {'line': b'-- Found PCL_GEOMETRY: /usr/include/pcl-1.10  \n'}
+[1.447913] (stair_modeling_ros) StdoutLine: {'line': b'-- looking for PCL_IO\n'}
+[1.447971] (stair_modeling_ros) StderrLine: {'line': b'\x1b[33mCMake Warning (dev) at /home/nimrod/.local/lib/python3.8/site-packages/cmake/data/share/cmake-3.26/Modules/FindPackageHandleStandardArgs.cmake:438 (message):\n'}
+[1.448030] (stair_modeling_ros) StderrLine: {'line': b'  The package name passed to `find_package_handle_standard_args` (PCL_IO)\n'}
+[1.448088] (stair_modeling_ros) StderrLine: {'line': b'  does not match the name of the calling package (PCL).  This can lead to\n'}
+[1.448144] (stair_modeling_ros) StderrLine: {'line': b'  problems in calling code that expects `find_package` result variables\n'}
+[1.448201] (stair_modeling_ros) StderrLine: {'line': b'  (e.g., `_FOUND`) to follow a certain pattern.\n'}
+[1.448268] (stair_modeling_ros) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[1.448396] (stair_modeling_ros) StderrLine: {'line': b'  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:616 (find_package_handle_standard_args)\n'}
+[1.448456] (stair_modeling_ros) StderrLine: {'line': b'  CMakeLists.txt:37 (find_package)\n'}
+[1.448556] (stair_modeling_ros) StderrLine: {'line': b'This warning is for project developers.  Use -Wno-dev to suppress it.\n'}
+[1.448589] (stair_modeling_ros) StderrLine: {'line': b'\x1b[0m\n'}
+[1.448620] (stair_modeling_ros) StdoutLine: {'line': b'-- Found PCL_IO: /usr/lib/x86_64-linux-gnu/libpcl_io.so  \n'}
+[1.448721] (stair_modeling_ros) StdoutLine: {'line': b'-- looking for PCL_FEATURES\n'}
+[1.448753] (stair_modeling_ros) StderrLine: {'line': b'\x1b[33mCMake Warning (dev) at /home/nimrod/.local/lib/python3.8/site-packages/cmake/data/share/cmake-3.26/Modules/FindPackageHandleStandardArgs.cmake:438 (message):\n'}
+[1.448784] (stair_modeling_ros) StderrLine: {'line': b'  The package name passed to `find_package_handle_standard_args`\n'}
+[1.448813] (stair_modeling_ros) StderrLine: {'line': b'  (PCL_FEATURES) does not match the name of the calling package (PCL).  This\n'}
+[1.448842] (stair_modeling_ros) StderrLine: {'line': b'  can lead to problems in calling code that expects `find_package` result\n'}
+[1.448870] (stair_modeling_ros) StderrLine: {'line': b'  variables (e.g., `_FOUND`) to follow a certain pattern.\n'}
+[1.448899] (stair_modeling_ros) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[1.448927] (stair_modeling_ros) StderrLine: {'line': b'  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:616 (find_package_handle_standard_args)\n'}
+[1.448955] (stair_modeling_ros) StderrLine: {'line': b'  CMakeLists.txt:37 (find_package)\n'}
+[1.448983] (stair_modeling_ros) StderrLine: {'line': b'This warning is for project developers.  Use -Wno-dev to suppress it.\n'}
+[1.449013] (stair_modeling_ros) StderrLine: {'line': b'\x1b[0m\n'}
+[1.449042] (stair_modeling_ros) StdoutLine: {'line': b'-- Found PCL_FEATURES: /usr/lib/x86_64-linux-gnu/libpcl_features.so  \n'}
+[1.449072] (stair_modeling_ros) StdoutLine: {'line': b'-- looking for PCL_ML\n'}
+[1.449101] (stair_modeling_ros) StdoutLine: {'line': b'-- Found PCL_ML: /usr/lib/x86_64-linux-gnu/libpcl_ml.so  \n'}
+[1.449129] (stair_modeling_ros) StderrLine: {'line': b'\x1b[33mCMake Warning (dev) at /home/nimrod/.local/lib/python3.8/site-packages/cmake/data/share/cmake-3.26/Modules/FindPackageHandleStandardArgs.cmake:438 (message):\n'}
+[1.449158] (stair_modeling_ros) StderrLine: {'line': b'  The package name passed to `find_package_handle_standard_args` (PCL_ML)\n'}
+[1.449185] (stair_modeling_ros) StderrLine: {'line': b'  does not match the name of the calling package (PCL).  This can lead to\n'}
+[1.449213] (stair_modeling_ros) StderrLine: {'line': b'  problems in calling code that expects `find_package` result variables\n'}
+[1.449241] (stair_modeling_ros) StderrLine: {'line': b'  (e.g., `_FOUND`) to follow a certain pattern.\n'}
+[1.449275] (stair_modeling_ros) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[1.449330] (stair_modeling_ros) StderrLine: {'line': b'  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:616 (find_package_handle_standard_args)\n'}
+[1.449375] (stair_modeling_ros) StderrLine: {'line': b'  CMakeLists.txt:37 (find_package)\n'}
+[1.449402] (stair_modeling_ros) StderrLine: {'line': b'This warning is for project developers.  Use -Wno-dev to suppress it.\n'}
+[1.449430] (stair_modeling_ros) StderrLine: {'line': b'\x1b[0m\n'}
+[1.449457] (stair_modeling_ros) StdoutLine: {'line': b'-- looking for PCL_SEGMENTATION\n'}
+[1.449486] (stair_modeling_ros) StderrLine: {'line': b'\x1b[33mCMake Warning (dev) at /home/nimrod/.local/lib/python3.8/site-packages/cmake/data/share/cmake-3.26/Modules/FindPackageHandleStandardArgs.cmake:438 (message):\n'}
+[1.449519] (stair_modeling_ros) StderrLine: {'line': b'  The package name passed to `find_package_handle_standard_args`\n'}
+[1.449548] (stair_modeling_ros) StderrLine: {'line': b'  (PCL_SEGMENTATION) does not match the name of the calling package (PCL).\n'}
+[1.449577] (stair_modeling_ros) StderrLine: {'line': b'  This can lead to problems in calling code that expects `find_package`\n'}
+[1.449606] (stair_modeling_ros) StderrLine: {'line': b'  result variables (e.g., `_FOUND`) to follow a certain pattern.\n'}
+[1.449635] (stair_modeling_ros) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[1.449664] (stair_modeling_ros) StderrLine: {'line': b'  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:616 (find_package_handle_standard_args)\n'}
+[1.449693] (stair_modeling_ros) StderrLine: {'line': b'  CMakeLists.txt:37 (find_package)\n'}
+[1.449723] (stair_modeling_ros) StderrLine: {'line': b'This warning is for project developers.  Use -Wno-dev to suppress it.\n'}
+[1.449752] (stair_modeling_ros) StderrLine: {'line': b'\x1b[0m\n'}
+[1.449782] (stair_modeling_ros) StdoutLine: {'line': b'-- Found PCL_SEGMENTATION: /usr/lib/x86_64-linux-gnu/libpcl_segmentation.so  \n'}
+[1.449837] (stair_modeling_ros) StdoutLine: {'line': b'-- looking for PCL_VISUALIZATION\n'}
+[1.450403] (stair_modeling_ros) StderrLine: {'line': b'\x1b[33mCMake Warning (dev) at /home/nimrod/.local/lib/python3.8/site-packages/cmake/data/share/cmake-3.26/Modules/FindPackageHandleStandardArgs.cmake:438 (message):\n'}
+[1.450437] (stair_modeling_ros) StderrLine: {'line': b'  The package name passed to `find_package_handle_standard_args`\n'}
+[1.450468] (stair_modeling_ros) StderrLine: {'line': b'  (PCL_VISUALIZATION) does not match the name of the calling package (PCL).\n'}
+[1.450498] (stair_modeling_ros) StderrLine: {'line': b'  This can lead to problems in calling code that expects `find_package`\n'}
+[1.450528] (stair_modeling_ros) StderrLine: {'line': b'  result variables (e.g., `_FOUND`) to follow a certain pattern.\n'}
+[1.450559] (stair_modeling_ros) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[1.450590] (stair_modeling_ros) StderrLine: {'line': b'  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:616 (find_package_handle_standard_args)\n'}
+[1.450648] (stair_modeling_ros) StderrLine: {'line': b'  CMakeLists.txt:37 (find_package)\n'}
+[1.450677] (stair_modeling_ros) StderrLine: {'line': b'This warning is for project developers.  Use -Wno-dev to suppress it.\n'}
+[1.450705] (stair_modeling_ros) StderrLine: {'line': b'\x1b[0m\n'}
+[1.450732] (stair_modeling_ros) StdoutLine: {'line': b'-- Found PCL_VISUALIZATION: /usr/lib/x86_64-linux-gnu/libpcl_visualization.so  \n'}
+[1.450760] (stair_modeling_ros) StdoutLine: {'line': b'-- looking for PCL_SURFACE\n'}
+[1.451472] (stair_modeling_ros) StderrLine: {'line': b'\x1b[33mCMake Warning (dev) at /home/nimrod/.local/lib/python3.8/site-packages/cmake/data/share/cmake-3.26/Modules/FindPackageHandleStandardArgs.cmake:438 (message):\n'}
+[1.451506] (stair_modeling_ros) StderrLine: {'line': b'  The package name passed to `find_package_handle_standard_args`\n'}
+[1.451537] (stair_modeling_ros) StderrLine: {'line': b'  (PCL_SURFACE) does not match the name of the calling package (PCL).  This\n'}
+[1.451566] (stair_modeling_ros) StderrLine: {'line': b'  can lead to problems in calling code that expects `find_package` result\n'}
+[1.451595] (stair_modeling_ros) StderrLine: {'line': b'  variables (e.g., `_FOUND`) to follow a certain pattern.\n'}
+[1.451647] (stair_modeling_ros) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[1.451675] (stair_modeling_ros) StderrLine: {'line': b'  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:616 (find_package_handle_standard_args)\n'}
+[1.451703] (stair_modeling_ros) StderrLine: {'line': b'  CMakeLists.txt:37 (find_package)\n'}
+[1.451731] (stair_modeling_ros) StderrLine: {'line': b'This warning is for project developers.  Use -Wno-dev to suppress it.\n'}
+[1.451760] (stair_modeling_ros) StderrLine: {'line': b'\x1b[0m\n'}
+[1.451788] (stair_modeling_ros) StdoutLine: {'line': b'-- Found PCL_SURFACE: /usr/lib/x86_64-linux-gnu/libpcl_surface.so  \n'}
+[1.451817] (stair_modeling_ros) StdoutLine: {'line': b'-- looking for PCL_REGISTRATION\n'}
+[1.452386] (stair_modeling_ros) StderrLine: {'line': b'\x1b[33mCMake Warning (dev) at /home/nimrod/.local/lib/python3.8/site-packages/cmake/data/share/cmake-3.26/Modules/FindPackageHandleStandardArgs.cmake:438 (message):\n'}
+[1.452433] (stair_modeling_ros) StderrLine: {'line': b'  The package name passed to `find_package_handle_standard_args`\n'}
+[1.452462] (stair_modeling_ros) StderrLine: {'line': b'  (PCL_REGISTRATION) does not match the name of the calling package (PCL).\n'}
+[1.452503] (stair_modeling_ros) StderrLine: {'line': b'  This can lead to problems in calling code that expects `find_package`\n'}
+[1.452531] (stair_modeling_ros) StderrLine: {'line': b'  result variables (e.g., `_FOUND`) to follow a certain pattern.\n'}
+[1.452559] (stair_modeling_ros) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[1.452586] (stair_modeling_ros) StderrLine: {'line': b'  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:616 (find_package_handle_standard_args)\n'}
+[1.452614] (stair_modeling_ros) StderrLine: {'line': b'  CMakeLists.txt:37 (find_package)\n'}
+[1.452640] (stair_modeling_ros) StderrLine: {'line': b'This warning is for project developers.  Use -Wno-dev to suppress it.\n'}
+[1.452668] (stair_modeling_ros) StderrLine: {'line': b'\x1b[0m\n'}
+[1.452698] (stair_modeling_ros) StdoutLine: {'line': b'-- Found PCL_REGISTRATION: /usr/lib/x86_64-linux-gnu/libpcl_registration.so  \n'}
+[1.452748] (stair_modeling_ros) StdoutLine: {'line': b'-- looking for PCL_KEYPOINTS\n'}
+[1.453610] (stair_modeling_ros) StdoutLine: {'line': b'-- Found PCL_KEYPOINTS: /usr/lib/x86_64-linux-gnu/libpcl_keypoints.so  \n'}
+[1.453643] (stair_modeling_ros) StderrLine: {'line': b'\x1b[33mCMake Warning (dev) at /home/nimrod/.local/lib/python3.8/site-packages/cmake/data/share/cmake-3.26/Modules/FindPackageHandleStandardArgs.cmake:438 (message):\n'}
+[1.453673] (stair_modeling_ros) StderrLine: {'line': b'  The package name passed to `find_package_handle_standard_args`\n'}
+[1.453702] (stair_modeling_ros) StderrLine: {'line': b'  (PCL_KEYPOINTS) does not match the name of the calling package (PCL).  This\n'}
+[1.453731] (stair_modeling_ros) StderrLine: {'line': b'  can lead to problems in calling code that expects `find_package` result\n'}
+[1.453759] (stair_modeling_ros) StderrLine: {'line': b'  variables (e.g., `_FOUND`) to follow a certain pattern.\n'}
+[1.453788] (stair_modeling_ros) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[1.453816] (stair_modeling_ros) StderrLine: {'line': b'  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:616 (find_package_handle_standard_args)\n'}
+[1.453845] (stair_modeling_ros) StderrLine: {'line': b'  CMakeLists.txt:37 (find_package)\n'}
+[1.453874] (stair_modeling_ros) StderrLine: {'line': b'This warning is for project developers.  Use -Wno-dev to suppress it.\n'}
+[1.453919] (stair_modeling_ros) StderrLine: {'line': b'\x1b[0m\n'}
+[1.453946] (stair_modeling_ros) StdoutLine: {'line': b'-- looking for PCL_TRACKING\n'}
+[1.454626] (stair_modeling_ros) StderrLine: {'line': b'\x1b[33mCMake Warning (dev) at /home/nimrod/.local/lib/python3.8/site-packages/cmake/data/share/cmake-3.26/Modules/FindPackageHandleStandardArgs.cmake:438 (message):\n'}
+[1.454657] (stair_modeling_ros) StderrLine: {'line': b'  The package name passed to `find_package_handle_standard_args`\n'}
+[1.454687] (stair_modeling_ros) StderrLine: {'line': b'  (PCL_TRACKING) does not match the name of the calling package (PCL).  This\n'}
+[1.454715] (stair_modeling_ros) StderrLine: {'line': b'  can lead to problems in calling code that expects `find_package` result\n'}
+[1.454744] (stair_modeling_ros) StderrLine: {'line': b'  variables (e.g., `_FOUND`) to follow a certain pattern.\n'}
+[1.454775] (stair_modeling_ros) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[1.454803] (stair_modeling_ros) StderrLine: {'line': b'  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:616 (find_package_handle_standard_args)\n'}
+[1.454831] (stair_modeling_ros) StderrLine: {'line': b'  CMakeLists.txt:37 (find_package)\n'}
+[1.454859] (stair_modeling_ros) StderrLine: {'line': b'This warning is for project developers.  Use -Wno-dev to suppress it.\n'}
+[1.454888] (stair_modeling_ros) StderrLine: {'line': b'\x1b[0m\n'}
+[1.454917] (stair_modeling_ros) StdoutLine: {'line': b'-- Found PCL_TRACKING: /usr/lib/x86_64-linux-gnu/libpcl_tracking.so  \n'}
+[1.454965] (stair_modeling_ros) StdoutLine: {'line': b'-- looking for PCL_RECOGNITION\n'}
+[1.455597] (stair_modeling_ros) StderrLine: {'line': b'\x1b[33mCMake Warning (dev) at /home/nimrod/.local/lib/python3.8/site-packages/cmake/data/share/cmake-3.26/Modules/FindPackageHandleStandardArgs.cmake:438 (message):\n'}
+[1.455629] (stair_modeling_ros) StderrLine: {'line': b'  The package name passed to `find_package_handle_standard_args`\n'}
+[1.455660] (stair_modeling_ros) StderrLine: {'line': b'  (PCL_RECOGNITION) does not match the name of the calling package (PCL).\n'}
+[1.455691] (stair_modeling_ros) StderrLine: {'line': b'  This can lead to problems in calling code that expects `find_package`\n'}
+[1.455720] (stair_modeling_ros) StderrLine: {'line': b'  result variables (e.g., `_FOUND`) to follow a certain pattern.\n'}
+[1.455749] (stair_modeling_ros) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[1.455779] (stair_modeling_ros) StderrLine: {'line': b'  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:616 (find_package_handle_standard_args)\n'}
+[1.455807] (stair_modeling_ros) StderrLine: {'line': b'  CMakeLists.txt:37 (find_package)\n'}
+[1.455836] (stair_modeling_ros) StderrLine: {'line': b'This warning is for project developers.  Use -Wno-dev to suppress it.\n'}
+[1.455886] (stair_modeling_ros) StderrLine: {'line': b'\x1b[0m\n'}
+[1.455914] (stair_modeling_ros) StdoutLine: {'line': b'-- Found PCL_RECOGNITION: /usr/lib/x86_64-linux-gnu/libpcl_recognition.so  \n'}
+[1.455944] (stair_modeling_ros) StdoutLine: {'line': b'-- looking for PCL_STEREO\n'}
+[1.456813] (stair_modeling_ros) StderrLine: {'line': b'\x1b[33mCMake Warning (dev) at /home/nimrod/.local/lib/python3.8/site-packages/cmake/data/share/cmake-3.26/Modules/FindPackageHandleStandardArgs.cmake:438 (message):\n'}
+[1.456848] (stair_modeling_ros) StderrLine: {'line': b'  The package name passed to `find_package_handle_standard_args` (PCL_STEREO)\n'}
+[1.456889] (stair_modeling_ros) StderrLine: {'line': b'  does not match the name of the calling package (PCL).  This can lead to\n'}
+[1.456916] (stair_modeling_ros) StderrLine: {'line': b'  problems in calling code that expects `find_package` result variables\n'}
+[1.456943] (stair_modeling_ros) StderrLine: {'line': b'  (e.g., `_FOUND`) to follow a certain pattern.\n'}
+[1.456970] (stair_modeling_ros) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[1.456997] (stair_modeling_ros) StderrLine: {'line': b'  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:616 (find_package_handle_standard_args)\n'}
+[1.457024] (stair_modeling_ros) StderrLine: {'line': b'  CMakeLists.txt:37 (find_package)\n'}
+[1.457051] (stair_modeling_ros) StderrLine: {'line': b'This warning is for project developers.  Use -Wno-dev to suppress it.\n'}
+[1.457078] (stair_modeling_ros) StderrLine: {'line': b'\x1b[0m\n'}
+[1.457104] (stair_modeling_ros) StdoutLine: {'line': b'-- Found PCL_STEREO: /usr/lib/x86_64-linux-gnu/libpcl_stereo.so  \n'}
+[1.457136] (stair_modeling_ros) StdoutLine: {'line': b'-- looking for PCL_APPS\n'}
+[1.457714] (stair_modeling_ros) StderrLine: {'line': b'\x1b[33mCMake Warning (dev) at /home/nimrod/.local/lib/python3.8/site-packages/cmake/data/share/cmake-3.26/Modules/FindPackageHandleStandardArgs.cmake:438 (message):\n'}
+[1.457761] (stair_modeling_ros) StderrLine: {'line': b'  The package name passed to `find_package_handle_standard_args` (PCL_APPS)\n'}
+[1.457790] (stair_modeling_ros) StderrLine: {'line': b'  does not match the name of the calling package (PCL).  This can lead to\n'}
+[1.457819] (stair_modeling_ros) StderrLine: {'line': b'  problems in calling code that expects `find_package` result variables\n'}
+[1.457846] (stair_modeling_ros) StderrLine: {'line': b'  (e.g., `_FOUND`) to follow a certain pattern.\n'}
+[1.457873] (stair_modeling_ros) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[1.457899] (stair_modeling_ros) StderrLine: {'line': b'  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:616 (find_package_handle_standard_args)\n'}
+[1.457927] (stair_modeling_ros) StderrLine: {'line': b'  CMakeLists.txt:37 (find_package)\n'}
+[1.457954] (stair_modeling_ros) StderrLine: {'line': b'This warning is for project developers.  Use -Wno-dev to suppress it.\n'}
+[1.457980] (stair_modeling_ros) StderrLine: {'line': b'\x1b[0m\n'}
+[1.458007] (stair_modeling_ros) StdoutLine: {'line': b'-- Found PCL_APPS: /usr/lib/x86_64-linux-gnu/libpcl_apps.so  \n'}
+[1.458215] (stair_modeling_ros) StdoutLine: {'line': b'-- looking for PCL_IN_HAND_SCANNER\n'}
+[1.458398] (stair_modeling_ros) StderrLine: {'line': b'\x1b[33mCMake Warning (dev) at /home/nimrod/.local/lib/python3.8/site-packages/cmake/data/share/cmake-3.26/Modules/FindPackageHandleStandardArgs.cmake:438 (message):\n'}
+[1.458430] (stair_modeling_ros) StderrLine: {'line': b'  The package name passed to `find_package_handle_standard_args`\n'}
+[1.458459] (stair_modeling_ros) StderrLine: {'line': b'  (PCL_IN_HAND_SCANNER) does not match the name of the calling package (PCL).\n'}
+[1.458489] (stair_modeling_ros) StderrLine: {'line': b'  This can lead to problems in calling code that expects `find_package`\n'}
+[1.458518] (stair_modeling_ros) StderrLine: {'line': b'  result variables (e.g., `_FOUND`) to follow a certain pattern.\n'}
+[1.458548] (stair_modeling_ros) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[1.458577] (stair_modeling_ros) StderrLine: {'line': b'  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:619 (find_package_handle_standard_args)\n'}
+[1.458606] (stair_modeling_ros) StderrLine: {'line': b'  CMakeLists.txt:37 (find_package)\n'}
+[1.458636] (stair_modeling_ros) StderrLine: {'line': b'This warning is for project developers.  Use -Wno-dev to suppress it.\n'}
+[1.458664] (stair_modeling_ros) StderrLine: {'line': b'\x1b[0m\n'}
+[1.458723] (stair_modeling_ros) StdoutLine: {'line': b'-- Found PCL_IN_HAND_SCANNER: /usr/include/pcl-1.10  \n'}
+[1.458754] (stair_modeling_ros) StdoutLine: {'line': b'-- looking for PCL_POINT_CLOUD_EDITOR\n'}
+[1.458853] (stair_modeling_ros) StderrLine: {'line': b'\x1b[33mCMake Warning (dev) at /home/nimrod/.local/lib/python3.8/site-packages/cmake/data/share/cmake-3.26/Modules/FindPackageHandleStandardArgs.cmake:438 (message):\n'}
+[1.458885] (stair_modeling_ros) StderrLine: {'line': b'  The package name passed to `find_package_handle_standard_args`\n'}
+[1.458916] (stair_modeling_ros) StderrLine: {'line': b'  (PCL_POINT_CLOUD_EDITOR) does not match the name of the calling package\n'}
+[1.458945] (stair_modeling_ros) StderrLine: {'line': b'  (PCL).  This can lead to problems in calling code that expects\n'}
+[1.458975] (stair_modeling_ros) StderrLine: {'line': b'  `find_package` result variables (e.g., `_FOUND`) to follow a certain\n'}
+[1.459004] (stair_modeling_ros) StderrLine: {'line': b'  pattern.\n'}
+[1.459034] (stair_modeling_ros) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[1.459063] (stair_modeling_ros) StderrLine: {'line': b'  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:619 (find_package_handle_standard_args)\n'}
+[1.459112] (stair_modeling_ros) StderrLine: {'line': b'  CMakeLists.txt:37 (find_package)\n'}
+[1.459140] (stair_modeling_ros) StderrLine: {'line': b'This warning is for project developers.  Use -Wno-dev to suppress it.\n'}
+[1.459169] (stair_modeling_ros) StderrLine: {'line': b'\x1b[0m\n'}
+[1.459195] (stair_modeling_ros) StdoutLine: {'line': b'-- Found PCL_POINT_CLOUD_EDITOR: /usr/include/pcl-1.10  \n'}
+[1.459223] (stair_modeling_ros) StdoutLine: {'line': b'-- looking for PCL_OUTOFCORE\n'}
+[1.459924] (stair_modeling_ros) StderrLine: {'line': b'\x1b[33mCMake Warning (dev) at /home/nimrod/.local/lib/python3.8/site-packages/cmake/data/share/cmake-3.26/Modules/FindPackageHandleStandardArgs.cmake:438 (message):\n'}
+[1.459956] (stair_modeling_ros) StderrLine: {'line': b'  The package name passed to `find_package_handle_standard_args`\n'}
+[1.459984] (stair_modeling_ros) StderrLine: {'line': b'  (PCL_OUTOFCORE) does not match the name of the calling package (PCL).  This\n'}
+[1.460011] (stair_modeling_ros) StderrLine: {'line': b'  can lead to problems in calling code that expects `find_package` result\n'}
+[1.460040] (stair_modeling_ros) StderrLine: {'line': b'  variables (e.g., `_FOUND`) to follow a certain pattern.\n'}
+[1.460069] (stair_modeling_ros) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[1.460099] (stair_modeling_ros) StderrLine: {'line': b'  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:616 (find_package_handle_standard_args)\n'}
+[1.460128] (stair_modeling_ros) StderrLine: {'line': b'  CMakeLists.txt:37 (find_package)\n'}
+[1.460170] (stair_modeling_ros) StderrLine: {'line': b'This warning is for project developers.  Use -Wno-dev to suppress it.\n'}
+[1.460198] (stair_modeling_ros) StderrLine: {'line': b'\x1b[0m\n'}
+[1.460232] (stair_modeling_ros) StdoutLine: {'line': b'-- Found PCL_OUTOFCORE: /usr/lib/x86_64-linux-gnu/libpcl_outofcore.so  \n'}
+[1.460261] (stair_modeling_ros) StdoutLine: {'line': b'-- looking for PCL_PEOPLE\n'}
+[1.461081] (stair_modeling_ros) StderrLine: {'line': b'\x1b[33mCMake Warning (dev) at /home/nimrod/.local/lib/python3.8/site-packages/cmake/data/share/cmake-3.26/Modules/FindPackageHandleStandardArgs.cmake:438 (message):\n'}
+[1.461114] (stair_modeling_ros) StderrLine: {'line': b'  The package name passed to `find_package_handle_standard_args` (PCL_PEOPLE)\n'}
+[1.461158] (stair_modeling_ros) StderrLine: {'line': b'  does not match the name of the calling package (PCL).  This can lead to\n'}
+[1.461186] (stair_modeling_ros) StderrLine: {'line': b'  problems in calling code that expects `find_package` result variables\n'}
+[1.461213] (stair_modeling_ros) StderrLine: {'line': b'  (e.g., `_FOUND`) to follow a certain pattern.\n'}
+[1.461239] (stair_modeling_ros) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[1.461265] (stair_modeling_ros) StderrLine: {'line': b'  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:616 (find_package_handle_standard_args)\n'}
+[1.461292] (stair_modeling_ros) StderrLine: {'line': b'  CMakeLists.txt:37 (find_package)\n'}
+[1.461318] (stair_modeling_ros) StderrLine: {'line': b'This warning is for project developers.  Use -Wno-dev to suppress it.\n'}
+[1.461344] (stair_modeling_ros) StderrLine: {'line': b'\x1b[0m\n'}
+[1.461371] (stair_modeling_ros) StdoutLine: {'line': b'-- Found PCL_PEOPLE: /usr/lib/x86_64-linux-gnu/libpcl_people.so  \n'}
+[1.461845] (stair_modeling_ros) StdoutLine: {'line': b'-- Found PCL: pcl_common;pcl_kdtree;pcl_octree;pcl_search;pcl_sample_consensus;pcl_filters;pcl_io;pcl_features;pcl_ml;pcl_segmentation;pcl_visualization;pcl_surface;pcl_registration;pcl_keypoints;pcl_tracking;pcl_recognition;pcl_stereo;pcl_apps;pcl_outofcore;pcl_people;/usr/lib/x86_64-linux-gnu/libboost_system.so;/usr/lib/x86_64-linux-gnu/libboost_filesystem.so;/usr/lib/x86_64-linux-gnu/libboost_date_time.so;/usr/lib/x86_64-linux-gnu/libboost_iostreams.so;/usr/lib/x86_64-linux-gnu/libboost_regex.so;optimized;/usr/lib/x86_64-linux-gnu/libqhull.so;debug;/usr/lib/x86_64-linux-gnu/libqhull.so;/usr/lib/libOpenNI.so;/usr/lib/libOpenNI2.so;vtkChartsCore;vtkCommonColor;vtkCommonCore;vtksys;vtkCommonDataModel;vtkCommonMath;vtkCommonMisc;vtkCommonSystem;vtkCommonTransforms;vtkCommonExecutionModel;vtkFiltersGeneral;vtkCommonComputationalGeometry;vtkFiltersCore;vtkInfovisCore;vtkFiltersExtraction;vtkFiltersStatistics;vtkImagingFourier;vtkImagingCore;vtkalglib;vtkRenderingContext2D;vtkRenderingCore;vtkFiltersGeometry;vtkFiltersSources;vtkRenderingFreeType;/usr/lib/x86_64-linux-gnu/libfreetype.so;/usr/lib/x86_64-linux-gnu/libz.so;vtkFiltersModeling;vtkImagingSources;vtkInteractionStyle;vtkInteractionWidgets;vtkFiltersHybrid;vtkImagingColor;vtkImagingGeneral;vtkImagingHybrid;vtkIOImage;vtkDICOMParser;vtkmetaio;/usr/lib/x86_64-linux-gnu/libjpeg.so;/usr/lib/x86_64-linux-gnu/libpng.so;/usr/lib/x86_64-linux-gnu/libtiff.so;vtkRenderingAnnotation;vtkRenderingVolume;vtkIOXML;vtkIOCore;vtkIOXMLParser;/usr/lib/x86_64-linux-gnu/libexpat.so;vtkIOGeometry;vtkIOLegacy;vtkIOPLY;vtkRenderingLOD;vtkViewsContext2D;vtkViewsCore;vtkRenderingContextOpenGL2;vtkRenderingOpenGL2;FLANN::FLANN  \n'}
+[1.463513] (stair_modeling_ros) StdoutLine: {'line': b'-- Found visualization_msgs: 2.0.5 (/opt/ros/foxy/share/visualization_msgs/cmake)\n'}
+[1.501839] (-) TimerEvent: {}
+[1.502046] (stair_modeling_ros) StdoutLine: {'line': b'-- Found zion_msgs: 0.0.0 (/home/nimrod/ros2_ws/install/zion_msgs/share/zion_msgs/cmake)\n'}
+[1.578102] (stair_modeling_ros) StdoutLine: {'line': b'-- Configuring done (1.5s)\n'}
+[1.602021] (-) TimerEvent: {}
+[1.604424] (stair_modeling_ros) StdoutLine: {'line': b'-- Generating done (0.0s)\n'}
+[1.605930] (stair_modeling_ros) StdoutLine: {'line': b'-- Build files have been written to: /home/nimrod/ros2_ws/src/stair_detection_pkg/stair_modeling_ros/build/stair_modeling_ros\n'}
+[1.618060] (stair_modeling_ros) CommandEnded: {'returncode': 0}
+[1.618687] (stair_modeling_ros) JobProgress: {'identifier': 'stair_modeling_ros', 'progress': 'build'}
+[1.618722] (stair_modeling_ros) Command: {'cmd': ['/home/nimrod/.local/bin/cmake', '--build', '/home/nimrod/ros2_ws/src/stair_detection_pkg/stair_modeling_ros/build/stair_modeling_ros', '--', '-j16', '-l16'], 'cwd': '/home/nimrod/ros2_ws/src/stair_detection_pkg/stair_modeling_ros/build/stair_modeling_ros', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_IL:en'), ('USER', 'nimrod'), ('SSH_AGENT_PID', '2050'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/nimrod/ros2_ws/install/stair_modeling_ros/lib:/home/nimrod/ros2_ws/install/zion_msgs/lib:/home/nimrod/ros2_ws/install/zed_topic_benchmark_interfaces/lib:/home/nimrod/ros2_ws/install/zed_rgb_convert/lib:/home/nimrod/ros2_ws/install/zed_components/lib:/home/nimrod/ros2_ws/install/rviz_plugin_zed_od/lib:/home/nimrod/ros2_ws/install/zed_interfaces/lib:/home/nimrod/ros2_ws/install/image_transport/lib:/home/nimrod/ros2_ws/install/camera_info_manager/lib:/home/nimrod/ros2_ws/install/camera_calibration_parsers/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib:/usr/local/cuda-11.7/lib64:'), ('HOME', '/home/nimrod'), ('OLDPWD', '/home/nimrod/ros2_ws'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/local/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1821'), ('DBUS_SESSION_BUS_ADDRESS', ''), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '40832'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/nimrod/ros2_ws/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'nimrod'), ('JOURNAL_STREAM', '8:53061'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'nimrod'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/usr/local/cuda-11.7/bin:/home/nimrod/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/nimrod-ThinkPad-P14s-Gen-3:@/tmp/.ICE-unix/2087,unix/nimrod-ThinkPad-P14s-Gen-3:/tmp/.ICE-unix/2087'), ('INVOCATION_ID', 'cb98390c3b9043aaa39ede44fea4b74f'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/nimrod/ros2_ws/install/zion_zed_ros2_interface:/home/nimrod/ros2_ws/install/stair_modeling_ros:/home/nimrod/ros2_ws/install/stair_detection_ros:/home/nimrod/ros2_ws/install/zion_msgs:/home/nimrod/ros2_ws/install/zed_ros2:/home/nimrod/ros2_ws/install/zed_multi_camera:/home/nimrod/ros2_ws/install/zed_display_rviz2:/home/nimrod/ros2_ws/install/zed_wrapper:/home/nimrod/ros2_ws/install/zed_tutorial_video:/home/nimrod/ros2_ws/install/zed_tutorial_pos_tracking:/home/nimrod/ros2_ws/install/zed_tutorial_depth:/home/nimrod/ros2_ws/install/zed_topic_benchmark_interfaces:/home/nimrod/ros2_ws/install/zed_rgb_convert:/home/nimrod/ros2_ws/install/zed_components:/home/nimrod/ros2_ws/install/rviz_plugin_zed_od:/home/nimrod/ros2_ws/install/zed_interfaces:/home/nimrod/ros2_ws/install/image_common:/home/nimrod/ros2_ws/install/image_transport:/home/nimrod/ros2_ws/install/camera_info_manager:/home/nimrod/ros2_ws/install/camera_calibration_parsers:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:2b67f8cd-d46d-41a1-b13a-ffba7190ac87'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/nimrod/ros2_ws/src/stair_detection_pkg/stair_modeling_ros/build/stair_modeling_ros'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/nimrod/ros2_ws/install/stair_detection_ros/lib/python3.8/site-packages:/home/nimrod/ros2_ws/install/zion_msgs/lib/python3.8/site-packages:/home/nimrod/ros2_ws/install/zed_topic_benchmark_interfaces/lib/python3.8/site-packages:/home/nimrod/ros2_ws/install/zed_interfaces/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/nimrod/ros2_ws/install/zion_zed_ros2_interface:/home/nimrod/ros2_ws/install/stair_modeling_ros:/home/nimrod/ros2_ws/install/zion_msgs:/home/nimrod/ros2_ws/install/zed_ros2:/home/nimrod/ros2_ws/install/zed_multi_camera:/home/nimrod/ros2_ws/install/zed_display_rviz2:/home/nimrod/ros2_ws/install/zed_wrapper:/home/nimrod/ros2_ws/install/zed_tutorial_video:/home/nimrod/ros2_ws/install/zed_tutorial_pos_tracking:/home/nimrod/ros2_ws/install/zed_tutorial_depth:/home/nimrod/ros2_ws/install/zed_topic_benchmark_interfaces:/home/nimrod/ros2_ws/install/zed_rgb_convert:/home/nimrod/ros2_ws/install/zed_components:/home/nimrod/ros2_ws/install/rviz_plugin_zed_od:/home/nimrod/ros2_ws/install/zed_interfaces:/home/nimrod/ros2_ws/install/image_common:/home/nimrod/ros2_ws/install/image_transport:/home/nimrod/ros2_ws/install/camera_info_manager:/home/nimrod/ros2_ws/install/camera_calibration_parsers:/home/nimrod/ros2_ws/install/stair_detection_ros:/opt/ros/foxy')]), 'shell': False}
+[1.648029] (stair_modeling_ros) StdoutLine: {'line': b'[ 11%] \x1b[32mBuilding CXX object CMakeFiles/zion_tf2_broadcaster.dir/src/zion_tf2_broadcaster.cpp.o\x1b[0m\n'}
+[1.648279] (stair_modeling_ros) StdoutLine: {'line': b'[ 22%] \x1b[32mBuilding CXX object CMakeFiles/stair_modeling_ros.dir/src/plane.cpp.o\x1b[0m\n'}
+[1.648756] (stair_modeling_ros) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/stair_modeling_ros.dir/src/stair.cpp.o\x1b[0m\n'}
+[1.648895] (stair_modeling_ros) StdoutLine: {'line': b'[ 44%] \x1b[32mBuilding CXX object CMakeFiles/stair_modeling_ros.dir/src/stair_modeling.cpp.o\x1b[0m\n'}
+[1.649613] (stair_modeling_ros) StdoutLine: {'line': b'[ 55%] \x1b[32mBuilding CXX object CMakeFiles/stair_modeling_ros.dir/src/utilities.cpp.o\x1b[0m\n'}
+[1.702254] (-) TimerEvent: {}
+[1.802593] (-) TimerEvent: {}
+[1.902994] (-) TimerEvent: {}
+[2.003412] (-) TimerEvent: {}
+[2.103780] (-) TimerEvent: {}
+[2.204119] (-) TimerEvent: {}
+[2.304464] (-) TimerEvent: {}
+[2.404824] (-) TimerEvent: {}
+[2.505119] (-) TimerEvent: {}
+[2.605486] (-) TimerEvent: {}
+[2.705902] (-) TimerEvent: {}
+[2.806300] (-) TimerEvent: {}
+[2.906706] (-) TimerEvent: {}
+[3.007096] (-) TimerEvent: {}
+[3.107489] (-) TimerEvent: {}
+[3.207864] (-) TimerEvent: {}
+[3.308273] (-) TimerEvent: {}
+[3.408618] (-) TimerEvent: {}
+[3.508949] (-) TimerEvent: {}
+[3.609336] (-) TimerEvent: {}
+[3.709813] (-) TimerEvent: {}
+[3.810341] (-) TimerEvent: {}
+[3.910927] (-) TimerEvent: {}
+[4.011594] (-) TimerEvent: {}
+[4.112287] (-) TimerEvent: {}
+[4.212953] (-) TimerEvent: {}
+[4.313651] (-) TimerEvent: {}
+[4.414356] (-) TimerEvent: {}
+[4.515013] (-) TimerEvent: {}
+[4.615730] (-) TimerEvent: {}
+[4.716442] (-) TimerEvent: {}
+[4.817161] (-) TimerEvent: {}
+[4.917875] (-) TimerEvent: {}
+[5.018611] (-) TimerEvent: {}
+[5.119401] (-) TimerEvent: {}
+[5.220178] (-) TimerEvent: {}
+[5.320931] (-) TimerEvent: {}
+[5.421709] (-) TimerEvent: {}
+[5.522493] (-) TimerEvent: {}
+[5.623261] (-) TimerEvent: {}
+[5.724023] (-) TimerEvent: {}
+[5.824820] (-) TimerEvent: {}
+[5.925564] (-) TimerEvent: {}
+[6.026274] (-) TimerEvent: {}
+[6.127070] (-) TimerEvent: {}
+[6.227856] (-) TimerEvent: {}
+[6.328603] (-) TimerEvent: {}
+[6.429249] (-) TimerEvent: {}
+[6.529970] (-) TimerEvent: {}
+[6.630765] (-) TimerEvent: {}
+[6.731538] (-) TimerEvent: {}
+[6.832319] (-) TimerEvent: {}
+[6.933084] (-) TimerEvent: {}
+[7.033856] (-) TimerEvent: {}
+[7.134642] (-) TimerEvent: {}
+[7.235312] (-) TimerEvent: {}
+[7.336080] (-) TimerEvent: {}
+[7.436883] (-) TimerEvent: {}
+[7.537652] (-) TimerEvent: {}
+[7.638436] (-) TimerEvent: {}
+[7.739210] (-) TimerEvent: {}
+[7.839989] (-) TimerEvent: {}
+[7.940763] (-) TimerEvent: {}
+[8.041490] (-) TimerEvent: {}
+[8.142194] (-) TimerEvent: {}
+[8.242891] (-) TimerEvent: {}
+[8.343608] (-) TimerEvent: {}
+[8.444396] (-) TimerEvent: {}
+[8.545176] (-) TimerEvent: {}
+[8.645957] (-) TimerEvent: {}
+[8.746735] (-) TimerEvent: {}
+[8.788791] (stair_modeling_ros) StdoutLine: {'line': b'[ 66%] \x1b[32m\x1b[1mLinking CXX executable zion_tf2_broadcaster\x1b[0m\n'}
+[8.847021] (-) TimerEvent: {}
+[8.947801] (-) TimerEvent: {}
+[9.048525] (-) TimerEvent: {}
+[9.149368] (-) TimerEvent: {}
+[9.250215] (-) TimerEvent: {}
+[9.270917] (stair_modeling_ros) StdoutLine: {'line': b'[ 66%] Built target zion_tf2_broadcaster\n'}
+[9.350508] (-) TimerEvent: {}
+[9.451272] (-) TimerEvent: {}
+[9.552044] (-) TimerEvent: {}
+[9.652758] (-) TimerEvent: {}
+[9.753484] (-) TimerEvent: {}
+[9.854307] (-) TimerEvent: {}
+[9.955112] (-) TimerEvent: {}
+[10.055908] (-) TimerEvent: {}
+[10.156598] (-) TimerEvent: {}
+[10.257330] (-) TimerEvent: {}
+[10.358071] (-) TimerEvent: {}
+[10.458883] (-) TimerEvent: {}
+[10.559586] (-) TimerEvent: {}
+[10.660319] (-) TimerEvent: {}
+[10.760921] (-) TimerEvent: {}
+[10.861627] (-) TimerEvent: {}
+[10.962318] (-) TimerEvent: {}
+[11.062953] (-) TimerEvent: {}
+[11.163567] (-) TimerEvent: {}
+[11.264326] (-) TimerEvent: {}
+[11.365024] (-) TimerEvent: {}
+[11.465683] (-) TimerEvent: {}
+[11.566311] (-) TimerEvent: {}
+[11.666962] (-) TimerEvent: {}
+[11.767595] (-) TimerEvent: {}
+[11.868232] (-) TimerEvent: {}
+[11.968801] (-) TimerEvent: {}
+[12.069436] (-) TimerEvent: {}
+[12.170117] (-) TimerEvent: {}
+[12.270712] (-) TimerEvent: {}
+[12.371317] (-) TimerEvent: {}
+[12.471870] (-) TimerEvent: {}
+[12.572459] (-) TimerEvent: {}
+[12.672949] (-) TimerEvent: {}
+[12.773540] (-) TimerEvent: {}
+[12.874122] (-) TimerEvent: {}
+[12.974699] (-) TimerEvent: {}
+[13.075277] (-) TimerEvent: {}
+[13.175836] (-) TimerEvent: {}
+[13.276395] (-) TimerEvent: {}
+[13.376978] (-) TimerEvent: {}
+[13.477566] (-) TimerEvent: {}
+[13.578145] (-) TimerEvent: {}
+[13.678726] (-) TimerEvent: {}
+[13.779300] (-) TimerEvent: {}
+[13.879874] (-) TimerEvent: {}
+[13.980474] (-) TimerEvent: {}
+[14.081045] (-) TimerEvent: {}
+[14.181606] (-) TimerEvent: {}
+[14.282167] (-) TimerEvent: {}
+[14.382708] (-) TimerEvent: {}
+[14.483277] (-) TimerEvent: {}
+[14.583829] (-) TimerEvent: {}
+[14.684383] (-) TimerEvent: {}
+[14.784923] (-) TimerEvent: {}
+[14.885463] (-) TimerEvent: {}
+[14.986019] (-) TimerEvent: {}
+[15.086503] (-) TimerEvent: {}
+[15.186924] (-) TimerEvent: {}
+[15.287421] (-) TimerEvent: {}
+[15.387917] (-) TimerEvent: {}
+[15.488417] (-) TimerEvent: {}
+[15.588851] (-) TimerEvent: {}
+[15.689353] (-) TimerEvent: {}
+[15.789919] (-) TimerEvent: {}
+[15.890500] (-) TimerEvent: {}
+[15.991142] (-) TimerEvent: {}
+[16.091689] (-) TimerEvent: {}
+[16.192200] (-) TimerEvent: {}
+[16.292868] (-) TimerEvent: {}
+[16.393407] (-) TimerEvent: {}
+[16.493954] (-) TimerEvent: {}
+[16.594471] (-) TimerEvent: {}
+[16.694955] (-) TimerEvent: {}
+[16.795439] (-) TimerEvent: {}
+[16.895856] (-) TimerEvent: {}
+[16.996429] (-) TimerEvent: {}
+[17.096791] (-) TimerEvent: {}
+[17.197168] (-) TimerEvent: {}
+[17.297566] (-) TimerEvent: {}
+[17.397948] (-) TimerEvent: {}
+[17.498329] (-) TimerEvent: {}
+[17.598688] (-) TimerEvent: {}
+[17.699059] (-) TimerEvent: {}
+[17.799413] (-) TimerEvent: {}
+[17.899874] (-) TimerEvent: {}
+[18.000278] (-) TimerEvent: {}
+[18.100618] (-) TimerEvent: {}
+[18.200989] (-) TimerEvent: {}
+[18.301467] (-) TimerEvent: {}
+[18.401835] (-) TimerEvent: {}
+[18.502212] (-) TimerEvent: {}
+[18.602576] (-) TimerEvent: {}
+[18.702950] (-) TimerEvent: {}
+[18.803325] (-) TimerEvent: {}
+[18.903703] (-) TimerEvent: {}
+[19.004070] (-) TimerEvent: {}
+[19.104464] (-) TimerEvent: {}
+[19.204764] (-) TimerEvent: {}
+[19.305123] (-) TimerEvent: {}
+[19.405489] (-) TimerEvent: {}
+[19.505845] (-) TimerEvent: {}
+[19.606189] (-) TimerEvent: {}
+[19.706541] (-) TimerEvent: {}
+[19.806897] (-) TimerEvent: {}
+[19.907245] (-) TimerEvent: {}
+[20.007596] (-) TimerEvent: {}
+[20.107943] (-) TimerEvent: {}
+[20.208295] (-) TimerEvent: {}
+[20.308548] (-) TimerEvent: {}
+[20.408845] (-) TimerEvent: {}
+[20.509303] (-) TimerEvent: {}
+[20.609648] (-) TimerEvent: {}
+[20.710011] (-) TimerEvent: {}
+[20.810366] (-) TimerEvent: {}
+[20.910712] (-) TimerEvent: {}
+[21.011067] (-) TimerEvent: {}
+[21.111420] (-) TimerEvent: {}
+[21.211789] (-) TimerEvent: {}
+[21.312152] (-) TimerEvent: {}
+[21.412422] (-) TimerEvent: {}
+[21.512696] (-) TimerEvent: {}
+[21.613040] (-) TimerEvent: {}
+[21.713432] (-) TimerEvent: {}
+[21.813794] (-) TimerEvent: {}
+[21.914082] (-) TimerEvent: {}
+[22.014458] (-) TimerEvent: {}
+[22.114924] (-) TimerEvent: {}
+[22.215339] (-) TimerEvent: {}
+[22.220630] (stair_modeling_ros) StdoutLine: {'line': b'[ 77%] \x1b[32m\x1b[1mLinking CXX shared library libstair_modeling_ros.so\x1b[0m\n'}
+[22.315555] (-) TimerEvent: {}
+[22.415865] (-) TimerEvent: {}
+[22.516196] (-) TimerEvent: {}
+[22.616574] (-) TimerEvent: {}
+[22.716908] (-) TimerEvent: {}
+[22.817245] (-) TimerEvent: {}
+[22.917668] (-) TimerEvent: {}
+[23.018112] (-) TimerEvent: {}
+[23.118558] (-) TimerEvent: {}
+[23.218931] (-) TimerEvent: {}
+[23.319349] (-) TimerEvent: {}
+[23.419793] (-) TimerEvent: {}
+[23.520253] (-) TimerEvent: {}
+[23.620605] (-) TimerEvent: {}
+[23.721034] (-) TimerEvent: {}
+[23.821472] (-) TimerEvent: {}
+[23.921934] (-) TimerEvent: {}
+[24.022473] (-) TimerEvent: {}
+[24.123005] (-) TimerEvent: {}
+[24.223439] (-) TimerEvent: {}
+[24.324014] (-) TimerEvent: {}
+[24.424418] (-) TimerEvent: {}
+[24.524823] (-) TimerEvent: {}
+[24.625187] (-) TimerEvent: {}
+[24.725565] (-) TimerEvent: {}
+[24.797229] (stair_modeling_ros) StdoutLine: {'line': b'[ 77%] Built target stair_modeling_ros\n'}
+[24.806827] (stair_modeling_ros) StdoutLine: {'line': b'[ 88%] \x1b[32mBuilding CXX object CMakeFiles/stair_modeling_ros_node.dir/src/stair_modeling_ros_node.cpp.o\x1b[0m\n'}
+[24.825778] (-) TimerEvent: {}
+[24.926206] (-) TimerEvent: {}
+[25.026583] (-) TimerEvent: {}
+[25.126974] (-) TimerEvent: {}
+[25.227337] (-) TimerEvent: {}
+[25.327757] (-) TimerEvent: {}
+[25.428138] (-) TimerEvent: {}
+[25.528588] (-) TimerEvent: {}
+[25.628930] (-) TimerEvent: {}
+[25.729318] (-) TimerEvent: {}
+[25.829697] (-) TimerEvent: {}
+[25.929981] (-) TimerEvent: {}
+[26.030351] (-) TimerEvent: {}
+[26.130732] (-) TimerEvent: {}
+[26.231097] (-) TimerEvent: {}
+[26.331474] (-) TimerEvent: {}
+[26.431848] (-) TimerEvent: {}
+[26.532133] (-) TimerEvent: {}
+[26.632457] (-) TimerEvent: {}
+[26.732829] (-) TimerEvent: {}
+[26.833201] (-) TimerEvent: {}
+[26.933577] (-) TimerEvent: {}
+[27.034042] (-) TimerEvent: {}
+[27.134487] (-) TimerEvent: {}
+[27.234907] (-) TimerEvent: {}
+[27.335320] (-) TimerEvent: {}
+[27.435694] (-) TimerEvent: {}
+[27.536105] (-) TimerEvent: {}
+[27.636518] (-) TimerEvent: {}
+[27.736860] (-) TimerEvent: {}
+[27.837275] (-) TimerEvent: {}
+[27.937683] (-) TimerEvent: {}
+[28.038034] (-) TimerEvent: {}
+[28.138407] (-) TimerEvent: {}
+[28.238763] (-) TimerEvent: {}
+[28.339120] (-) TimerEvent: {}
+[28.439460] (-) TimerEvent: {}
+[28.539810] (-) TimerEvent: {}
+[28.640254] (-) TimerEvent: {}
+[28.740599] (-) TimerEvent: {}
+[28.840957] (-) TimerEvent: {}
+[28.941334] (-) TimerEvent: {}
+[29.041732] (-) TimerEvent: {}
+[29.142080] (-) TimerEvent: {}
+[29.242566] (-) TimerEvent: {}
+[29.342999] (-) TimerEvent: {}
+[29.443361] (-) TimerEvent: {}
+[29.543785] (-) TimerEvent: {}
+[29.644180] (-) TimerEvent: {}
+[29.744593] (-) TimerEvent: {}
+[29.845012] (-) TimerEvent: {}
+[29.945426] (-) TimerEvent: {}
+[30.045858] (-) TimerEvent: {}
+[30.146265] (-) TimerEvent: {}
+[30.246693] (-) TimerEvent: {}
+[30.347121] (-) TimerEvent: {}
+[30.447544] (-) TimerEvent: {}
+[30.547954] (-) TimerEvent: {}
+[30.648370] (-) TimerEvent: {}
+[30.748707] (-) TimerEvent: {}
+[30.849093] (-) TimerEvent: {}
+[30.949532] (-) TimerEvent: {}
+[31.049926] (-) TimerEvent: {}
+[31.150318] (-) TimerEvent: {}
+[31.250761] (-) TimerEvent: {}
+[31.351205] (-) TimerEvent: {}
+[31.451605] (-) TimerEvent: {}
+[31.551976] (-) TimerEvent: {}
+[31.652416] (-) TimerEvent: {}
+[31.752903] (-) TimerEvent: {}
+[31.853412] (-) TimerEvent: {}
+[31.953818] (-) TimerEvent: {}
+[32.054214] (-) TimerEvent: {}
+[32.154667] (-) TimerEvent: {}
+[32.255046] (-) TimerEvent: {}
+[32.355405] (-) TimerEvent: {}
+[32.455890] (-) TimerEvent: {}
+[32.556317] (-) TimerEvent: {}
+[32.656668] (-) TimerEvent: {}
+[32.757063] (-) TimerEvent: {}
+[32.857461] (-) TimerEvent: {}
+[32.957936] (-) TimerEvent: {}
+[33.058387] (-) TimerEvent: {}
+[33.158867] (-) TimerEvent: {}
+[33.259290] (-) TimerEvent: {}
+[33.359752] (-) TimerEvent: {}
+[33.460154] (-) TimerEvent: {}
+[33.560578] (-) TimerEvent: {}
+[33.660955] (-) TimerEvent: {}
+[33.761351] (-) TimerEvent: {}
+[33.861710] (-) TimerEvent: {}
+[33.962189] (-) TimerEvent: {}
+[34.062580] (-) TimerEvent: {}
+[34.163087] (-) TimerEvent: {}
+[34.263523] (-) TimerEvent: {}
+[34.363964] (-) TimerEvent: {}
+[34.464365] (-) TimerEvent: {}
+[34.564757] (-) TimerEvent: {}
+[34.617697] (stair_modeling_ros) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable stair_modeling_ros_node\x1b[0m\n'}
+[34.664871] (-) TimerEvent: {}
+[34.765339] (-) TimerEvent: {}
+[34.865758] (-) TimerEvent: {}
+[34.966186] (-) TimerEvent: {}
+[35.066590] (-) TimerEvent: {}
+[35.167006] (-) TimerEvent: {}
+[35.267500] (-) TimerEvent: {}
+[35.367977] (-) TimerEvent: {}
+[35.468365] (-) TimerEvent: {}
+[35.568792] (-) TimerEvent: {}
+[35.669223] (-) TimerEvent: {}
+[35.673708] (stair_modeling_ros) StdoutLine: {'line': b'[100%] Built target stair_modeling_ros_node\n'}
+[35.685341] (stair_modeling_ros) CommandEnded: {'returncode': 0}
+[35.769904] (stair_modeling_ros) JobProgress: {'identifier': 'stair_modeling_ros', 'progress': 'install'}
+[35.770126] (-) TimerEvent: {}
+[35.822439] (stair_modeling_ros) Command: {'cmd': ['/home/nimrod/.local/bin/cmake', '--install', '/home/nimrod/ros2_ws/src/stair_detection_pkg/stair_modeling_ros/build/stair_modeling_ros'], 'cwd': '/home/nimrod/ros2_ws/src/stair_detection_pkg/stair_modeling_ros/build/stair_modeling_ros', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_IL:en'), ('USER', 'nimrod'), ('SSH_AGENT_PID', '2050'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/nimrod/ros2_ws/install/stair_modeling_ros/lib:/home/nimrod/ros2_ws/install/zion_msgs/lib:/home/nimrod/ros2_ws/install/zed_topic_benchmark_interfaces/lib:/home/nimrod/ros2_ws/install/zed_rgb_convert/lib:/home/nimrod/ros2_ws/install/zed_components/lib:/home/nimrod/ros2_ws/install/rviz_plugin_zed_od/lib:/home/nimrod/ros2_ws/install/zed_interfaces/lib:/home/nimrod/ros2_ws/install/image_transport/lib:/home/nimrod/ros2_ws/install/camera_info_manager/lib:/home/nimrod/ros2_ws/install/camera_calibration_parsers/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib:/usr/local/cuda-11.7/lib64:'), ('HOME', '/home/nimrod'), ('OLDPWD', '/home/nimrod/ros2_ws'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/local/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1821'), ('DBUS_SESSION_BUS_ADDRESS', ''), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '40832'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/nimrod/ros2_ws/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'nimrod'), ('JOURNAL_STREAM', '8:53061'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'nimrod'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/usr/local/cuda-11.7/bin:/home/nimrod/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/nimrod-ThinkPad-P14s-Gen-3:@/tmp/.ICE-unix/2087,unix/nimrod-ThinkPad-P14s-Gen-3:/tmp/.ICE-unix/2087'), ('INVOCATION_ID', 'cb98390c3b9043aaa39ede44fea4b74f'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/nimrod/ros2_ws/install/zion_zed_ros2_interface:/home/nimrod/ros2_ws/install/stair_modeling_ros:/home/nimrod/ros2_ws/install/stair_detection_ros:/home/nimrod/ros2_ws/install/zion_msgs:/home/nimrod/ros2_ws/install/zed_ros2:/home/nimrod/ros2_ws/install/zed_multi_camera:/home/nimrod/ros2_ws/install/zed_display_rviz2:/home/nimrod/ros2_ws/install/zed_wrapper:/home/nimrod/ros2_ws/install/zed_tutorial_video:/home/nimrod/ros2_ws/install/zed_tutorial_pos_tracking:/home/nimrod/ros2_ws/install/zed_tutorial_depth:/home/nimrod/ros2_ws/install/zed_topic_benchmark_interfaces:/home/nimrod/ros2_ws/install/zed_rgb_convert:/home/nimrod/ros2_ws/install/zed_components:/home/nimrod/ros2_ws/install/rviz_plugin_zed_od:/home/nimrod/ros2_ws/install/zed_interfaces:/home/nimrod/ros2_ws/install/image_common:/home/nimrod/ros2_ws/install/image_transport:/home/nimrod/ros2_ws/install/camera_info_manager:/home/nimrod/ros2_ws/install/camera_calibration_parsers:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:2b67f8cd-d46d-41a1-b13a-ffba7190ac87'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/nimrod/ros2_ws/src/stair_detection_pkg/stair_modeling_ros/build/stair_modeling_ros'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/nimrod/ros2_ws/install/stair_detection_ros/lib/python3.8/site-packages:/home/nimrod/ros2_ws/install/zion_msgs/lib/python3.8/site-packages:/home/nimrod/ros2_ws/install/zed_topic_benchmark_interfaces/lib/python3.8/site-packages:/home/nimrod/ros2_ws/install/zed_interfaces/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/nimrod/ros2_ws/install/zion_zed_ros2_interface:/home/nimrod/ros2_ws/install/stair_modeling_ros:/home/nimrod/ros2_ws/install/zion_msgs:/home/nimrod/ros2_ws/install/zed_ros2:/home/nimrod/ros2_ws/install/zed_multi_camera:/home/nimrod/ros2_ws/install/zed_display_rviz2:/home/nimrod/ros2_ws/install/zed_wrapper:/home/nimrod/ros2_ws/install/zed_tutorial_video:/home/nimrod/ros2_ws/install/zed_tutorial_pos_tracking:/home/nimrod/ros2_ws/install/zed_tutorial_depth:/home/nimrod/ros2_ws/install/zed_topic_benchmark_interfaces:/home/nimrod/ros2_ws/install/zed_rgb_convert:/home/nimrod/ros2_ws/install/zed_components:/home/nimrod/ros2_ws/install/rviz_plugin_zed_od:/home/nimrod/ros2_ws/install/zed_interfaces:/home/nimrod/ros2_ws/install/image_common:/home/nimrod/ros2_ws/install/image_transport:/home/nimrod/ros2_ws/install/camera_info_manager:/home/nimrod/ros2_ws/install/camera_calibration_parsers:/home/nimrod/ros2_ws/install/stair_detection_ros:/opt/ros/foxy')]), 'shell': False}
+[35.865433] (stair_modeling_ros) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[35.866012] (stair_modeling_ros) StdoutLine: {'line': b'-- Installing: /home/nimrod/ros2_ws/src/stair_detection_pkg/stair_modeling_ros/install/stair_modeling_ros/lib/libstair_modeling_ros.so\n'}
+[35.870285] (-) TimerEvent: {}
+[35.873823] (stair_modeling_ros) StdoutLine: {'line': b'-- Set runtime path of "/home/nimrod/ros2_ws/src/stair_detection_pkg/stair_modeling_ros/install/stair_modeling_ros/lib/libstair_modeling_ros.so" to ""\n'}
+[35.874157] (stair_modeling_ros) StdoutLine: {'line': b'-- Installing: /home/nimrod/ros2_ws/src/stair_detection_pkg/stair_modeling_ros/install/stair_modeling_ros/lib/stair_modeling_ros/stair_modeling_ros_node\n'}
+[35.874492] (stair_modeling_ros) StdoutLine: {'line': b'-- Set runtime path of "/home/nimrod/ros2_ws/src/stair_detection_pkg/stair_modeling_ros/install/stair_modeling_ros/lib/stair_modeling_ros/stair_modeling_ros_node" to ""\n'}
+[35.874722] (stair_modeling_ros) StdoutLine: {'line': b'-- Installing: /home/nimrod/ros2_ws/src/stair_detection_pkg/stair_modeling_ros/install/stair_modeling_ros/lib/stair_modeling_ros/zion_tf2_broadcaster\n'}
+[35.876423] (stair_modeling_ros) StdoutLine: {'line': b'-- Set runtime path of "/home/nimrod/ros2_ws/src/stair_detection_pkg/stair_modeling_ros/install/stair_modeling_ros/lib/stair_modeling_ros/zion_tf2_broadcaster" to ""\n'}
+[35.876938] (stair_modeling_ros) StdoutLine: {'line': b'-- Installing: /home/nimrod/ros2_ws/src/stair_detection_pkg/stair_modeling_ros/install/stair_modeling_ros/include/stair_modeling_ros\n'}
+[35.877233] (stair_modeling_ros) StdoutLine: {'line': b'-- Installing: /home/nimrod/ros2_ws/src/stair_detection_pkg/stair_modeling_ros/install/stair_modeling_ros/share/stair_modeling_ros/rviz2\n'}
+[35.877491] (stair_modeling_ros) StdoutLine: {'line': b'-- Installing: /home/nimrod/ros2_ws/src/stair_detection_pkg/stair_modeling_ros/install/stair_modeling_ros/share/stair_modeling_ros/rviz2/stair_modeling.rviz\n'}
+[35.877719] (stair_modeling_ros) StdoutLine: {'line': b'-- Installing: /home/nimrod/ros2_ws/src/stair_detection_pkg/stair_modeling_ros/install/stair_modeling_ros/share/stair_modeling_ros/params\n'}
+[35.877964] (stair_modeling_ros) StdoutLine: {'line': b'-- Installing: /home/nimrod/ros2_ws/src/stair_detection_pkg/stair_modeling_ros/install/stair_modeling_ros/share/stair_modeling_ros/params/stair_modeling_params.yaml\n'}
+[35.878176] (stair_modeling_ros) StdoutLine: {'line': b'-- Installing: /home/nimrod/ros2_ws/src/stair_detection_pkg/stair_modeling_ros/install/stair_modeling_ros/share/stair_modeling_ros/launch\n'}
+[35.878393] (stair_modeling_ros) StdoutLine: {'line': b'-- Installing: /home/nimrod/ros2_ws/src/stair_detection_pkg/stair_modeling_ros/install/stair_modeling_ros/share/stair_modeling_ros/launch/stair_modeling_view.launch.py\n'}
+[35.878579] (stair_modeling_ros) StdoutLine: {'line': b'-- Installing: /home/nimrod/ros2_ws/src/stair_detection_pkg/stair_modeling_ros/install/stair_modeling_ros/share/stair_modeling_ros/launch/stair_modeling.launch.py\n'}
+[35.878760] (stair_modeling_ros) StdoutLine: {'line': b'-- Installing: /home/nimrod/ros2_ws/src/stair_detection_pkg/stair_modeling_ros/install/stair_modeling_ros/share/ament_index/resource_index/package_run_dependencies/stair_modeling_ros\n'}
+[35.878923] (stair_modeling_ros) StdoutLine: {'line': b'-- Installing: /home/nimrod/ros2_ws/src/stair_detection_pkg/stair_modeling_ros/install/stair_modeling_ros/share/ament_index/resource_index/parent_prefix_path/stair_modeling_ros\n'}
+[35.879087] (stair_modeling_ros) StdoutLine: {'line': b'-- Installing: /home/nimrod/ros2_ws/src/stair_detection_pkg/stair_modeling_ros/install/stair_modeling_ros/share/stair_modeling_ros/environment/ament_prefix_path.sh\n'}
+[35.879245] (stair_modeling_ros) StdoutLine: {'line': b'-- Installing: /home/nimrod/ros2_ws/src/stair_detection_pkg/stair_modeling_ros/install/stair_modeling_ros/share/stair_modeling_ros/environment/ament_prefix_path.dsv\n'}
+[35.879407] (stair_modeling_ros) StdoutLine: {'line': b'-- Installing: /home/nimrod/ros2_ws/src/stair_detection_pkg/stair_modeling_ros/install/stair_modeling_ros/share/stair_modeling_ros/environment/path.sh\n'}
+[35.879563] (stair_modeling_ros) StdoutLine: {'line': b'-- Installing: /home/nimrod/ros2_ws/src/stair_detection_pkg/stair_modeling_ros/install/stair_modeling_ros/share/stair_modeling_ros/environment/path.dsv\n'}
+[35.879716] (stair_modeling_ros) StdoutLine: {'line': b'-- Installing: /home/nimrod/ros2_ws/src/stair_detection_pkg/stair_modeling_ros/install/stair_modeling_ros/share/stair_modeling_ros/local_setup.bash\n'}
+[35.879869] (stair_modeling_ros) StdoutLine: {'line': b'-- Installing: /home/nimrod/ros2_ws/src/stair_detection_pkg/stair_modeling_ros/install/stair_modeling_ros/share/stair_modeling_ros/local_setup.sh\n'}
+[35.880020] (stair_modeling_ros) StdoutLine: {'line': b'-- Installing: /home/nimrod/ros2_ws/src/stair_detection_pkg/stair_modeling_ros/install/stair_modeling_ros/share/stair_modeling_ros/local_setup.zsh\n'}
+[35.880171] (stair_modeling_ros) StdoutLine: {'line': b'-- Installing: /home/nimrod/ros2_ws/src/stair_detection_pkg/stair_modeling_ros/install/stair_modeling_ros/share/stair_modeling_ros/local_setup.dsv\n'}
+[35.880339] (stair_modeling_ros) StdoutLine: {'line': b'-- Installing: /home/nimrod/ros2_ws/src/stair_detection_pkg/stair_modeling_ros/install/stair_modeling_ros/share/stair_modeling_ros/package.dsv\n'}
+[35.880495] (stair_modeling_ros) StdoutLine: {'line': b'-- Installing: /home/nimrod/ros2_ws/src/stair_detection_pkg/stair_modeling_ros/install/stair_modeling_ros/share/ament_index/resource_index/packages/stair_modeling_ros\n'}
+[35.880649] (stair_modeling_ros) StdoutLine: {'line': b'-- Installing: /home/nimrod/ros2_ws/src/stair_detection_pkg/stair_modeling_ros/install/stair_modeling_ros/share/stair_modeling_ros/cmake/stair_modeling_rosConfig.cmake\n'}
+[35.880803] (stair_modeling_ros) StdoutLine: {'line': b'-- Installing: /home/nimrod/ros2_ws/src/stair_detection_pkg/stair_modeling_ros/install/stair_modeling_ros/share/stair_modeling_ros/cmake/stair_modeling_rosConfig-version.cmake\n'}
+[35.880961] (stair_modeling_ros) StdoutLine: {'line': b'-- Installing: /home/nimrod/ros2_ws/src/stair_detection_pkg/stair_modeling_ros/install/stair_modeling_ros/share/stair_modeling_ros/package.xml\n'}
+[35.885527] (stair_modeling_ros) CommandEnded: {'returncode': 0}
+[35.971245] (-) TimerEvent: {}
+[36.072408] (-) TimerEvent: {}
+[36.173363] (-) TimerEvent: {}
+[36.276162] (-) TimerEvent: {}
+[36.379306] (-) TimerEvent: {}
+[36.481803] (-) TimerEvent: {}
+[36.585102] (-) TimerEvent: {}
+[36.686336] (stair_modeling_ros) JobEnded: {'identifier': 'stair_modeling_ros', 'rc': 0}
+[36.687878] (-) TimerEvent: {}
+[36.688074] (-) EventReactorShutdown: {}

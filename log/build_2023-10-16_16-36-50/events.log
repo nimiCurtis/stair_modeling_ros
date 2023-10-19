@@ -1,0 +1,313 @@
+[0.000000] (-) TimerEvent: {}
+[0.000460] (stair_modeling_ros) JobQueued: {'identifier': 'stair_modeling_ros', 'dependencies': OrderedDict()}
+[0.001167] (stair_modeling_ros) JobStarted: {'identifier': 'stair_modeling_ros'}
+[0.100048] (-) TimerEvent: {}
+[0.200982] (-) TimerEvent: {}
+[0.303236] (-) TimerEvent: {}
+[0.403822] (-) TimerEvent: {}
+[0.474091] (stair_modeling_ros) JobProgress: {'identifier': 'stair_modeling_ros', 'progress': 'cmake'}
+[0.477096] (stair_modeling_ros) JobProgress: {'identifier': 'stair_modeling_ros', 'progress': 'build'}
+[0.477288] (stair_modeling_ros) Command: {'cmd': ['/home/nimrod/.local/bin/cmake', '--build', '/home/nimrod/ros2_ws/src/stair_detection_pkg/stair_modeling_ros/build/stair_modeling_ros', '--', '-j16', '-l16'], 'cwd': '/home/nimrod/ros2_ws/src/stair_detection_pkg/stair_modeling_ros/build/stair_modeling_ros', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_IL:en'), ('USER', 'nimrod'), ('SSH_AGENT_PID', '2050'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/nimrod/ros2_ws/src/stair_detection_pkg/stair_modeling_ros/install/stair_modeling_ros/lib:/home/nimrod/ros2_ws/install/stair_modeling_ros/lib:/home/nimrod/ros2_ws/install/zion_msgs/lib:/home/nimrod/ros2_ws/install/zed_topic_benchmark_interfaces/lib:/home/nimrod/ros2_ws/install/zed_rgb_convert/lib:/home/nimrod/ros2_ws/install/zed_components/lib:/home/nimrod/ros2_ws/install/rviz_plugin_zed_od/lib:/home/nimrod/ros2_ws/install/zed_interfaces/lib:/home/nimrod/ros2_ws/install/image_transport/lib:/home/nimrod/ros2_ws/install/camera_info_manager/lib:/home/nimrod/ros2_ws/install/camera_calibration_parsers/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib:/usr/local/cuda-11.7/lib64:'), ('HOME', '/home/nimrod'), ('OLDPWD', '/home/nimrod/ros2_ws'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/local/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1821'), ('DBUS_SESSION_BUS_ADDRESS', ''), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '40832'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/nimrod/ros2_ws/src/stair_detection_pkg/stair_modeling_ros/install:/home/nimrod/ros2_ws/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'nimrod'), ('JOURNAL_STREAM', '8:53061'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'nimrod'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/usr/local/cuda-11.7/bin:/home/nimrod/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/nimrod-ThinkPad-P14s-Gen-3:@/tmp/.ICE-unix/2087,unix/nimrod-ThinkPad-P14s-Gen-3:/tmp/.ICE-unix/2087'), ('INVOCATION_ID', 'cb98390c3b9043aaa39ede44fea4b74f'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/nimrod/ros2_ws/src/stair_detection_pkg/stair_modeling_ros/install/stair_modeling_ros:/home/nimrod/ros2_ws/install/zion_zed_ros2_interface:/home/nimrod/ros2_ws/install/stair_modeling_ros:/home/nimrod/ros2_ws/install/stair_detection_ros:/home/nimrod/ros2_ws/install/zion_msgs:/home/nimrod/ros2_ws/install/zed_ros2:/home/nimrod/ros2_ws/install/zed_multi_camera:/home/nimrod/ros2_ws/install/zed_display_rviz2:/home/nimrod/ros2_ws/install/zed_wrapper:/home/nimrod/ros2_ws/install/zed_tutorial_video:/home/nimrod/ros2_ws/install/zed_tutorial_pos_tracking:/home/nimrod/ros2_ws/install/zed_tutorial_depth:/home/nimrod/ros2_ws/install/zed_topic_benchmark_interfaces:/home/nimrod/ros2_ws/install/zed_rgb_convert:/home/nimrod/ros2_ws/install/zed_components:/home/nimrod/ros2_ws/install/rviz_plugin_zed_od:/home/nimrod/ros2_ws/install/zed_interfaces:/home/nimrod/ros2_ws/install/image_common:/home/nimrod/ros2_ws/install/image_transport:/home/nimrod/ros2_ws/install/camera_info_manager:/home/nimrod/ros2_ws/install/camera_calibration_parsers:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:2b67f8cd-d46d-41a1-b13a-ffba7190ac87'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/nimrod/ros2_ws/src/stair_detection_pkg/stair_modeling_ros/build/stair_modeling_ros'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/nimrod/ros2_ws/install/stair_detection_ros/lib/python3.8/site-packages:/home/nimrod/ros2_ws/install/zion_msgs/lib/python3.8/site-packages:/home/nimrod/ros2_ws/install/zed_topic_benchmark_interfaces/lib/python3.8/site-packages:/home/nimrod/ros2_ws/install/zed_interfaces/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/nimrod/ros2_ws/src/stair_detection_pkg/stair_modeling_ros/install/stair_modeling_ros:/home/nimrod/ros2_ws/install/zion_zed_ros2_interface:/home/nimrod/ros2_ws/install/stair_modeling_ros:/home/nimrod/ros2_ws/install/zion_msgs:/home/nimrod/ros2_ws/install/zed_ros2:/home/nimrod/ros2_ws/install/zed_multi_camera:/home/nimrod/ros2_ws/install/zed_display_rviz2:/home/nimrod/ros2_ws/install/zed_wrapper:/home/nimrod/ros2_ws/install/zed_tutorial_video:/home/nimrod/ros2_ws/install/zed_tutorial_pos_tracking:/home/nimrod/ros2_ws/install/zed_tutorial_depth:/home/nimrod/ros2_ws/install/zed_topic_benchmark_interfaces:/home/nimrod/ros2_ws/install/zed_rgb_convert:/home/nimrod/ros2_ws/install/zed_components:/home/nimrod/ros2_ws/install/rviz_plugin_zed_od:/home/nimrod/ros2_ws/install/zed_interfaces:/home/nimrod/ros2_ws/install/image_common:/home/nimrod/ros2_ws/install/image_transport:/home/nimrod/ros2_ws/install/camera_info_manager:/home/nimrod/ros2_ws/install/camera_calibration_parsers:/home/nimrod/ros2_ws/install/stair_detection_ros:/opt/ros/foxy')]), 'shell': False}
+[0.504102] (-) TimerEvent: {}
+[0.588208] (stair_modeling_ros) StdoutLine: {'line': b'[ 11%] \x1b[32mBuilding CXX object CMakeFiles/zion_tf2_broadcaster.dir/src/zion_tf2_broadcaster.cpp.o\x1b[0m\n'}
+[0.604221] (-) TimerEvent: {}
+[0.688472] (stair_modeling_ros) StdoutLine: {'line': b'[ 22%] \x1b[32mBuilding CXX object CMakeFiles/stair_modeling_ros.dir/src/stair_modeling.cpp.o\x1b[0m\n'}
+[0.704400] (-) TimerEvent: {}
+[0.805083] (-) TimerEvent: {}
+[0.905792] (-) TimerEvent: {}
+[1.006288] (-) TimerEvent: {}
+[1.106779] (-) TimerEvent: {}
+[1.207440] (-) TimerEvent: {}
+[1.308224] (-) TimerEvent: {}
+[1.409160] (-) TimerEvent: {}
+[1.509938] (-) TimerEvent: {}
+[1.610800] (-) TimerEvent: {}
+[1.711749] (-) TimerEvent: {}
+[1.812613] (-) TimerEvent: {}
+[1.913462] (-) TimerEvent: {}
+[2.014347] (-) TimerEvent: {}
+[2.115195] (-) TimerEvent: {}
+[2.215972] (-) TimerEvent: {}
+[2.316794] (-) TimerEvent: {}
+[2.417642] (-) TimerEvent: {}
+[2.518409] (-) TimerEvent: {}
+[2.619310] (-) TimerEvent: {}
+[2.720269] (-) TimerEvent: {}
+[2.820915] (-) TimerEvent: {}
+[2.921417] (-) TimerEvent: {}
+[3.022097] (-) TimerEvent: {}
+[3.122838] (-) TimerEvent: {}
+[3.223678] (-) TimerEvent: {}
+[3.324522] (-) TimerEvent: {}
+[3.344869] (stair_modeling_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/nimrod/ros2_ws/src/stair_detection_pkg/stair_modeling_ros/src/zion_tf2_broadcaster.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid CloudTransformer::topic_callback(tf2_msgs::msg::TFMessage_<std::allocator<void> >::SharedPtr)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[3.345552] (stair_modeling_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/nimrod/ros2_ws/src/stair_detection_pkg/stair_modeling_ros/src/zion_tf2_broadcaster.cpp:50:65:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kmsg\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[3.345898] (stair_modeling_ros) StderrLine: {'line': b'   50 |   void topic_callback(\x1b[01;35m\x1b[Kconst tf2_msgs::msg::TFMessage::SharedPtr msg\x1b[m\x1b[K)\n'}
+[3.346209] (stair_modeling_ros) StderrLine: {'line': b'      |                       \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~\x1b[m\x1b[K\n'}
+[3.424725] (-) TimerEvent: {}
+[3.525703] (-) TimerEvent: {}
+[3.626535] (-) TimerEvent: {}
+[3.727402] (-) TimerEvent: {}
+[3.828222] (-) TimerEvent: {}
+[3.929065] (-) TimerEvent: {}
+[4.029943] (-) TimerEvent: {}
+[4.130746] (-) TimerEvent: {}
+[4.231516] (-) TimerEvent: {}
+[4.332417] (-) TimerEvent: {}
+[4.433203] (-) TimerEvent: {}
+[4.534076] (-) TimerEvent: {}
+[4.634833] (-) TimerEvent: {}
+[4.735634] (-) TimerEvent: {}
+[4.836343] (-) TimerEvent: {}
+[4.937020] (-) TimerEvent: {}
+[5.037747] (-) TimerEvent: {}
+[5.138440] (-) TimerEvent: {}
+[5.239172] (-) TimerEvent: {}
+[5.339849] (-) TimerEvent: {}
+[5.440602] (-) TimerEvent: {}
+[5.541214] (-) TimerEvent: {}
+[5.641842] (-) TimerEvent: {}
+[5.742552] (-) TimerEvent: {}
+[5.843364] (-) TimerEvent: {}
+[5.944250] (-) TimerEvent: {}
+[6.045051] (-) TimerEvent: {}
+[6.145810] (-) TimerEvent: {}
+[6.246724] (-) TimerEvent: {}
+[6.347450] (-) TimerEvent: {}
+[6.448201] (-) TimerEvent: {}
+[6.548953] (-) TimerEvent: {}
+[6.649619] (-) TimerEvent: {}
+[6.750298] (-) TimerEvent: {}
+[6.850749] (-) TimerEvent: {}
+[6.951209] (-) TimerEvent: {}
+[7.051654] (-) TimerEvent: {}
+[7.152116] (-) TimerEvent: {}
+[7.252592] (-) TimerEvent: {}
+[7.353220] (-) TimerEvent: {}
+[7.453942] (-) TimerEvent: {}
+[7.554585] (-) TimerEvent: {}
+[7.655224] (-) TimerEvent: {}
+[7.755865] (-) TimerEvent: {}
+[7.856658] (-) TimerEvent: {}
+[7.957271] (-) TimerEvent: {}
+[8.057963] (-) TimerEvent: {}
+[8.158502] (-) TimerEvent: {}
+[8.259094] (-) TimerEvent: {}
+[8.359756] (-) TimerEvent: {}
+[8.460308] (-) TimerEvent: {}
+[8.560992] (-) TimerEvent: {}
+[8.661623] (-) TimerEvent: {}
+[8.762146] (-) TimerEvent: {}
+[8.862774] (-) TimerEvent: {}
+[8.963254] (-) TimerEvent: {}
+[9.063973] (-) TimerEvent: {}
+[9.164669] (-) TimerEvent: {}
+[9.265314] (-) TimerEvent: {}
+[9.365775] (-) TimerEvent: {}
+[9.466305] (-) TimerEvent: {}
+[9.566778] (-) TimerEvent: {}
+[9.667428] (-) TimerEvent: {}
+[9.768065] (-) TimerEvent: {}
+[9.868544] (-) TimerEvent: {}
+[9.969235] (-) TimerEvent: {}
+[10.069884] (-) TimerEvent: {}
+[10.170682] (-) TimerEvent: {}
+[10.271539] (-) TimerEvent: {}
+[10.342786] (stair_modeling_ros) StdoutLine: {'line': b'[ 33%] \x1b[32m\x1b[1mLinking CXX executable zion_tf2_broadcaster\x1b[0m\n'}
+[10.371760] (-) TimerEvent: {}
+[10.472633] (-) TimerEvent: {}
+[10.573470] (-) TimerEvent: {}
+[10.674335] (-) TimerEvent: {}
+[10.775236] (-) TimerEvent: {}
+[10.876153] (-) TimerEvent: {}
+[10.909959] (stair_modeling_ros) StdoutLine: {'line': b'[ 33%] Built target zion_tf2_broadcaster\n'}
+[10.976375] (-) TimerEvent: {}
+[11.077218] (-) TimerEvent: {}
+[11.177800] (-) TimerEvent: {}
+[11.278402] (-) TimerEvent: {}
+[11.379025] (-) TimerEvent: {}
+[11.479678] (-) TimerEvent: {}
+[11.580310] (-) TimerEvent: {}
+[11.680896] (-) TimerEvent: {}
+[11.781735] (-) TimerEvent: {}
+[11.882313] (-) TimerEvent: {}
+[11.983070] (-) TimerEvent: {}
+[12.084179] (-) TimerEvent: {}
+[12.185218] (-) TimerEvent: {}
+[12.286002] (-) TimerEvent: {}
+[12.386816] (-) TimerEvent: {}
+[12.487832] (-) TimerEvent: {}
+[12.588727] (-) TimerEvent: {}
+[12.689581] (-) TimerEvent: {}
+[12.790353] (-) TimerEvent: {}
+[12.891149] (-) TimerEvent: {}
+[12.991963] (-) TimerEvent: {}
+[13.092797] (-) TimerEvent: {}
+[13.193635] (-) TimerEvent: {}
+[13.294471] (-) TimerEvent: {}
+[13.395312] (-) TimerEvent: {}
+[13.496197] (-) TimerEvent: {}
+[13.542273] (stair_modeling_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/nimrod/ros2_ws/src/stair_detection_pkg/stair_modeling_ros/src/stair_modeling.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid StairModeling::tfCallback(tf2_msgs::msg::TFMessage_<std::allocator<void> >::SharedPtr)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[13.543118] (stair_modeling_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/nimrod/ros2_ws/src/stair_detection_pkg/stair_modeling_ros/src/stair_modeling.cpp:152:74:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Ktf_msg\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[13.543605] (stair_modeling_ros) StderrLine: {'line': b'  152 | void StairModeling::tfCallback(\x1b[01;35m\x1b[Kconst tf2_msgs::msg::TFMessage::SharedPtr tf_msg\x1b[m\x1b[K)\n'}
+[13.544066] (stair_modeling_ros) StderrLine: {'line': b'      |                                \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~\x1b[m\x1b[K\n'}
+[13.596392] (-) TimerEvent: {}
+[13.697365] (-) TimerEvent: {}
+[13.798191] (-) TimerEvent: {}
+[13.898991] (-) TimerEvent: {}
+[13.999779] (-) TimerEvent: {}
+[14.100573] (-) TimerEvent: {}
+[14.201105] (-) TimerEvent: {}
+[14.301680] (-) TimerEvent: {}
+[14.402549] (-) TimerEvent: {}
+[14.503522] (-) TimerEvent: {}
+[14.604572] (-) TimerEvent: {}
+[14.705458] (-) TimerEvent: {}
+[14.806208] (-) TimerEvent: {}
+[14.906998] (-) TimerEvent: {}
+[15.007924] (-) TimerEvent: {}
+[15.108744] (-) TimerEvent: {}
+[15.209483] (-) TimerEvent: {}
+[15.310594] (-) TimerEvent: {}
+[15.411604] (-) TimerEvent: {}
+[15.512350] (-) TimerEvent: {}
+[15.613096] (-) TimerEvent: {}
+[15.713893] (-) TimerEvent: {}
+[15.814816] (-) TimerEvent: {}
+[15.915557] (-) TimerEvent: {}
+[16.016292] (-) TimerEvent: {}
+[16.116930] (-) TimerEvent: {}
+[16.217692] (-) TimerEvent: {}
+[16.318554] (-) TimerEvent: {}
+[16.419402] (-) TimerEvent: {}
+[16.520409] (-) TimerEvent: {}
+[16.621469] (-) TimerEvent: {}
+[16.722423] (-) TimerEvent: {}
+[16.823270] (-) TimerEvent: {}
+[16.924162] (-) TimerEvent: {}
+[17.024967] (-) TimerEvent: {}
+[17.125832] (-) TimerEvent: {}
+[17.226629] (-) TimerEvent: {}
+[17.327352] (-) TimerEvent: {}
+[17.428411] (-) TimerEvent: {}
+[17.529133] (-) TimerEvent: {}
+[17.629792] (-) TimerEvent: {}
+[17.730427] (-) TimerEvent: {}
+[17.831700] (-) TimerEvent: {}
+[17.932770] (-) TimerEvent: {}
+[18.033695] (-) TimerEvent: {}
+[18.134567] (-) TimerEvent: {}
+[18.235399] (-) TimerEvent: {}
+[18.336254] (-) TimerEvent: {}
+[18.437052] (-) TimerEvent: {}
+[18.537815] (-) TimerEvent: {}
+[18.638692] (-) TimerEvent: {}
+[18.739613] (-) TimerEvent: {}
+[18.840727] (-) TimerEvent: {}
+[18.941647] (-) TimerEvent: {}
+[19.042563] (-) TimerEvent: {}
+[19.143407] (-) TimerEvent: {}
+[19.244206] (-) TimerEvent: {}
+[19.345064] (-) TimerEvent: {}
+[19.445932] (-) TimerEvent: {}
+[19.546655] (-) TimerEvent: {}
+[19.647444] (-) TimerEvent: {}
+[19.748271] (-) TimerEvent: {}
+[19.849014] (-) TimerEvent: {}
+[19.949678] (-) TimerEvent: {}
+[20.050252] (-) TimerEvent: {}
+[20.150977] (-) TimerEvent: {}
+[20.251672] (-) TimerEvent: {}
+[20.352387] (-) TimerEvent: {}
+[20.453095] (-) TimerEvent: {}
+[20.553638] (-) TimerEvent: {}
+[20.654487] (-) TimerEvent: {}
+[20.755353] (-) TimerEvent: {}
+[20.856110] (-) TimerEvent: {}
+[20.956788] (-) TimerEvent: {}
+[21.057483] (-) TimerEvent: {}
+[21.158343] (-) TimerEvent: {}
+[21.259233] (-) TimerEvent: {}
+[21.360128] (-) TimerEvent: {}
+[21.460696] (-) TimerEvent: {}
+[21.561253] (-) TimerEvent: {}
+[21.661808] (-) TimerEvent: {}
+[21.762295] (-) TimerEvent: {}
+[21.862736] (-) TimerEvent: {}
+[21.963210] (-) TimerEvent: {}
+[22.063658] (-) TimerEvent: {}
+[22.164120] (-) TimerEvent: {}
+[22.264551] (-) TimerEvent: {}
+[22.364965] (-) TimerEvent: {}
+[22.465362] (-) TimerEvent: {}
+[22.565780] (-) TimerEvent: {}
+[22.666195] (-) TimerEvent: {}
+[22.766610] (-) TimerEvent: {}
+[22.867031] (-) TimerEvent: {}
+[22.967440] (-) TimerEvent: {}
+[23.067923] (-) TimerEvent: {}
+[23.168485] (-) TimerEvent: {}
+[23.269007] (-) TimerEvent: {}
+[23.369601] (-) TimerEvent: {}
+[23.470173] (-) TimerEvent: {}
+[23.570830] (-) TimerEvent: {}
+[23.671383] (-) TimerEvent: {}
+[23.772108] (-) TimerEvent: {}
+[23.872617] (-) TimerEvent: {}
+[23.973148] (-) TimerEvent: {}
+[24.073645] (-) TimerEvent: {}
+[24.174283] (-) TimerEvent: {}
+[24.274934] (-) TimerEvent: {}
+[24.375568] (-) TimerEvent: {}
+[24.476323] (-) TimerEvent: {}
+[24.577045] (-) TimerEvent: {}
+[24.677606] (-) TimerEvent: {}
+[24.778311] (-) TimerEvent: {}
+[24.878963] (-) TimerEvent: {}
+[24.979596] (-) TimerEvent: {}
+[25.080222] (-) TimerEvent: {}
+[25.180906] (-) TimerEvent: {}
+[25.281553] (-) TimerEvent: {}
+[25.382150] (-) TimerEvent: {}
+[25.482711] (-) TimerEvent: {}
+[25.583158] (-) TimerEvent: {}
+[25.683763] (-) TimerEvent: {}
+[25.784276] (-) TimerEvent: {}
+[25.884893] (-) TimerEvent: {}
+[25.985366] (-) TimerEvent: {}
+[26.085910] (-) TimerEvent: {}
+[26.186474] (-) TimerEvent: {}
+[26.287092] (-) TimerEvent: {}
+[26.387636] (-) TimerEvent: {}
+[26.488163] (-) TimerEvent: {}
+[26.588631] (-) TimerEvent: {}
+[26.689081] (-) TimerEvent: {}
+[26.789515] (-) TimerEvent: {}
+[26.889984] (-) TimerEvent: {}
+[26.908569] (stair_modeling_ros) StderrLine: {'line': b'make[2]: *** [CMakeFiles/stair_modeling_ros.dir/build.make:90: CMakeFiles/stair_modeling_ros.dir/src/stair_modeling.cpp.o] Interrupt\n'}
+[26.909190] (stair_modeling_ros) StderrLine: {'line': b'make[1]: *** [CMakeFiles/Makefile2:141: CMakeFiles/stair_modeling_ros.dir/all] Interrupt\n'}
+[26.909475] (stair_modeling_ros) StderrLine: {'line': b'make: *** [Makefile:146: all] Interrupt\n'}
+[26.911349] (stair_modeling_ros) StderrLine: {'line': b'Traceback (most recent call last):\n'}
+[26.911845] (stair_modeling_ros) StderrLine: {'line': b'  File "/home/nimrod/.local/bin/cmake", line 8, in <module>\n'}
+[26.912144] (stair_modeling_ros) StderrLine: {'line': b'    sys.exit(cmake())\n'}
+[26.912391] (stair_modeling_ros) StderrLine: {'line': b'  File "/home/nimrod/.local/lib/python3.8/site-packages/cmake/__init__.py", line 43, in cmake\n'}
+[26.912620] (stair_modeling_ros) StderrLine: {'line': b"    raise SystemExit(_program('cmake', sys.argv[1:]))\n"}
+[26.912845] (stair_modeling_ros) StderrLine: {'line': b'  File "/home/nimrod/.local/lib/python3.8/site-packages/cmake/__init__.py", line 39, in _program\n'}
+[26.913067] (stair_modeling_ros) StderrLine: {'line': b'    return subprocess.call([os.path.join(CMAKE_BIN_DIR, name)] + args, close_fds=False)\n'}
+[26.913295] (stair_modeling_ros) StderrLine: {'line': b'  File "/usr/lib/python3.8/subprocess.py", line 342, in call\n'}
+[26.918390] (stair_modeling_ros) StderrLine: {'line': b'    return p.wait(timeout=timeout)\n'}
+[26.918762] (stair_modeling_ros) StderrLine: {'line': b'  File "/usr/lib/python3.8/subprocess.py", line 1083, in wait\n'}
+[26.919112] (stair_modeling_ros) StderrLine: {'line': b'    return self._wait(timeout=timeout)\n'}
+[26.919351] (stair_modeling_ros) StderrLine: {'line': b'  File "/usr/lib/python3.8/subprocess.py", line 1806, in _wait\n'}
+[26.919735] (stair_modeling_ros) StderrLine: {'line': b'    (pid, sts) = self._try_wait(0)\n'}
+[26.919971] (stair_modeling_ros) StderrLine: {'line': b'  File "/usr/lib/python3.8/subprocess.py", line 1764, in _try_wait\n'}
+[26.920570] (stair_modeling_ros) StderrLine: {'line': b'    (pid, sts) = os.waitpid(self.pid, wait_flags)\n'}
+[26.920963] (stair_modeling_ros) StderrLine: {'line': b'KeyboardInterrupt\n'}
+[26.988340] (stair_modeling_ros) CommandEnded: {'returncode': -2}
+[26.990076] (-) TimerEvent: {}
+[27.092375] (-) TimerEvent: {}
+[27.195031] (-) TimerEvent: {}
+[27.295819] (-) TimerEvent: {}
+[27.397361] (-) TimerEvent: {}
+[27.498274] (-) TimerEvent: {}
+[27.499814] (stair_modeling_ros) JobEnded: {'identifier': 'stair_modeling_ros', 'rc': 'SIGINT'}
+[27.510506] (-) EventReactorShutdown: {}

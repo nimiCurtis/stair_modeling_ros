@@ -1,0 +1,45 @@
+[0.483s] Invoking command in '/home/nimrod/ros2_ws/src/stair_detection_pkg/stair_modeling_ros/build/stair_modeling_ros': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nimrod/ros2_ws/install/stair_detection_ros:/opt/ros/foxy /home/nimrod/.local/bin/cmake --build /home/nimrod/ros2_ws/src/stair_detection_pkg/stair_modeling_ros/build/stair_modeling_ros -- -j16 -l16
+[0.594s] [ 22%] Built target zion_tf2_broadcaster
+[0.632s] [ 33%] [32mBuilding CXX object CMakeFiles/stair_modeling_ros.dir/src/stair_modeling.cpp.o[0m
+[10.736s] [01m[K/home/nimrod/ros2_ws/src/stair_detection_pkg/stair_modeling_ros/src/stair_modeling.cpp:[m[K In member function ‘[01m[Kvoid StairModeling::tfCallback(tf2_msgs::msg::TFMessage_<std::allocator<void> >::SharedPtr)[m[K’:
+[10.736s] [01m[K/home/nimrod/ros2_ws/src/stair_detection_pkg/stair_modeling_ros/src/stair_modeling.cpp:152:74:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ktf_msg[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[10.736s]   152 | void StairModeling::tfCallback([01;35m[Kconst tf2_msgs::msg::TFMessage::SharedPtr tf_msg[m[K)
+[10.736s]       |                                [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~[m[K
+[29.960s] [ 44%] [32m[1mLinking CXX shared library libstair_modeling_ros.so[0m
+[34.482s] [ 77%] Built target stair_modeling_ros
+[34.527s] [ 88%] [32mBuilding CXX object CMakeFiles/stair_modeling_ros_node.dir/src/stair_modeling_ros_node.cpp.o[0m
+[49.212s] [100%] [32m[1mLinking CXX executable stair_modeling_ros_node[0m
+[50.734s] [100%] Built target stair_modeling_ros_node
+[50.748s] Invoked command in '/home/nimrod/ros2_ws/src/stair_detection_pkg/stair_modeling_ros/build/stair_modeling_ros' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nimrod/ros2_ws/install/stair_detection_ros:/opt/ros/foxy /home/nimrod/.local/bin/cmake --build /home/nimrod/ros2_ws/src/stair_detection_pkg/stair_modeling_ros/build/stair_modeling_ros -- -j16 -l16
+[50.934s] Invoking command in '/home/nimrod/ros2_ws/src/stair_detection_pkg/stair_modeling_ros/build/stair_modeling_ros': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nimrod/ros2_ws/install/stair_detection_ros:/opt/ros/foxy /home/nimrod/.local/bin/cmake --install /home/nimrod/ros2_ws/src/stair_detection_pkg/stair_modeling_ros/build/stair_modeling_ros
+[50.991s] -- Install configuration: ""
+[50.992s] -- Installing: /home/nimrod/ros2_ws/src/stair_detection_pkg/stair_modeling_ros/install/stair_modeling_ros/lib/libstair_modeling_ros.so
+[51.004s] -- Set runtime path of "/home/nimrod/ros2_ws/src/stair_detection_pkg/stair_modeling_ros/install/stair_modeling_ros/lib/libstair_modeling_ros.so" to ""
+[51.005s] -- Installing: /home/nimrod/ros2_ws/src/stair_detection_pkg/stair_modeling_ros/install/stair_modeling_ros/lib/stair_modeling_ros/stair_modeling_ros_node
+[51.005s] -- Set runtime path of "/home/nimrod/ros2_ws/src/stair_detection_pkg/stair_modeling_ros/install/stair_modeling_ros/lib/stair_modeling_ros/stair_modeling_ros_node" to ""
+[51.006s] -- Installing: /home/nimrod/ros2_ws/src/stair_detection_pkg/stair_modeling_ros/install/stair_modeling_ros/lib/stair_modeling_ros/zion_tf2_broadcaster
+[51.008s] -- Set runtime path of "/home/nimrod/ros2_ws/src/stair_detection_pkg/stair_modeling_ros/install/stair_modeling_ros/lib/stair_modeling_ros/zion_tf2_broadcaster" to ""
+[51.009s] -- Up-to-date: /home/nimrod/ros2_ws/src/stair_detection_pkg/stair_modeling_ros/install/stair_modeling_ros/include/stair_modeling_ros
+[51.010s] -- Up-to-date: /home/nimrod/ros2_ws/src/stair_detection_pkg/stair_modeling_ros/install/stair_modeling_ros/share/stair_modeling_ros/rviz2
+[51.010s] -- Up-to-date: /home/nimrod/ros2_ws/src/stair_detection_pkg/stair_modeling_ros/install/stair_modeling_ros/share/stair_modeling_ros/rviz2/stair_modeling.rviz
+[51.010s] -- Up-to-date: /home/nimrod/ros2_ws/src/stair_detection_pkg/stair_modeling_ros/install/stair_modeling_ros/share/stair_modeling_ros/params
+[51.010s] -- Up-to-date: /home/nimrod/ros2_ws/src/stair_detection_pkg/stair_modeling_ros/install/stair_modeling_ros/share/stair_modeling_ros/params/stair_modeling_params.yaml
+[51.010s] -- Up-to-date: /home/nimrod/ros2_ws/src/stair_detection_pkg/stair_modeling_ros/install/stair_modeling_ros/share/stair_modeling_ros/launch
+[51.010s] -- Up-to-date: /home/nimrod/ros2_ws/src/stair_detection_pkg/stair_modeling_ros/install/stair_modeling_ros/share/stair_modeling_ros/launch/stair_modeling_view.launch.py
+[51.010s] -- Up-to-date: /home/nimrod/ros2_ws/src/stair_detection_pkg/stair_modeling_ros/install/stair_modeling_ros/share/stair_modeling_ros/launch/stair_modeling.launch.py
+[51.010s] -- Up-to-date: /home/nimrod/ros2_ws/src/stair_detection_pkg/stair_modeling_ros/install/stair_modeling_ros/share/ament_index/resource_index/package_run_dependencies/stair_modeling_ros
+[51.010s] -- Up-to-date: /home/nimrod/ros2_ws/src/stair_detection_pkg/stair_modeling_ros/install/stair_modeling_ros/share/ament_index/resource_index/parent_prefix_path/stair_modeling_ros
+[51.010s] -- Up-to-date: /home/nimrod/ros2_ws/src/stair_detection_pkg/stair_modeling_ros/install/stair_modeling_ros/share/stair_modeling_ros/environment/ament_prefix_path.sh
+[51.010s] -- Up-to-date: /home/nimrod/ros2_ws/src/stair_detection_pkg/stair_modeling_ros/install/stair_modeling_ros/share/stair_modeling_ros/environment/ament_prefix_path.dsv
+[51.011s] -- Up-to-date: /home/nimrod/ros2_ws/src/stair_detection_pkg/stair_modeling_ros/install/stair_modeling_ros/share/stair_modeling_ros/environment/path.sh
+[51.011s] -- Up-to-date: /home/nimrod/ros2_ws/src/stair_detection_pkg/stair_modeling_ros/install/stair_modeling_ros/share/stair_modeling_ros/environment/path.dsv
+[51.011s] -- Up-to-date: /home/nimrod/ros2_ws/src/stair_detection_pkg/stair_modeling_ros/install/stair_modeling_ros/share/stair_modeling_ros/local_setup.bash
+[51.011s] -- Up-to-date: /home/nimrod/ros2_ws/src/stair_detection_pkg/stair_modeling_ros/install/stair_modeling_ros/share/stair_modeling_ros/local_setup.sh
+[51.011s] -- Up-to-date: /home/nimrod/ros2_ws/src/stair_detection_pkg/stair_modeling_ros/install/stair_modeling_ros/share/stair_modeling_ros/local_setup.zsh
+[51.011s] -- Up-to-date: /home/nimrod/ros2_ws/src/stair_detection_pkg/stair_modeling_ros/install/stair_modeling_ros/share/stair_modeling_ros/local_setup.dsv
+[51.011s] -- Installing: /home/nimrod/ros2_ws/src/stair_detection_pkg/stair_modeling_ros/install/stair_modeling_ros/share/stair_modeling_ros/package.dsv
+[51.011s] -- Up-to-date: /home/nimrod/ros2_ws/src/stair_detection_pkg/stair_modeling_ros/install/stair_modeling_ros/share/ament_index/resource_index/packages/stair_modeling_ros
+[51.011s] -- Up-to-date: /home/nimrod/ros2_ws/src/stair_detection_pkg/stair_modeling_ros/install/stair_modeling_ros/share/stair_modeling_ros/cmake/stair_modeling_rosConfig.cmake
+[51.011s] -- Up-to-date: /home/nimrod/ros2_ws/src/stair_detection_pkg/stair_modeling_ros/install/stair_modeling_ros/share/stair_modeling_ros/cmake/stair_modeling_rosConfig-version.cmake
+[51.011s] -- Up-to-date: /home/nimrod/ros2_ws/src/stair_detection_pkg/stair_modeling_ros/install/stair_modeling_ros/share/stair_modeling_ros/package.xml
+[51.019s] Invoked command in '/home/nimrod/ros2_ws/src/stair_detection_pkg/stair_modeling_ros/build/stair_modeling_ros' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nimrod/ros2_ws/install/stair_detection_ros:/opt/ros/foxy /home/nimrod/.local/bin/cmake --install /home/nimrod/ros2_ws/src/stair_detection_pkg/stair_modeling_ros/build/stair_modeling_ros
