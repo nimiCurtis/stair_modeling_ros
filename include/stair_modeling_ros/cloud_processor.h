@@ -1,5 +1,5 @@
-#ifndef ZION_TF2_BROADCASTER
-#define ZION_TF2_BROADCASTER
+#ifndef CLOUD_PROCESSOR
+#define CLOUD_PROCESSOR
 
 #include <chrono>
 #include <functional>
@@ -32,20 +32,20 @@ using namespace std::chrono_literals;
 #include <string>
 
 
-class ZionBroadcaster : public rclcpp::Node
+class CloudProcessor : public rclcpp::Node
 {
 public:
-  ZionBroadcaster();
+  CloudProcessor();
 
 private:
 
-  void tfCallback(const tf2_msgs::msg::TFMessage::SharedPtr msg);
+  void pclCallback(const sensor_msgs::msg::PointCloud2::SharedPtr pcl_msg);
+
   void loadParams();
 
   std::unique_ptr<tf2_ros::Buffer> tf_buffer_;
   std::shared_ptr<tf2_ros::TransformListener> tf_listener_{nullptr};
-  std::unique_ptr<tf2_ros::TransformBroadcaster> tf_broadcaster_;
-  rclcpp::Subscription<tf2_msgs::msg::TFMessage>::SharedPtr tf_sub_;
+
   rclcpp::Subscription<sensor_msgs::msg::PointCloud2>::SharedPtr pcl_sub_;
 
   //publishers
@@ -57,13 +57,13 @@ private:
   std::string input_point_cloud_topic_;
   std::string filtered_point_cloud_topic_;
 
-  std::string map_frame_;
-  std::string base_frame_;
+
   std::string input_frame_;
   std::string output_frame_;
 
   double leaf_size_xy_;
   double leaf_size_z_;
+  
   double min_x_;
   double max_x_;
   double min_y_;
@@ -72,4 +72,4 @@ private:
   double max_z_;
 };
 
-#endif //  ZION_TF2_BROADCASTER
+#endif //  CLOUD_PROCESSOR

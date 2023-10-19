@@ -57,6 +57,7 @@ set(SRC_FILES
   src/stair.cpp
   src/utilities.cpp
   src/zion_tf2_broadcaster.cpp
+  src/cloud_processor.cpp
 )
 
 set(dependencies
