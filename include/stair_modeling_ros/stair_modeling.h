@@ -66,7 +66,7 @@ private:
      * @param secs The seconds part of the timestamp.
      * @param nsecs The nanoseconds part of the timestamp.
      */
-    void publishHullsAsMarkerArray(const std::string& cloud_frame, int secs, int nsecs);
+    void publishHullsAsMarkerArray(const std::string& cloud_frame);
 
     /**
      * @brief Publishes the the env_geo msgs.
@@ -74,7 +74,7 @@ private:
      * @param secs The seconds part of the timestamp.
      * @param nsecs The nanoseconds part of the timestamp.
      */
-    void publishEnvGeo(const std::string& cloud_frame, int secs, int nsecs);
+    void publishEnvGeo(const std::string& cloud_frame);
     void transformCloud(const sensor_msgs::msg::PointCloud2::SharedPtr input_cloud,
                                sensor_msgs::msg::PointCloud2::SharedPtr output_cloud);
 
@@ -138,7 +138,7 @@ private:
     int k_neighbors_;
     int x_neighbors_;
     double y_threshold_;
-    
+
     std::string input_point_cloud_topic_;
     std::string filtered_point_cloud_topic_;
 

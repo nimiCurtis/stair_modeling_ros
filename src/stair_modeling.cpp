@@ -393,15 +393,14 @@ void StairModeling::calcPlaneSlope()
     printDebug();
 }
 
-void StairModeling::publishEnvGeo(const std::string& cloud_frame,
-                                    int secs, int nsecs)
+void StairModeling::publishEnvGeo(const std::string& cloud_frame)
 {   
     
     zion_msgs::msg::EnvGeoStamped env_geo_stamped_msg; //with or without ::msg ?
     zion_msgs::msg::EnvGeo env_geo_msg;
     
     env_geo_stamped_msg.header.frame_id = cloud_frame;
-    env_geo_stamped_msg.header.stamp = rclcpp::Time(secs, nsecs);
+    env_geo_stamped_msg.header.stamp = this->get_clock()->now();
 
     // declare env_geo_msg
     if(stair_detected_){
@@ -425,8 +424,7 @@ void StairModeling::publishEnvGeo(const std::string& cloud_frame,
     env_geo_pub_->publish(env_geo_stamped_msg);
 }
 
-void StairModeling::publishHullsAsMarkerArray(const std::string& cloud_frame,
-                                    int secs, int nsecs)
+void StairModeling::publishHullsAsMarkerArray(const std::string& cloud_frame)
 {
 
   geometry_msgs::msg::Point point;
@@ -438,7 +436,7 @@ void StairModeling::publishHullsAsMarkerArray(const std::string& cloud_frame,
 
         visualization_msgs::msg::Marker marker;
         marker.header.frame_id = cloud_frame;
-        marker.header.stamp = rclcpp::Time(secs, nsecs);
+        marker.header.stamp = this->get_clock()->now();
         marker.ns = "hull_" + std::to_string(i);
         marker.id = i;
         marker.type = visualization_msgs::msg::Marker::LINE_LIST;
@@ -579,8 +577,8 @@ void StairModeling::pclCallback(const sensor_msgs::msg::PointCloud2::SharedPtr p
         rclcpp::Time stamp = this->get_clock()->now();
         
         // Publish the processed point cloud and custom msgs
-        publishHullsAsMarkerArray(output_frame_,stamp.seconds(),stamp.nanoseconds());
-        publishEnvGeo(output_frame_,stamp.seconds(),stamp.nanoseconds());
+        publishHullsAsMarkerArray(output_frame_);
+        publishEnvGeo(output_frame_);
 
         // debug msg
         if(debug_){
