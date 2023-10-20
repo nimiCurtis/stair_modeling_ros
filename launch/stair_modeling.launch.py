@@ -8,7 +8,8 @@ def generate_launch_description():
 
     # Set LOG format
     os.environ['RCUTILS_CONSOLE_OUTPUT_FORMAT'] = '{time} [{name}] [{severity}] {message}'
-    
+    os.environ['RCUTILS_COLORIZED_OUTPUT'] = 0
+    RCUTILS_COLORIZED_OUTPUT=0
     # Get parameters from yaml
     config = os.path.join(
         get_package_share_directory('stair_modeling_ros'),
@@ -31,7 +32,6 @@ def generate_launch_description():
                                 parameters=[config,
                                             {'debug': LaunchConfiguration('debug')}],
                         )
-
 
     # Return launch description
     return LaunchDescription([
