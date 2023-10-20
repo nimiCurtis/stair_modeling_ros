@@ -35,93 +35,139 @@ find_package(tf2_ros REQUIRED)
 find_package(tf2_geometry_msgs REQUIRED)
 find_package(tf2_msgs REQUIRED)
 find_package(tf2_sensor_msgs REQUIRED)
-
-# find_package(pcl_conversions REQUIRED)
-# find_package(PCL REQUIRED)
 find_package(PCL REQUIRED) ## See ROS REP2000 for expected PCL version
-
-# find_package(rcl_interfaces REQUIRED)
 find_package(visualization_msgs REQUIRED)
-#find_package(eigen REQUIRED)
-# find_package(rosidl_default_generators REQUIRED)
-#Custom
 find_package(zion_msgs REQUIRED)
 
-include_directories(${PCL_INCLUDE_DIRS})
-link_directories(${PCL_LIBRARY_DIRS})
-add_definitions(${PCL_DEFINITIONS})
+# include_directories(${PCL_INCLUDE_DIRS})
 
-set(SRC_FILES
-  src/plane.cpp
-  src/stair_modeling.cpp
-  src/stair.cpp
-  src/utilities.cpp
-  src/zion_tf2_broadcaster.cpp
-  src/cloud_processor.cpp
-)
 
-set(dependencies
+
+set(DEPENDENCIES
   rclcpp
+  rclcpp_components
   rcutils
   zion_msgs
+  tf2
   tf2_ros
   tf2_geometry_msgs
+  std_msgs
   sensor_msgs
   geometry_msgs
   visualization_msgs
 )
 
+###############################################################################
+# INCLUDES and LIBS
+
 include_directories(
   include
   SYSTEM
-  ${EIGEN3_INCLUDE_DIR}
+  # ${EIGEN3_INCLUDE_DIR}
   ${PCL_INCLUDE_DIRS}
 )
 
-## Declare a cpp library
-add_library(${PROJECT_NAME} SHARED
-  ${SRC_FILES}
+link_directories(${PCL_LIBRARY_DIRS})
+add_definitions(${PCL_DEFINITIONS})
+
+
+###############################################################################
+# SOURCES
+
+
+set(CLOUD_PROCESSOR_INC
+  ${CMAKE_CURRENT_SOURCE_DIR}/include/${PROJECT_NAME}/visibility_control.h
+  ${CMAKE_CURRENT_SOURCE_DIR}/include/${PROJECT_NAME}/utilities.h
+  ${CMAKE_CURRENT_SOURCE_DIR}/include/${PROJECT_NAME}/cloud_processor_component.hpp
+  ${CMAKE_CURRENT_SOURCE_DIR}/src/utilities.cpp
+  ${CMAKE_CURRENT_SOURCE_DIR}/src/cloud_processor_component.cpp
 )
 
-target_link_libraries(${PROJECT_NAME}
+set(BROADCASTER_INC
+  ${CMAKE_CURRENT_SOURCE_DIR}/include/${PROJECT_NAME}/visibility_control.h
+  ${CMAKE_CURRENT_SOURCE_DIR}/include/${PROJECT_NAME}/zion_broadcaster_component.hpp
+  ${CMAKE_CURRENT_SOURCE_DIR}/src/zion_broadcaster_component.cpp
+)
+
+set(STAIR_MODELING_INC
+  ${CMAKE_CURRENT_SOURCE_DIR}/include/${PROJECT_NAME}/visibility_control.h
+  ${CMAKE_CURRENT_SOURCE_DIR}/include/${PROJECT_NAME}/plane.h
+  ${CMAKE_CURRENT_SOURCE_DIR}/include/${PROJECT_NAME}/stair.h
+  ${CMAKE_CURRENT_SOURCE_DIR}/include/${PROJECT_NAME}/utilities.h
+  ${CMAKE_CURRENT_SOURCE_DIR}/include/${PROJECT_NAME}/cloud_processor_component.hpp
+  ${CMAKE_CURRENT_SOURCE_DIR}/include/${PROJECT_NAME}/stair_modeling_component.hpp
+  ${CMAKE_CURRENT_SOURCE_DIR}/include/${PROJECT_NAME}/zion_broadcaster_component.hpp
+  ${CMAKE_CURRENT_SOURCE_DIR}/src/plane.cpp
+  ${CMAKE_CURRENT_SOURCE_DIR}/src/stair.cpp
+  ${CMAKE_CURRENT_SOURCE_DIR}/src/utilities.cpp
+  ${CMAKE_CURRENT_SOURCE_DIR}/src/cloud_processor_component.cpp
+  ${CMAKE_CURRENT_SOURCE_DIR}/src/stair_modeling_component.cpp
+  ${CMAKE_CURRENT_SOURCE_DIR}/src/zion_broadcaster_component.cpp
+)
+###############################################################################
+# Bin and Install
+
+# create ament index resource which references the libraries in the binary dir
+set(node_plugins "")
+
+add_library(cloud_processor_component SHARED
+    ${CLOUD_PROCESSOR_INC})
+target_compile_definitions(cloud_processor_component
+  PRIVATE "COMPOSITION_BUILDING_DLL")
+ament_target_dependencies(cloud_processor_component
+    ${DEPENDENCIES})
+rclcpp_components_register_nodes(cloud_processor_component "stair_modeling::CloudProcessor")
+set(node_plugins "${node_plugins}stair_modeling::CloudProcessor;$<TARGET_FILE:cloud_processor_component>\n")
+
+add_library(zion_broadcaster_component SHARED
+    ${BROADCASTER_INC})
+target_compile_definitions(zion_broadcaster_component
+  PRIVATE "COMPOSITION_BUILDING_DLL")
+ament_target_dependencies(zion_broadcaster_component
+    ${DEPENDENCIES})
+rclcpp_components_register_nodes(zion_broadcaster_component "stair_modeling::ZionBroadcaster")
+set(node_plugins "${node_plugins}stair_modeling::ZionBroadcaster;$<TARGET_FILE:zion_broadcaster_component>\n")
+
+add_library(stair_modeling_component SHARED
+    ${STAIR_MODELING_INC})
+target_compile_definitions(stair_modeling_component
+  PRIVATE "COMPOSITION_BUILDING_DLL")
+ament_target_dependencies(stair_modeling_component
+    ${DEPENDENCIES})
+rclcpp_components_register_nodes(stair_modeling_component "stair_modeling::StairModeling")
+set(node_plugins "${node_plugins}stair_modeling::StairModeling;$<TARGET_FILE:stair_modeling_component>\n")
+
+###############################################################################
+# executables
+
+add_executable(stair_modeling_ros
+  src/stair_modeling_ros.cpp)
+target_link_libraries(stair_modeling_ros
+  cloud_processor_component
+  zion_broadcaster_component
+  stair_modeling_component
   ${PCL_LIBRARIES}
 )
-
-ament_target_dependencies(${PROJECT_NAME}
-  ${dependencies}
+ament_target_dependencies(stair_modeling_ros
+  ${DEPENDENCIES}
 )
 
-add_executable(stair_modeling_ros_node
-  src/stair_modeling_ros_node.cpp
-)
-
-target_link_libraries(stair_modeling_ros_node
-  ${PROJECT_NAME}
-  ${PCL_LIBRARIES}
-)
-
-ament_target_dependencies(${PROJECT_NAME}
-  ${dependencies}
-)
-
-########### zion_tf2_broadcaster #####
-# add_executable(zion_tf2_broadcaster src/zion_tf2_broadcaster.cpp)
-
-# ament_target_dependencies(zion_tf2_broadcaster 
-#   ${dependencies} 
-#   )
-
-#############
-## Install ## 
-#############
+###############################################################################
+# Install 
 
 # Mark executables and/or libraries for installation
-install(
-  TARGETS
-  ${PROJECT_NAME}
-  stair_modeling_ros_node
+
+install(TARGETS
+  cloud_processor_component
+  zion_broadcaster_component
+  stair_modeling_component
   ARCHIVE DESTINATION lib
   LIBRARY DESTINATION lib
+  RUNTIME DESTINATION bin
+)
+
+install(TARGETS
+  stair_modeling_ros
   RUNTIME DESTINATION lib/${PROJECT_NAME}
 )
 
@@ -134,10 +180,10 @@ install(
 
 install(
   DIRECTORY
-    # config
-    rviz2
-    params
-    launch
+  # config
+  rviz2
+  params
+  launch
   DESTINATION share/${PROJECT_NAME}
 )
 

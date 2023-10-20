@@ -6,6 +6,9 @@ from launch_ros.actions import Node
 from launch.substitutions import LaunchConfiguration
 def generate_launch_description():
 
+    # Set LOG format
+    os.environ['RCUTILS_CONSOLE_OUTPUT_FORMAT'] = '{time} [{name}] [{severity}] {message}'
+    
     # Get parameters from yaml
     config = os.path.join(
         get_package_share_directory('stair_modeling_ros'),
@@ -21,20 +24,17 @@ def generate_launch_description():
     )
 
     # Set launch of stair detector
-    launch_stair_modeling = TimerAction(
-                period=0.5,
-                actions=[
-                        Node(
+    stair_modeling_node = Node(
                                 package='stair_modeling_ros',
-                                executable='stair_modeling_ros_node',
+                                executable='stair_modeling_ros',
                                 output='screen',
-                                parameters=[config, {'debug': LaunchConfiguration('debug')}],
+                                parameters=[config,
+                                            {'debug': LaunchConfiguration('debug')}],
                         )
-                ]
-        )
+
 
     # Return launch description
     return LaunchDescription([
         debug_arg,
-        launch_stair_modeling
+        stair_modeling_node
     ])

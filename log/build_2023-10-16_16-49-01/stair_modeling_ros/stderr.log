@@ -1,4 +1,0 @@
-[01m[K/home/nimrod/ros2_ws/src/stair_detection_pkg/stair_modeling_ros/src/stair_modeling.cpp:[m[K In member function ‘[01m[Kvoid StairModeling::tfCallback(tf2_msgs::msg::TFMessage_<std::allocator<void> >::SharedPtr)[m[K’:
-[01m[K/home/nimrod/ros2_ws/src/stair_detection_pkg/stair_modeling_ros/src/stair_modeling.cpp:151:74:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ktf_msg[m[K’ [[01;35m[K-Wunused-parameter[m[K]
-  151 | void StairModeling::tfCallback([01;35m[Kconst tf2_msgs::msg::TFMessage::SharedPtr tf_msg[m[K)
-      |                                [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~[m[K

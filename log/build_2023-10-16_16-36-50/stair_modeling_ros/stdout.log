@@ -1,4 +1,0 @@
-[ 11%] [32mBuilding CXX object CMakeFiles/zion_tf2_broadcaster.dir/src/zion_tf2_broadcaster.cpp.o[0m
-[ 22%] [32mBuilding CXX object CMakeFiles/stair_modeling_ros.dir/src/stair_modeling.cpp.o[0m
-[ 33%] [32m[1mLinking CXX executable zion_tf2_broadcaster[0m
-[ 33%] Built target zion_tf2_broadcaster
